@@ -55,7 +55,8 @@ def get_campsites():
     
     #create beautiful soup object
     bs = BeautifulSoup(content, 'html.parser')
-    
+   # bs = BeautifulSoup('https://www.campinginontario.ca/campgrounds?region=0', 'html.parser')
+
     #find all <div> tags that has a 'camp-link' class
     rows = bs.find_all('div', class_='camp-link')
     
@@ -75,7 +76,6 @@ def get_info(content):
     soup = BeautifulSoup(content, 'html.parser')
     
     #################Name:
-    
     
     #################Address and GPS
     address_tag = soup.find('div', class_='cg-address')

@@ -1,0 +1,159 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+	    
+	    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script src="/static/js/bootstrap.bundle.min.js"></script>
+		
+		
+		<title>Gone Camping</title>
+		<style>
+			body, html {
+			  height: 100%;
+			  margin: 0;
+			}
+			
+			.body {
+			  /* The image used */
+			  background-image: url("/static/img/camping.jpg");
+			
+			  /* Full height */
+			  height: 100%; 
+			
+			  /* Center and scale the image nicely */
+			  background-position: center;
+			  background-repeat: no-repeat;
+			  background-size: cover;
+			}
+			.user-input{
+				margin-top: 20px;
+				margin-left: 300px;
+			}
+			#search-bar{
+				margin-top: 30px;
+			}
+			#select-site{
+				color: #555;
+			    background-color: #fff;
+			    border-radius: 0.25rem;
+			    border: 1px solid #6c757d;
+			    padding: 7px;
+			    font-size: 0.9em;
+			    width: 300px;
+			}
+			.site-label{
+				color: #fff;
+				font-weight: 900;
+				display: block;
+				font-size:1.2em;
+			}
+			#search-result{
+				background-color: #333;
+				border-radius:0.2rem;
+				border: 1px solid #333;
+				min-height:300px;
+				width: 100%;
+				padding: 7px;
+				opacity: 0.9;
+				color: #fff;
+			}
+			.table{
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body class='body'>
+		<header>
+		  <div class="navbar navbar-dark bg-dark shadow-sm">
+		    <div class="container d-flex justify-content-between">
+		      <a href="#" class="navbar-brand d-flex align-items-center">
+		        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+		        <strong>Gone Camping</strong>
+		      </a>
+		    </div>
+		  </div>
+		</header>
+		<div class='container'>
+			<!--  
+			<div class="dropdown">
+			  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Select Campsite
+			  </a>
+			
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			    <a class="dropdown-item site-name" href="#">1000 Islands/Kingston KOA</a>
+			    <a class="dropdown-item" href="#">Bay Meadows Park</a>
+			  </div>
+			  -->
+			  <div class="ui-widget" id='search-bar'>
+				  <label for="tags" class="site-label">To start, select a campground</label>
+				  <input id="select-site" placeholder="Type a campground name">
+				  <button class='btn btn-secondary' style="display: inline-block" id='search-button'>Search</button>
+			  </div>
+			  
+			  
+			  <div class='site-label' style='margin-top: 30px;'>Similar Campgrounds</div>
+			  <div id='search-result'>
+			  	<table class="table" id='result-table'>
+				  <thead class="thead-dark">
+				    <tr>
+				      <th scope="col">#</th>
+				      <th scope="col">Name</th>
+				      <th scope="col">Address</th>
+				      <th scope="col">Phone</th>
+				      <th scope="col">Overview</th>
+				      <th scope="col">Similarity</th>
+				    </tr>
+				  </thead>
+				</table>
+			  </div>
+		</div>
+	</body>
+	<script>
+		$( function() {
+		    var availableSites = [
+		      {% for name in all_sites %}
+		      	"{{name}}",
+		      {% endfor %}
+		    ];
+		    $( "#select-site" ).autocomplete({
+		      source: availableSites
+		    });
+		    $('#search-button').click(function(){
+		    	$('.result-row').remove();
+		    	url = '/recommendations?name='+$('#select-site').val();
+		    	console.log(url);
+		    	$.ajax({
+		    		'url': url
+		    	}).done(function(data){
+		    		console.log('success! ');
+		    		console.log(data)
+		    		for(var i=1; i<data.length; i++){
+    		    		d = data[i];
+    		    		row = $("<tr class='result-row'>");
+    		    		row.append(
+    		    			$('<td>').text(i)
+    		    		).append(
+    			    	 $('<td>').text(d.name)
+    			    	).append(
+    			    	 $('<td>').text(d.address)
+    			    	).append(
+    			    	 $('<td>').text(d.phone)
+    			    	).append(
+    			    	 $('<td>').text(d.overview)
+    			    	).append(
+    			    	 $('<td>').text(d.score.toFixed(2))
+    			    	);
+    		    		$('#result-table').append(row);
+		    		}
+		    		
+		    	})
+		    	.fail(function(data){
+		    		console.log('fail! ' + data)
+		    	});
+		    })
+		  } );
+	</script>
+</html>

@@ -1,0 +1,7 @@
+.spyproject/
+.DS_Store
+Archived/
+Test.py
+__pycache__
+htmls/
+temp/
