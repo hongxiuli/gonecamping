@@ -5,3 +5,7 @@ Test.py
 __pycache__
 htmls/
 temp/
+
+.project
+.pydevproject
+.settings/

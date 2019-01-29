@@ -2,6 +2,7 @@ import requests
 import urllib.parse
 import pandas as pd
 import time
+import math
 
 textsearch_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery'
 textsearch_url += '&key=AIzaSyDX8Uxzozw5kOzezJ5Cfz-DPsXXG8neOkM'
@@ -25,7 +26,7 @@ def get_google_api_response(url):
         print("status: %d" % res.status_code)
         raise Exception(res.content)
 
-def get_google_review(name, address, phone):
+def get_google_review(name, address=None, phone=None):
     
     print("=========================================")
     #try name first
@@ -37,44 +38,58 @@ def get_google_review(name, address, phone):
         temp['by'] = 'name'
         return temp
     
-    #try phone second
-    phone = phone.replace('-','')
-    phone = '+1'+phone
-    url = phonesearch_url + urllib.parse.quote_plus(phone)
-    print("get by phone: %s, url: %s" % (phone, url))
-    result = get_google_api_response(url)
-    if(len(result['candidates'])>0 and result['candidates'][0]['rating']>0):
-        temp = result['candidates'][0]
-        temp['by'] = 'phone'
-        return temp
-    
-    #try address finally
-    # this typically does not generate any result on ratings and has a different rating on
-    url = textsearch_url + urllib.parse.quote_plus(address)
-    print("get by address: %s, url: %s" % (address, url))
-    result =  get_google_api_response(url)
-    if(len(result['candidates'])>0):
-        temp = result['candidates'][0]
-        temp['by'] = 'address'
-        return temp
+    if(phone is not None and not math.isnan(phone)):
+        #try phone second
+        phone = phone.replace('-','')
+        phone = '+1'+phone
+        url = phonesearch_url + urllib.parse.quote_plus(phone)
+        print("get by phone: %s, url: %s" % (phone, url))
+        result = get_google_api_response(url)
+        if(len(result['candidates'])>0 and result['candidates'][0]['rating']>0):
+            temp = result['candidates'][0]
+            temp['by'] = 'phone'
+            return temp
     else:
         return {
-            'name': None,
-            'place_id': None,
-            'rating': None,
-            'by': 'address'
-        }
+                'name': None,
+                'place_id': None,
+                'rating': None,
+                'by': 'name'
+            }
+
+    if(address is not None and not math.isnan(address)):
+        #try address finally
+        # this typically does not generate any result on ratings and has a different rating on
+        url = textsearch_url + urllib.parse.quote_plus(address)
+        print("get by address: %s, url: %s" % (address, url))
+        result =  get_google_api_response(url)
+        if(len(result['candidates'])>0):
+            temp = result['candidates'][0]
+            temp['by'] = 'address'
+            return temp
+        else:
+            return {
+                'name': None,
+                'place_id': None,
+                'rating': None,
+                'by': 'address'
+            }
+    else:
+        return {
+                'name': None,
+                'place_id': None,
+                'rating': None,
+                'by': 'phone'
+            }
     
-def get_all_basic_info():
+def get_all_basic_info(df, output_fn):
     '''
     - get the basic information for a place especailly the place_id, which will be used in another google API call to get the reviews
     - save the basic information to private_camp_sites_places.csv
     '''
     result = {}
     keys = ['name', 'place_id', 'rating', 'by']
-    fn = 'private_camp_sites.csv'
-    print('read %s' % fn )
-    df = pd.read_csv('private_camp_sites.csv', encoding='utf-8')
+    
     i = 0
     while(i<df.shape[0]):
         row = df.iloc[i]
@@ -100,8 +115,8 @@ def get_all_basic_info():
             print(e)
         i+=1
     
-    df = pd.DataFrame(result)
-    df.to_csv('private_camp_sites_places.csv', encoding='utf-8', header=True, index=False)
+    temp = pd.DataFrame(result)
+    temp.to_csv(output_fn, encoding='utf-8', header=True, index=False)
     
 def check_basic_info():
     '''
@@ -122,8 +137,7 @@ def check_basic_info():
     temp = df.loc[df['by']=='address']
     print(temp)
     
-def get_reviews():
-    df = pd.read_csv('private_camp_sites_places.csv', encoding='utf-8')
+def get_reviews(df, output_fn):
     i = 0
     result = {}
     keys = ['author_name', 'author_url', 'profile_photo_url', 'rating', 'relative_time_description', 'text', 'time']
@@ -131,40 +145,43 @@ def get_reviews():
         row = df.iloc[i]
         print("processing %d: %s" %(i+1, row['original_name']) )
         try:
-            url = detaillsearch_url + row['place_id']
-            res = get_google_api_response(url)
-            if(res['status']=='OK'):
-                temp = res['result']
-                for r in temp['reviews']:
-                    if('name' in result):
-                        result['name'].append(row['original_name'])
-                    else:
-                        result['name'] = [row['original_name']]
-                        
-                    for key in keys:
-                        if(key in result):
-                            result[key].append(r[key])
+            if(row['place_id'] is not None):
+                url = detaillsearch_url + row['place_id']
+                res = get_google_api_response(url)
+                if(res['status']=='OK'):
+                    temp = res['result']
+                    for r in temp['reviews']:
+                        if('name' in result):
+                            result['name'].append(row['original_name'])
                         else:
-                            result[key] = [r[key]]
+                            result['name'] = [row['original_name']]
+                            
+                        for key in keys:
+                            if(key in result):
+                                result[key].append(r[key])
+                            else:
+                                result[key] = [r[key]]
+                else:
+                    print("%s for %s" %(res.status, url))
             else:
-                print("%s for %s" %(res.status, url))
-                
+                print("%s has not place_id, skipping" %(row['name']))
         except Exception as e:
             print(e)
         i+=1
     
-    df = pd.DataFrame(result)
-    df.to_csv('private_camp_sites_reviews.csv', encoding='utf-8', header=True, index=False)
-#to call google api to get basic information of all the places, uncomment the line below
-#get_all_basic_info()
+    temp = pd.DataFrame(result)
+    temp.to_csv(output_fn, encoding='utf-8', header=True, index=False)
 
-
-#to check the basic information we get from google place api, uncomment the line below
-#check_basic_info()
-
-#to get the reviews, uncomment the line below.
-#you need to have private_camp_sites_places.csv populated first
-get_reviews()
+def process_public_campsite_review():    
+    #1. to call google api to get basic information of all the places, uncomment the line below
+    #df = pd.read_csv('public_campsites.csv', encoding='utf-8')
+    #get_all_basic_info(df, 'public_campsites_googleinfo.csv')
+    
+    #to get the reviews, uncomment the line below.
+    #you need to have private_camp_sites_places.csv populated first
+    df = pd.read_csv('public_campsites_googleinfo.csv', encoding='utf-8')
+    df.dropna(inplace=True)
+    get_reviews(df, 'public_campsites_reviews.csv')
     
     
-    
+process_public_campsite_review()

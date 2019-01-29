@@ -13,7 +13,7 @@ import urllib.parse
 
 from bs4 import BeautifulSoup
 import os
-import time
+from utils import get_content
 
 def get_content(url):
     '''
