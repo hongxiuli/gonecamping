@@ -12,8 +12,7 @@ from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-
-campsite_list = pd.read_csv("private_campsites.csv", encoding='utf-8') 
+stop_words = stopwords.words('english')
 
 #############utility functions
 def stem_sentence(sentence, stemmer):
@@ -28,35 +27,59 @@ def remove_stopwords(rev):
     rev_new = " ".join([i for i in rev if i not in stop_words])
     return rev_new
 
+def activity_str_to_set(a):
+    result = set()
+    temp = a.split(',')
+    for t in temp:
+        t = t.replace('Activities In or Around the Campground:', '').strip().lower()
+        if(len(t)>0):
+            result.add(t)
+    return result
 
-stop_words = stopwords.words('english')
+def process_activities(campsite_list):
+    activities = set()
+    for i in range(campsite_list.shape[0]):
+        temp = activity_str_to_set(campsite_list.iloc[i]['activities'])
+        activities = activities.union(temp) 
+                
+    #add the columns
+    for a in activities:
+        campsite_list[a] = 0
+    
+    for i in range(campsite_list.shape[0]):
+        temp = activity_str_to_set(campsite_list.iloc[i]['activities'])
+        for t in temp:
+            campsite_list.at[i, t] = 1
+    
+    return activities
 
-##############Reviews
+###### STEP 1: load the campsite into memory 
+        
+campsite_list = pd.read_csv("private_campsites.csv", encoding='utf-8') 
+
+###### SETP 2: process activities to binary columns
+activities = process_activities(campsite_list)
+
+
+###### SETP 3: Reviews
 campsite_review = pd.read_csv("private_campsites_reviews.csv", encoding='utf-8') 
-
 review = campsite_review[['name','text']]
 review.dropna(inplace=True)
-
 names = review['name'].unique().tolist()
-
 temp_dict = {
     'name': [],
     'review': []
 }
-
 for name in names:
     temp = review.loc[review['name'] == name]
     reviews_for_name = ' ' + ' '.join(temp['text'].tolist())
     temp_dict['name'].append(name)
     temp_dict['review'].append(reviews_for_name)
-    
 reviews_all = pd.DataFrame(temp_dict)
-
 campsite_list_rv = campsite_list.merge(reviews_all, on='name')
-
 campsite_list_rv['ov_rv'] = campsite_list_rv['overview'] + campsite_list_rv['review']
 
-#####Preprocessing 
+##### SETP 4: add overview and review together
 ov_rv =campsite_list_rv[['ov_rv']]
 ov_rv['ov_rv'] = ov_rv['ov_rv'].str.replace("[^a-zA-Z#]", " ")
 # make entire text lowercase
@@ -65,16 +88,14 @@ ov_rv_done = [remove_stopwords(r.split()) for r in ov_rv['ov_rv']]
 stemmer = nltk.stem.PorterStemmer()
 ov_rv_done = [stem_sentence(r, stemmer) for r in ov_rv_done]
 
-#print(stemmer.stem('working'))
 
-
+##### SETP 5: vectorize text and pre-calculate the cosine similarity
 tfidf = TfidfVectorizer(stop_words='english',)
 tfidf_matrix = tfidf.fit_transform(ov_rv_done)
-#print(tfidf.get_feature_names())
+coss_ov_rv = cosine_similarity(tfidf_matrix, tfidf_matrix)
 
 
-
-######add other binary features
+##### STEP 6: pre-calculate cosine similarity for binary columns
 bin_cols = ['Accessible facilities', 'Credit/debit cards', 'Dumping (station or mobile)',
           'Group camping','Internet (WiFi at site)','Laundromat','Pet-friendly',
           'Planned activities/events','Playground','Pull-thru sites','Rec hall/games room',
@@ -83,16 +104,25 @@ bin_cols = ['Accessible facilities', 'Credit/debit cards', 'Dumping (station or 
           'Hot tub','Internet (hot spot)','Propane','Swimming (indoor pool)','Swimming (lake, river, or beach)',
           'Toilets (pit/outhouse)'
           ]
+bin_cols += list(activities)
 bin_list =campsite_list_rv[bin_cols]
-corr= bin_list.corr()
+coss_binary_vars = cosine_similarity(bin_list, bin_list)
 
-all_features = np.concatenate((tfidf_matrix.toarray(),bin_list),axis=1)
-cosine_sim = cosine_similarity(all_features, all_features)
+print("****model is ready")
 
 def get_recommendations(name):
     row = campsite_list_rv.loc[campsite_list_rv['name']==name]
     print("look for index %d for name %s" %(row.index[0], name))
-    candidates = cosine_sim[row.index[0]]
+    
+    #get the cosine similarity for binary values
+    bin_candidates = coss_binary_vars[row.index[0]]
+    
+    #get the cosine similarity for text values
+    text_candidates = coss_ov_rv[row.index[0]]
+    
+    candidates = 0.5*bin_candidates + 0.5*text_candidates
+    
+    #candidates = cosine_sim[row.index[0]]
     df = campsite_list_rv[['name']].copy()
     df['score'] = list(candidates)
     df_sorted = df.sort_values(by='score', ascending=False)

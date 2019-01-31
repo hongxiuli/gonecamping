@@ -2,9 +2,9 @@ original_name,name,place_id,rating,by
 Aaron Provincial Park,Aaron Provincial Park,ChIJj8efqcG7olIRZjK84OhM0rI,4.3,name
 Algonquin  Achray Campground,Achray Campground Office,ChIJp8rrkFrr1kwR5YDZ-uzjXag,4.8,name
 Algonquin  Backcountry Campground,,,,name
-Algonquin  Brent Campground,Algonquin Outfitters - Brent,ChIJe_jpKmg51kwRJ9AgEKiCrBo,5.0,name
+Algonquin  Brent Campground,,ChIJe_jpKmg51kwRJ9AgEKiCrBo,5.0,name
 Algonquin  Canisbay Lake Campground,Algonquin  Canisbay Lake Campground Office,ChIJmXvBP1Pn1UwRwDQKqieeOsw,4.5,name
-Algonquin  Coon Lake Campground,Coon Lake,ChIJSzQxoEQes1IRJr1ctdAhpt8,4.4,name
+Algonquin  Coon Lake Campground,Algonquin  Coon Lake Campground,ChIJSzQxoEQes1IRJr1ctdAhpt8,4.4,name
 Algonquin  Kearney Lake Campground,Kearney Lake Campground,ChIJp824MgnZ1UwRSCx2OBC6fLY,4.4,name
 Algonquin  Kiosk Campground,Kiosk Campground,ChIJg4agzTLaKU0R9a0IBzPmQpQ,4.6,name
 Algonquin  Lake of Two Rivers Campground,Lake of Two Rivers Campground Office,ChIJc8f6bMPe1UwRZK5S0Oo-6iY,4.4,name
@@ -12,7 +12,7 @@ Algonquin  Mew Lake Campground,Mew Lake Campground,ChIJhXOQWuze1UwRo0bBirlE3DE,4
 Algonquin  Pog Lake Campground,Pog Lake Campground,ChIJsy9idgrZ1UwR-qYTmgLsmL0,4.4,name
 Algonquin  Rock Lake Campground,Rock Lake Campground,ChIJsVe8TJnQ1UwRdjgqKd5O_EI,4.4,name
 Algonquin  Tea Lake Campground,Algonquin  Tea Lake Campground Office,ChIJwV34IOnl1UwRypZHEJU65RE,4.1,name
-Algonquin  Whitefish Lake Campground,WHITEFISH LAKE STATE PARK,ChIJLwQOrvpoZlMR104wBfqMhw4,3.8,name
+Algonquin  Whitefish Lake Campground,Algonquin  Whitefish Lake Campground,ChIJLwQOrvpoZlMR104wBfqMhw4,3.8,name
 Arrowhead Provincial Park,Arrowhead Provincial Park,ChIJDT0k5TINKk0Rj8AbTHfbzxU,4.6,name
 Arrow Lake Provincial Park,,,,name
 Awenda Provincial Park,Awenda Provincial Park,ChIJie0i1wYgK00RmAw703ltsMw,4.6,name
@@ -23,7 +23,7 @@ Biscotasi Lake Provincial Park,,,,name
 Blue Lake Provincial Park,Blue Lake Provincial Park,ChIJ5-s7N5xmvVIRdkE73nI2FGM,4.7,name
 Bon Echo Provincial Park,Bon Echo Provincial Park,ChIJDyJ46POg00wRGy7EmvK-jkI,4.7,name
 Bonnechere Provincial Park,Bonnechere Provincial Park,ChIJeUi6FWal1kwRDCq0CvXcJsE,4.6,name
-Bronte Creek Provincial Park,Bronte Creek Provincial Park (Day use Entrance),ChIJcXmf_zJnK4gRQB-hmJkBAQM,4.3,name
+Bronte Creek Provincial Park,Bronte Creek Provincial Park campground,ChIJcXmf_zJnK4gRQB-hmJkBAQM,4.3,name
 Caliper Lake Provincial Park,Caliper Lake Provincial Park,ChIJc9_I37tHvFIRT0k-s6ADd5o,4.5,name
 Charleston Lake Provincial Park,Charleston Lake Provincial Park,ChIJ1Qy90aJuzUwRYpgzQ-LjCQs,4.5,name
 Chutes Provincial Park,Chutes Provincial Park,ChIJhcBXXYvpMU0R7PEcr9N-eFI,4.6,name
@@ -67,7 +67,7 @@ Marten River Provincial Park,Marten River Provincial Park,ChIJX8UmJyu5KE0R_oZtlo
 McRae Point Provincial Park,McRae Point Provincial Park,ChIJDYxOcd5V1UwRCm0HkjWyA9k,4.3,name
 Mikisew Provincial Park,Mikisew Provincial Park,ChIJwYrf-jaEKU0RXwFeFYnCZBI,4.6,name
 Misery Bay Provincial Park,,,,name
-Missinaibi Provincial Park,Missinaibi River,ChIJqUhNtG4tOU0RwbdyW0k96dI,5.0,name
+Missinaibi Provincial Park,Missinaibi Provincial Park,ChIJqUhNtG4tOU0RwbdyW0k96dI,5.0,name
 Mississagi Provincial Park,Mississagi Provincial Park,ChIJX1xXnW3iME0RIha7btFpaV8,4.3,name
 Mono Cliffs Provincial Park,Mono Cliffs Provincial Park,ChIJcVWUBrb4KogRPWlr7F6-Aa8,4.5,name
 Murphys Point Provincial Park,Murphys Point Provincial Park,ChIJ9VnKTgt50kwRyOwRidTrY4o,4.0,name
@@ -101,7 +101,7 @@ Samuel de Champlain Provincial Park,Samuel de Champlain Provincial Park,ChIJ3-Ma
 Sandbanks Provincial Park,Sandbanks Provincial Park,ChIJryLPHVVJ1okRIvkoUFOQQ3E,4.6,name
 Sandbar Lake Provincial Park,Sandbar Lake Provincial Park,ChIJVbGYAvozolIRY_psh4YHhTs,4.7,name
 Sauble Falls Provincial Park,Sauble Falls Provincial Park,ChIJT2TscKHYKYgRdDZj0cyy_RM,4.2,name
-Selkirk Provincial Park,Selkirk,ChIJJXgi1n37LIgRxVU_ZiWEAlA,4.1,name
+Selkirk Provincial Park,Selkirk provincial park,ChIJJXgi1n37LIgRxVU_ZiWEAlA,4.1,name
 Sharbot Lake Provincial Park,Sharbot Lake Provincial Park,ChIJxQzdFh330kwRSUpcPptR5Nc,4.2,name
 Sibbald Point Provincial Park,Sibbald Point Provincial Park,ChIJhcCSkrxN1YkR1YY8SET2A08,4.3,name
 Silent Lake Provincial Park,Silent Lake Provincial Park,ChIJnwtU0hSL1EwRQywEMGXk2WM,4.6,name
