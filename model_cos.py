@@ -11,6 +11,8 @@ import nltk
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
+from gensim.models import Word2Vec, Doc2Vec
+import gensim
 
 stop_words = stopwords.words('english')
 
@@ -82,17 +84,58 @@ campsite_list_rv['ov_rv'] = campsite_list_rv['overview'] + campsite_list_rv['rev
 ##### SETP 4: add overview and review together
 ov_rv =campsite_list_rv[['ov_rv']]
 ov_rv['ov_rv'] = ov_rv['ov_rv'].str.replace("[^a-zA-Z#]", " ")
-# make entire text lowercase
 ov_rv_done = [remove_stopwords(r.split()) for r in ov_rv['ov_rv']]
 # make entire text lowercase and stem them
 stemmer = nltk.stem.PorterStemmer()
-ov_rv_done = [stem_sentence(r, stemmer) for r in ov_rv_done]
+ov_rv_done = [stem_sentence(r, stemmer).lower() for r in ov_rv_done]
 
 
-##### SETP 5: vectorize text and pre-calculate the cosine similarity
+##### SETP 5.1: TFIDF vectorize text and pre-calculate the cosine similarity
 tfidf = TfidfVectorizer(stop_words='english',)
 tfidf_matrix = tfidf.fit_transform(ov_rv_done)
-coss_ov_rv = cosine_similarity(tfidf_matrix, tfidf_matrix)
+cosine_tfidf = cosine_similarity(tfidf_matrix, tfidf_matrix)
+
+#### STEP 5.2 Word2Vec
+ov_rv_tokenized = [nltk.word_tokenize(sent) for sent in ov_rv_done]
+word2vec = Word2Vec(ov_rv_tokenized, min_count=2)  
+vocabulary = word2vec.wv.vocab
+count=0
+def get_vec_for_doc(doc):
+    global count
+    temp = []
+    for word in doc:
+        try:
+            temp.append(word2vec.wv[word])
+        except KeyError as k:
+            count+=1
+            #print(k)
+    result = np.mean(temp, axis=0)
+    return result
+ov_rv_w2v = [ get_vec_for_doc(doc) for doc in ov_rv_tokenized]
+cosine_w2v = cosine_similarity(ov_rv_w2v, ov_rv_w2v)
+
+#### STEP 5.3 Doc2Vec
+class LabeledLineSetence():
+    def __init__(self, doc_list, labels_list):
+       self.labels_list = labels_list
+       self.doc_list = doc_list
+    def __iter__(self):
+        for idx, doc in enumerate(self.doc_list):
+            yield gensim.models.doc2vec.TaggedDocument(words=doc,tags=[self.labels_list[idx]])
+labels = campsite_list_rv['name'].tolist()
+it = LabeledLineSetence(ov_rv_tokenized, labels)
+doc2vec = Doc2Vec(size=100, window=10, min_count=5, workers=11,alpha=0.025, iter=20)
+doc2vec.build_vocab(it)
+doc2vec.train(it,total_examples=doc2vec.corpus_count, epochs=doc2vec.iter)
+ov_rv_d2v = [doc2vec[name] for name in labels]
+cosine_d2v = cosine_similarity(ov_rv_d2v, ov_rv_d2v)
+
+#### STEP 5.4 Comparison
+w2v_minus_d2v = cosine_w2v-cosine_d2v
+tf_minus_d2v = cosine_tfidf-cosine_d2v
+
+#print(ov_rv.loc[8])
+#ov_rv.to_csv("ov_rv.csv",sep='\t', encoding='utf-8')
 
 
 ##### STEP 6: pre-calculate cosine similarity for binary columns
@@ -109,6 +152,16 @@ bin_list =campsite_list_rv[bin_cols]
 coss_binary_vars = cosine_similarity(bin_list, bin_list)
 
 print("****model is ready")
+
+
+##### STEP 7: Summary of Reviews using TextRank
+
+
+
+
+
+
+
 
 def get_recommendations(name):
     row = campsite_list_rv.loc[campsite_list_rv['name']==name]
@@ -132,4 +185,18 @@ def get_recommendations(name):
         top[col] = campsite_list_rv[col]
     result = top.to_dict('records')
     return result
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
