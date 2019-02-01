@@ -163,22 +163,35 @@ print("****model is ready")
 
 
 
-def get_recommendations(name):
+def get_recommendations(data):
+    name = data.pop('name')
+    
     row = campsite_list_rv.loc[campsite_list_rv['name']==name]
     print("look for index %d for name %s" %(row.index[0], name))
     
     #get the cosine similarity for binary values
-    bin_candidates = coss_binary_vars[row.index[0]]
+    bin_similarity = coss_binary_vars[row.index[0]]
     
     #get the cosine similarity for text values
-    text_candidates = coss_ov_rv[row.index[0]]
+    text_similarity = cosine_d2v[row.index[0]]
     
-    candidates = 0.5*bin_candidates + 0.5*text_candidates
+    similarity = 0.5*bin_similarity + 0.5*text_similarity
     
     #candidates = cosine_sim[row.index[0]]
     df = campsite_list_rv[['name']].copy()
-    df['score'] = list(candidates)
-    df_sorted = df.sort_values(by='score', ascending=False)
+    df['score'] = list(similarity)
+
+    #filter
+    temp = campsite_list_rv
+    for col in data.keys():
+        temp = temp.loc[temp[col]==1]
+    valid_indexes = temp.index.tolist()
+    print("after filtering, we get:")
+    print(valid_indexes)
+
+    df_filtered = df.iloc[valid_indexes]
+
+    df_sorted = df_filtered.sort_values(by='score', ascending=False)
     top=df_sorted.iloc[:6].copy()
     return_cols = ['name','address', 'phone', 'overview']
     for col in return_cols:
