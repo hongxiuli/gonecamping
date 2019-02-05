@@ -1,4 +1,4 @@
-name,introduction,camping,activities,facilities,camping_raw,activities_raw,facilities_raw,address,phone
+name,introduction,camping,activities,facilities,camping_raw,activities_raw,facilities_raw,address,phone,activities_icon,facilities_icon
 Aaron Provincial Park,"Conveniently located off of the Trans-Canada Highway, this park is the perfect stopping point for cross-country explorers.
 Two sandy beaches and the clear, shallow waters of Thunder Lake make Aaron ideal for water based activities, such as swimming, boating and fishing.
 The park’s Thunder Lake is a remnant of the ancient glaciers that covered Ontario tens of thousands of years ago.","Car Camping
@@ -35,7 +35,7 @@ A stroll down this trail will help you appreciate the history and ecology of Aar
 <p>Groceries are available outside of the park in Dryden, 11 km west of the park on Highway 17.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the day-use area of the park and it is available on a first-come first-served basis.</p> <h2>Rentals</h2>
 <p>Canoes and kayaks are available for rent at the Park Office. Personal Floatation Devices (PFDs) are also available for loan with a $25 refundable deposit.</p>
-</div>",,
+</div>","Box 730, 479 Government Street Dryden, ON P8N 2Z4",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Achray Campground,"Located on the east side of Algonquin Provincial Park
 Small campground in a peaceful lakeside setting
 Starting point for exploring the interior of Algonquin by canoe or on foot
@@ -99,7 +99,7 @@ Eastern Pines is an overnight backpacking trail which may be accessed at the cam
 <p>The park store offers firewood, ice, ice cream and some camper supplies but not bread, milk, etc</p> <h2>Rentals</h2>
 <p>Canoe rentals are available for day-use only from the store in the Stone House at Achray. <br/>
 Overnight canoe rentals may be arranged with the outfitters</p>
-</div>",,
+</div>",31 Riverside Dr Pembroke K8A 8R6,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Backcountry Campground,"Ontario’s oldest provincial park offers an unparalleled wilderness experience that’s easily accessed from Southern Ontario
 29 different entry points provide access to maintained campsites and portages amidst the serenity and natural beauty of Algonquin’s wilderness.
 Over 2,000 kilometres of canoe routes connect thousands of pristine lakes that can take a lifetime to fully explore
@@ -522,7 +522,7 @@ No lodges or rental outfitters operate in Algonquin during the winter, but yurts
 Located 6 km north from km 46.3 on Highway 60</p>
 <p>Portage Store and Canoe Centre<br/>
 Located at km 14.1 on Highway 60</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Brent Campground,"Located on the north side of Algonquin Provincial Park
 Small, quiet campground
 Some campsites have direct water access
@@ -543,7 +543,7 @@ The Brent Crater was formed when a meteorite crashed to earth thousands of years
 <p>Like all lakes in Algonquin, Cedar Lake is clean, clear and inviting for swimming.</p> </div>","<div id=""facilities"">
 <h2>Boat Launch</h2>
 <p>A boat launch in the campground provides access to Cedar Lake.</p>
-</div>",,
+</div>",31 Riverside Drive Pembroke K8A 8R6,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Canisbay Lake Campground,"Located on the Highway 60 corridor at km 23
 Hardwood forest setting, sandy beaches, full amenities
 Open May to October","Backcountry Camping
@@ -602,7 +602,7 @@ This looped trail includes an easy climb to a pine-clad cliff.</p> <h2>Hunting</
 <p>The Portage Store, located west of Canisbay Campground at km 14, sells parks souvenirs and outfitting supplies. It has an eat-in restaurant.  The Two Rivers Store located east of Canisbay Campground at km 31 sells basic groceries and has a snack bar.</p> <h2>Rentals</h2>
 <p>Canoes may be rented in the park from the Portage Store or Opeongo Store. In addition, bicycles may be rented at the Two Rivers Store (km31.4).</p> <h2>Visitor Centre</h2>
 <p>The Algonquin Visitor Centre, located at km 43, is open year-round and features exhibits on the natural and human history of Algonquin, a theatre which plays the video presentation “Images of Algonquin”, a viewing deck that looks out over an amazing Algonquin landscape, bookstore, and “The Algonquin Room” which exhibits Algonquin themed art by local artists.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Coon Lake Campground,"Located 5km south of Highway 60; turn at km 40
 Situated in a predominantly birch setting on a small and pretty Coon Lake
 Open mid-June to Labour Day","Car Camping
@@ -641,7 +641,7 @@ At km 20, on a small hill next to Found Lake, there sits a giant, hollow sculptu
 <p>The Framing Place and Gallery (Huntsville) has been entrusted to carry out this unique project. The central vision of this project is to act as a bridge, connecting the art world with the natural world, as well as to promote the preservation and protection of the environment, from a local to global scale.<br/>
 Another Art Centre ethic is to make this facility available to everyone. It is wheelchair accessible and the entrance fee is a voluntary admission, where your contribution will be put towards the enhancement of this “open-concept” project.</p>
 <p>The Algonquin Art Centre has an indoor gallery, consisting of three wings and a boutique; an outdoor gallery; and a “Green” Gazebo where you can treat yourself to various tasty treats, teas and coffees, or participate in one of the many scheduled art activities for both adults and children.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Kearney Lake Campground,"Centrally located on the Highway 60 corridor; close to Algonquin’s many attractions
 Pine forest setting, many amenities, beaches
 Open on the May long weekend and from mid-June until Labour Day","Car Camping
@@ -691,7 +691,7 @@ At km 20, on a small hill next to Found Lake, there sits a giant, hollow sculptu
 <p>The Framing Place and Gallery (Huntsville) has been entrusted to carry out this unique project. The central vision of this project is to act as a bridge, connecting the art world with the natural world, as well as to promote the preservation and protection of the environment, from a local to global scale.<br/>
 Another Art Centre ethic is to make this facility available to everyone. It is wheelchair accessible and the entrance fee is a voluntary admission, where your contribution will be put towards the enhancement of this “open-concept” project.</p>
 <p>The Algonquin Art Centre has an indoor gallery, consisting of three wings and a boutique; an outdoor gallery; and a “Green” Gazebo where you can treat yourself to various tasty treats, teas and coffees, or participate in one of the many scheduled art activities for both adults and children.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Kiosk Campground,"Located in the northwest corner of Algonquin Provincial Park
 Small, quiet campground
 Great starting point for exploring the interior of Algonquin","Car Camping
@@ -738,7 +738,7 @@ Call 1-888-ONT-PARK (1-888-668-7275)
 <h2>Boat Launch</h2>
 <p>A boat launch onto Kioshkokwi Lake is located adjacent to the campground beach.</p> <h2>Flush Toilets</h2>
 <p>Flush toilets are centrally located in the campground.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Lake of Two Rivers Campground,"Oldest and best known of Algonquin’s campgrounds
 Excellent beach
 Centrally located on the Highway 60 corridor; close to Algonquin’s many attractions
@@ -793,7 +793,7 @@ At km 20, on a small hill next to Found Lake, there sits a giant, hollow sculptu
 <p>The Framing Place and Gallery (Huntsville) has been entrusted to carry out this unique project. The central vision of this project is to act as a bridge, connecting the art world with the natural world, as well as to promote the preservation and protection of the environment, from a local to global scale.<br/>
 Another Art Centre ethic is to make this facility available to everyone – it is wheelchair accessible and the entrance fee is a voluntary admission, where your contribution will be put towards the enhancement of this “open-concept” project.</p>
 <p>The Algonquin Art Centre has an indoor gallery, consisting of three wings and a boutique; an outdoor gallery; and a “Green” Gazebo where you can treat yourself to various tasty treats, teas and coffees, or participate in one of the many scheduled art activities for both adults and children.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Mew Lake Campground,"This campground offers all modern camping amenities along with yurts
 Great access to hiking and biking trails
 Opened year-round for those who want to experience Algonquin in all four seasons
@@ -883,7 +883,7 @@ Highway 60 Corridor </strong></p>
 <p>Please call the park directly to reserve 705-633-5572.</p> <h2>Rentals</h2>
 <p>Bicycle rentals are available nearby at the Lake of Two Rivers Store from May to Thanksgiving. Canoe rentals are available at The Portage Store on Canoe Lake and the Opeongo Store on Opeongo Lake.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre is open year-round and features exhibits on the natural and human history of Algonquin, a theatre which plays the video presentation “Images of Algonquin”, a viewing deck that looks out over an amazing Algonquin landscape, bookstore, and “The Algonquin Room” which exhibits Algonquin themed art by local artists.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Pog Lake Campground,"Centrally located on the Highway 60 corridor; close to Algonquin’s many attractions
 Pine forest setting, many amenities, beaches
 Open on the May long weekend and from mid-June until Labour Day","Car Camping
@@ -935,7 +935,7 @@ This trail provides excellent views of two beaver ponds.</p> <h2>Hunting</h2>
 <p>Please call the park directly to reserve 705-633-5572.</p> <h2>Rentals</h2>
 <p>Bicycle rentals are available at the Lake of Two Rivers Store. Canoe rentals are available at The Portage Store on Canoe Lake and the Opeongo Store on Opeongo Lake.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre is open year-round and features exhibits on the natural and human history of Algonquin, a theatre which plays the video presentation “Images of Algonquin”, a viewing deck that looks out over an amazing Algonquin landscape, bookstore, and “The Algonquin Room” which exhibits Algonquin themed art by local artists.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Rock Lake Campground,"Located 8 km south of Highway 60; turn at km 40
 Situated in a predominantly pine setting on Rock Lake
 Open April to October","Car Camping
@@ -977,7 +977,7 @@ At km 20, on a small hill next to Found Lake, there sits a giant, hollow sculptu
 <p>The Framing Place and Gallery (Huntsville) has been entrusted to carry out this unique project. The central vision of this project is to act as a bridge, connecting the art world with the natural world, as well as to promote the preservation and protection of the environment, from a local to global scale.</p>
 <p>Another Art Centre ethic is to make this facility available to everyone – it is wheelchair accessible and the entrance fee is a voluntary admission, where your contribution will be put towards the enhancement of this “open-concept” project.</p>
 <p>The Algonquin Art Centre has an indoor gallery, consisting of three wings and a boutique; an outdoor gallery; and a “Green” Gazebo where you can treat yourself to various tasty treats, teas and coffees, or participate in one of the many scheduled art activities for both adults and children.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Tea Lake Campground,"Popular with backpackers and canoeists heading out to the interior of the park
 Small campground with basic services
 Located in a mixed hardwood, evergreen forest","Car Camping
@@ -1014,7 +1014,7 @@ At km 20, on a small hill next to Found Lake, there sits a giant, hollow sculptu
 <p>The Framing Place and Gallery (Huntsville) has been entrusted to carry out this unique project. The central vision of this project is to act as a bridge, connecting the art world with the natural world, as well as to promote the preservation and protection of the environment, from a local to global scale.</p>
 <p>Another Art Centre ethic is to make this facility available to everyone – it is wheelchair accessible and the entrance fee is a voluntary admission, where your contribution will be put towards the enhancement of this “open-concept” project.<br/>
 The Algonquin Art Centre has an indoor gallery, consisting of three wings and a boutique; an outdoor gallery; and a “Green” Gazebo where you can treat yourself to various tasty treats, teas and coffees, or participate in one of the many scheduled art activities for both adults and children.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Algonquin  Whitefish Lake Campground,"Offering large campsites for organized groups
 Centrally located on the Highway 60 Corridor at km 37; close to other park attractions
 Open from late April to Thanksgiving weekend","Group Camping
@@ -1062,7 +1062,7 @@ At km 20, on a small hill next to Found Lake, there sits a giant, hollow sculptu
 <p>The Framing Place and Gallery (Huntsville) has been entrusted to carry out this unique project. The central vision of this project is to act as a bridge, connecting the art world with the natural world, as well as to promote the preservation and protection of the environment, from a local to global scale.</p>
 <p>Another Art Centre ethic is to make this facility available to everyone – it is wheelchair accessible and the entrance fee is a voluntary admission, where your contribution will be put towards the enhancement of this “open-concept” project.</p>
 <p>The Algonquin Art Centre has an indoor gallery, consisting of three wings and a boutique; an outdoor gallery; and a “Green” Gazebo where you can treat yourself to various tasty treats, teas and coffees, or participate in one of the many scheduled art activities for both adults and children.</p>
-</div>",,
+</div>",Hwy 60 P.O. Box 219 Whitney K0J 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Arrowhead Provincial Park,"Large, treed and private campsites in the heart of Muskoka
 Three sand beaches on Arrowhead Lake
 Quiet motorboat-free lakes
@@ -1170,7 +1170,7 @@ Take this trail in early spring when wildflowers and songbirds will be your rewa
 <p>The pet exercise area is located at the north end of Arrowhead Lake; it is the only designated area in the park where dogs can be walked without a leash. There is also a small area near the main beach (both sides of the bridge) where dogs can swim.</p> <h2>Picnic Shelters</h2>
 <p>A group picnic shelter in the day-use area accommodates 50 – 100 people and can be reserved for birthday parties, reunions, gatherings or any other special event. Reservations can be made by calling the Park Office Monday – Friday, starting in April.</p> <h2>Rentals</h2>
 <p>In the summer months: canoes, kayaks and bicycles can be rented from the Beach Information Building at the day-use beach. There are also PFDs and helmets available to rent. In the winter months the main gate rents cross-country ski equipment, snowshoes and skates.</p>
-</div>",,
+</div>",451 Arrowhead Park Rd. Huntsville P1H 2J4,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Arrow Lake Provincial Park,"Features diabase cliffs and talus slopes with associated vegetation and glacial outwash deposits
 Offers seasonal camping program
 Offers great swimming, canoeing, boating and sport fishing 
@@ -1192,7 +1192,7 @@ Park offers the seasonal campsite program.  For more information visit the seaso
 <p><strong>Please note :</strong> There is no electricity or running water available at this park.</p> <h2>Boat Launch</h2>
 <p>Two boat launches are located directly on Arrow Lake within the campground. The boat launch located by campsite 31 offers a stable easier launch.</p> <h2>Toilets (vault / earth pit)</h2>
 <p>Two vault privies and several earth pit privies are located in the campground. Please note there is no running water at the park. Hand sanitizer is provided.</p>
-</div>",,
+</div>",Box 252 Kakabeka Falls P0T 1W0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Awenda Provincial Park,"Over 2,900 hectares of forested land on the shores of Georgian Bay
 31 kilometres of trails
 Summer interpretive programs
@@ -1307,7 +1307,7 @@ For the most current trail conditions at Awenda and other Ontario Parks check th
 <p>Visitors can borrow a properly fitted Personal Floatation Device (PFD) with a $25 refundable deposit. Staff can provide additional information and can outfit you with a PFD at the Campground Office. </p>
 <p>Electrical extension cords for trailer units are also available for a daily or weekly fee. </p>
 <p>Canoes, complete with paddles and PFDs, are available to rent, by the hour or the half day, for use on Kettle’s Lake by campers. Canoe rentals are not available for day use visitors.  Rentals are available for the months of July and August only.</p>
-</div>",,
+</div>","P.O. Box 5004, 670 Concession 18 East Penetanguishene, ON L9M 2G2",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Balsam Lake Provincial Park,"Boating on the Trent-Severn Waterway
 Large sandy beach
 Good fishing for Walleye, Muskellunge, Large and Small Mouth Bass
@@ -1380,7 +1380,7 @@ For reservations, please call 1-888-ONT-PARK (1-888-668-7275) or 1-519-826-5290 
 <p>Located at canoe launch.</p> <h2>Picnic Shelters</h2>
 <p>There are three large picnic shelters located near the main beach area. The shelters maybe reserved by calling the park at (705)-454-3324 (not available to reserve on holiday weekends).</p> <h2>Rentals</h2>
 <p>Canoes, kayaks and paddle boats are available to rent on the beach.</p>
-</div>",,
+</div>",2238 County Road 48 Kirkfield K0M 2B0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Bass Lake Provincial Park,"Approx 10 minute drive west of Orillia, Ontario
 2.8 km hiking trail
 RV, car camping, group camping, picnic shelters and a day use area
@@ -1429,7 +1429,7 @@ Reservations can be made online or through our call centre by phoning 1-888-ONT-
 <p>Call the Park directly to inquire about or reserve picnic shelters (705) 326-7054</p> <h2>Rentals</h2>
 <p>We currently offer a small fleet of canoes, paddle boats and kayaks for rent on a first-come first-served basis from the end of June to Labour Day. A security deposit is required, (charged to a credit card with each rental) and you must be a minimum of 16 years of age to rent a boat. Each rental comes with all necessary equipment including Personal Floatation Devices, emergency kits and oars. </p>
 <p>We also offer a Personal Floatation Device (PFD) loaner program where you can rent a PFD for a refundable $30.00 deposit for each jacket. PFDs are available at our Registration Office or our Park Store.</p>
-</div>",,
+</div>","2540 Bass Lake Sideroad East Oro-Medonte Township, ON L3V 6H2",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Batchawana Bay Provincial Park,"The drive along Highway 17 near Batchawana Bay offers outstanding views of Lake Superior. And Batchawana Bay Provincial Park is a perfect spot to stop and immerse yourself in this stunning scenery.
 Enjoy a beautiful beach with warm water on scenic Lake Superior, an exceptional picnic site and a good location with easy access for a short paddle.
 A plaque erected by the Ontario Motor League highlights Batchawana Bay (at Chippewa Falls) as the mid-point in the longest national highway in the world - the Trans-Canada Highway.",This park is open from mid-May to October for day-use only.,"Boating,Fishing,Swimming","Day Use,Picnic Shelters","<div id=""camping"">
@@ -1443,7 +1443,7 @@ A plaque erected by the Ontario Motor League highlights Batchawana Bay (at Chipp
 <h2>Day Use</h2>
 <p> A beach front area with picnic tables and vault toilets are available.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the park that is available on a first-come first-served basis.</p>
-</div>",,
+</div>","12729 Hwy 17N P.0. Box 61 Batchawana Bay, ON P0S 1A0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Biscotasi Lake Provincial Park,"The Spanish River and Biscotasi Lake are favourites for backcountry canoeing. Its rugged landscape, towering pines, variety of whitewater, a chance to include road or train access options and choice of routes make it a popular trip.
 The Spanish River offers paddling for canoeists of intermediate skill level, with Class I and II rapids, lots of swifts and moving water. Take the East Branch of the river for whitewater fun or take the train to Biscotasing to start your trip on the wilder, West Branch of the river.
 Stay on huge island-studded Biscotasi Lake for flatwater paddling and great fishing.
@@ -1494,7 +1494,7 @@ Biscotasi Lake to Sheahan – 74 km (4 days)</p>
 <h2>Boat Launch</h2>
 <p>There is a public boat launch at the Duke Lake access. Boat launches are located at Biscotasing General Store and Agnew Lake Lodge (a launch fee applies at this location).</p> <h2>Day Use</h2>
 <p>The park is open for day-use. Permits for day-use are not required.</p>
-</div>",,
+</div>","c/o Chutes Provincial Park P.O. Box 37, 660 Imperial Street North Massey P0P 1P0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Blue Lake Provincial Park,"Renowned for its crystal clear waters and long sandy beach, Blue Lake is an outstanding destination for all types of water activities
 Blue Lake Crag a 25 metre high rock face
 Hiking trails ranging from easy, interpretive trails to longer day hikes
@@ -1569,7 +1569,7 @@ A fen is a fascinating world where land floats on water, plants eat animals and 
 <p>There is one picnic shelter in the park located at the center of the beach. The shelter is available on a first-come first-served basis. Group campsite #502 also has its own picnic shelter.</p> <h2>Rentals</h2>
 <p>Canoes and kayaks are available for rent. Personal Floatation Devices (PFDs) are also available on loan with a $25 refundable deposit.</p> <h2>Visitor Centre</h2>
 <p>Stop by the Visitor Centre, located in an old log cabin at the south end of the beach, to view displays of plant, rock and wildlife specimens. The cabin is one of the original cottages from the early days of Blue Lake campers.</p>
-</div>",,
+</div>","Box 730, 479 Government Street Dryden, ON P8N 2Z4",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Bon Echo Provincial Park,"100 metre high Mazinaw Rock featuring over 260 Indigenous pictographs
 Great hiking trails from 1 km in length to 17 km in length
 Interpretive Boat Tours on Mazinaw Lake and over to Mazinaw Rock
@@ -1789,7 +1789,7 @@ Let your furry friend off-leash on this designated pet exercise trail.</p> <h2>N
 <p>Canoes, kayaks and SUP’s are available for rent. Please contact the private canoe concession contractor, “Bon Echo Outfitters” at 1-800-985-2571.</p>
 <p>Personal Floatation Devices (PFDs) are also available for loan with a refundable deposit.</p> <h2>Visitor Centre</h2>
 <p>The park visitor centre is located in Dollywood, one of the original cottages from the Bon Echo Inn era. Learn more about the Aboriginal pictograph site, the history of the Inn and the wildlife in the park.</p>
-</div>",,
+</div>","16151 Hwy. 41 Cloyne, Ontario K0H 1K0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Bonnechere Provincial Park,"Rich Ottawa Valley history
 Sandy beach on the shores of Round Lake
 McNaughton Trail with Foot Prints in Time enhanced interpretive experience
@@ -1901,7 +1901,7 @@ The Walks of the Little Bonnechere River is a compilation of 10 local trails and
 <p>Canoes and kayaks are rented out of the Park Store on a first-come first-served basis. Reservations are not taken.</p>
 <p>Personal Floatation Devices (PFDs) are also available with a $25 refundable deposit.</p> <h2>Visitor Centre</h2>
 <p>The Davenport Centre is located in the day-use area and is in the same building as the Park Store. Here you can participate in one of our many Natural Heritage programs and learn about Bonnechere’s rich history linked to First Nations, pioneer and logging eras as well as the many natural features unique to the area.</p>
-</div>",,
+</div>",4024 Round Lake Rd. Killaloe K0J 2A0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Bronte Creek Provincial Park,"Bronte Creek Ravine - 50 m (115 ft) deep
 Family camping experience –from tents to large RV’s
 1.8 acre outdoor pool
@@ -1996,7 +1996,7 @@ This linear path meanders along the top of the valley between Spruce Lane Farm a
 <br/>
 The Nature Centre is where visitors can learn about glaciers and wildlife or meet for special outings such as spirit walks or coyote howls. </p>
 <p>Spruce Lane Farm House is the centre of the annual Maple Syrup Festival and Victorian Christmas Program. During the summer months you can chat with the staff in period costume about life in the early 1900s and witness some of the activities from that time.</p>
-</div>",,
+</div>",1219 Burloak Drive Oakville L6M 4J7,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Caliper Lake Provincial Park,"Campground features an impressive stand of old growth red and white pine trees
 The dedicated angler might catch Northern pike, crappie, walleye, or Smallmouth bass
  Large beach and buoyed swimming area provide family fun
@@ -2033,7 +2033,7 @@ The Beaver Pond Trail is accessed off the main entrance road between the Park Of
 <p>Firewood, ice, souvenirs and basic camping supplies are available at the park office.</p> <h2>Picnic Shelters</h2>
 <p>A picnic shelter is located in the main day-use area and adjacent to the beach. The shelter is available on a first-come, first-served basis.</p> <h2>Rentals</h2>
 <p>Canoes and kayaks are available for rent at the park office.</p>
-</div>",,
+</div>","P.O. Box 188 Nestor Falls, ON P0X 1K0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Charleston Lake Provincial Park,"A favourite family camping destination offering excellent swimming, boating, fishing and wildlife viewing
 Rocky lake and forest landscape that is an extension of the Canadian Shield
 Great hiking trails including a vantage point from the highest peak in the county
@@ -2173,7 +2173,7 @@ Hike to the top of Blue Mountain where you will get scenic vistas from the highe
 <p>Charleston Lake has one designated pet beach located beside the Shady Ridge Beach.</p> <h2>Rentals</h2>
 <p>Canoes and kayaks are available for rent. Check at the gatehouse for availability.</p> <h2>Visitor Centre</h2>
 <p>The Discovery Centre at Charleston Lake is home to various displays, events, and is the hub of our Natural Heritage Education program. During the peak season you can stop by to see a real live Black Rat snake</p>
-</div>",,
+</div>",148 Woodvale Rd. Lansdowne K0E 1L0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Chutes Provincial Park,"A quiet campground located on the Aux Sables River 
 A six kilometre hiking trail with great views of scenic waterfalls and river gorge 
 One kilometer from the Trans-Canada Highway this is the only provincial park between Sudbury and Sault Ste Marie
@@ -2229,7 +2229,7 @@ Due to the proximity of the group campsites within the regular campground, they 
 <p>The park store, located in the gatehouse, offers a selection of Ontario Parks’ merchandise. There is a Pepsi vending machine at the comfort station. Personal floatation devices (PFDs) are available with a $25 refundable deposit.</p> <h2>Pet Exercise Area</h2>
 <p>A fenced section for pets to exercise off-leash is found in the day-use area. There is a path to a section of the river where pets can swim. The current here can vary depending on water levels.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the day-use area near the river which can be reserved for family gatherings, picnics and functions (call the Park Clerk at 705-865-2021). The shelter has no hydro but does have picnic tables and garbage bins.</p>
-</div>",,
+</div>","P.O. Box 37, 660 Imperial Street North Massey P0P 1P0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Craigleith Provincial Park,"Located on the southern shore of Georgian Bay
 Fractured plates of shale that form our shoreline contain fossils that are 450 million years old
 Flat rock is ideal for launching a sailboat, kayak/canoe, paddle board, wind surfing, fishing or watching a spectacular sunset
@@ -2269,7 +2269,7 @@ Areas C and D, which offer both electrical and non-electrical sites provide radi
 <p>Craigleith’s store is combined with our gatehouse. The store carries a variety of convenience and necessity items, groceries, firewood, treats, ice, ice cream, slushies, pop, snacks, souvenirs, Bruce Trail Guides and Nature Books. The store also carries freshly brewed coffee/hot chocolate and a free book and movie exchange. It is a one stop shop where you can register for your site, purchase your s’mores kit, firewood, sweatshirt and coffee and then borrow a book to relax with on the waterfront. The park store is located at the park entrance where you register for your campsite.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the park which is located in the day-use area. The shelter can be reserved for $50.00 for a full day or $25.00 for a half day for functions. Contact the Park Office at 705-445-4467 to reserve the shelter.</p> <h2>Rentals</h2>
 <p>Personal Floatation Devices (PFDs) are available with a $60 refundable deposit. A variety of sports equipment is also available for rent (i.e. volleyballs, horseshoes).</p>
-</div>",,
+</div>","209403 Highway 26 Blue Mountains, ON L9Y 0T6",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Darlington Provincial Park,"Family camping experience close to home
 Great day-use and picnic facilities
 Group picnic and camping opportunities
@@ -2313,7 +2313,7 @@ A small section of the 350 km, multi-use trail that follows the shore of Lake On
 <p>PFDs are available for loan at the main gate and fishing gear is available through the Tackleshare program at the park store. </p>
 <p>Picnic shelters and BBQs in the day use areas are also available for rent; contact the park for details, (905) 436-2036.</p> <h2>Visitor Centre</h2>
 <p>The Log Cabin Visitor Centre is located in day-use Area #2 and is open daily throughout the summer. Stop in to check out the many artefacts, exhibits and live specimens, or to chat with one of our friendly park naturalists and learn about the natural and cultural history of Darlington.</p>
-</div>",,
+</div>",1600 Darlington Park Rd. Bowmanville L1C 3K3,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Driftwood Provincial Park,"Waterfront campsites on the Ottawa River
 Panoramic views of the scenic Upper Ottawa Valley and Laurentian Hills
 Beautiful sunsets
@@ -2352,7 +2352,7 @@ This trail climbs steeply to a lookout with a panoramic view of the Ottawa River
 <p>A coin operated washer and dryer is located at the comfort station.</p> <h2>Park Store</h2>
 <p>Canoe rentals, ice, firewood and a selection of souvenir merchandise can be purchased at the park store.</p> <h2>Rentals</h2>
 <p>Rental canoes are conveniently located in the campground and day-use area on the shores of the Ottawa River. Rentals include Personal Floatation Devices (PFDs), paddles and a boat safety kit. </p>
-</div>",,
+</div>",39520 Highway 17 Stonecliffe K0J 2K0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Earl Rowe Provincial Park,"Large outdoor swimming pool open from July 1 to Labour Day
 Great hiking trails including one paved trail for accessibility
 The fish ladder is a great place to view salmon spawning in the fall and trout in the spring.
@@ -2416,7 +2416,7 @@ No lifeguards are posted on the beach and no pets are allowed in the beach area.
 <p>The Park Store is located in the Main Day-Use area and offers a variety of grocery items, Ontario Parks Merchandise and lots more!</p> <h2>Picnic Shelters</h2>
 <p>Four picnic shelters are available for rent throughout the summer. Fletcher’s Mill Pond Picnic Shelter and Westbeach Picnic Shelter have electrical hook ups. The Park Store and Greenbush Picnic Shelters are non-electrical. Contact the park for fees and availability.</p> <h2>Rentals</h2>
 <p>Canoe and paddleboats rentals are available at the Rental Booth at East Beach.</p>
-</div>",,
+</div>",4998 Concession #7 Tosorontio Township L9R 1W1,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Emily Provincial Park,"Great family camping experience
 Located in the heart of the Kawarthas
 Excellent fishing opportunities
@@ -2490,7 +2490,7 @@ In the event of a cancellation, the party will have forfeited the reservation fe
 <p>Personal Floation Devices (PFDs) are available for loan at the park store. For a $25 refundable deposit, visitors can borrow a properly fitted PFD for themselves and their children. Staff can provide additional information and can outfit visitors with a PFD.<br/>
 <br/>
 Through the TackleShare program, sponsored by the Ontario Federation of Anglers and Hunters, park visitors who don’t own their own equipment can borrow fishing rods, reels and tackle.</p>
-</div>",,
+</div>",797 Emily Park Rd. R.R. 4 Omemee K0L 2W0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Esker Lakes Provincial Park,"A pleasant, family-oriented park with small lakes for canoeing and fishing, trails for hiking, sandy beaches and a full range of campground facilities.
 A peaceful, friendly lakeside campground offers a full range of campground facilities.
 The park is surrounded by Boreal Forest and offers plenty of bird-watching opportunities.
@@ -2535,7 +2535,7 @@ The Trapper’s Trail offers three loops to choose from in order to best suit yo
 <p>A barrier-free picnic shelter is located close to the day-use area. This shelter is available to rent for events and gatherings.</p> <h2>Rentals</h2>
 <p>Rentals are available for personal floatation devices, canoes, kayaks, paddle boats, stand-up paddleboards, trailer storage and a picnic shelter. The park participates in a Tackleshare program and provides fishing rods and tackle free to visitors.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre is open occasionally when Natural Heritage Education staff are at the park. Check the announcement boards located around the park for facility opening times and details on activities.</p>
-</div>",,
+</div>",Highway 672 Kirkland Lake P2N 3K4,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Fairbank Provincial Park,"Spring-fed Fairbank Lake, is crystal clear with great swimming at the buoyed sandy beach.
 Family oriented with waterfront campsites, located near Sudbury.
 Popular outdoor destination in the region for over 50 years!
@@ -2569,7 +2569,7 @@ Fairbank Provincial Park provides a beautiful and isolated group camping area. 
 <p>Pet exercise Area is located at the boat launch.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the park.</p> <h2>Rentals</h2>
 <p>Fairbank offers canoe rentals.</p>
-</div>",,
+</div>","P.O. Box 560, c/o Windy Lake Provincial Park Levack, ON P0M 2C0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Ferris Provincial Park,"Pedestrian suspension bridge over the Trent River Gorge
 Selection of wooded and open car and RV campsites
 Over 10 km of trails through forest and riverside settings
@@ -2606,7 +2606,7 @@ This trail offers magnificent views of the Trent River gorge from the Ranney Gor
 <p>Flush toilets are available in the three comfort stations in the campgrounds.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the park which is located by the north day-use area. The shelter is available for exclusive rental but if not rented is available on a first-come first-served basis. Please contact the park to reserve: 705 653-3575.</p> <h2>Rentals</h2>
 <p>The picnic shelter is available for exclusive day-use rental. Please contact the park to reserve: 705 653-3575.</p>
-</div>",,
+</div>",474 County Rd. 8 Campbellford K0L 1L0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Finlayson Point Provincial Park,"A peninsula in the island-dotted waters of Lake Temagami, part of thousands of kilometres of ancient pine shoreline
 Gateway to Temagami’s vast wilderness, including Lady Evelyn-Smoothwater 
 A base for canoeists, boaters, hikers and anglers seeking the wilds of Temagami region
@@ -2665,7 +2665,7 @@ To reserve the cabin at Finlayson Point, please call 1-888-ONT-PARK (1-888-668-7
 <p>The store features clothing items, souvenirs, maps, ice, firewood, books and rentals. Groceries are available in the Town of Temagami, 1 km north of the park on Highway 11.</p> <h2>Picnic Shelters</h2>
 <p>The park’s picnic shelter is available to rent for family gatherings, events and picnics. The shelter is located near the boat launch and boat basin.</p> <h2>Rentals</h2>
 <p>Canoes, kayaks and bicycles are available for rent.</p>
-</div>",,
+</div>",24 Finlayson Park Road Temagami P0H 2H0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Fitzroy Provincial Park,"Great family camping park with large campsites; swim, hike or relax by the beach 
 Stay at the park and explore the Ottawa Valley or visit the nation’s capital - only one hour away
 Located at the junction of the meandering Carp River and the mighty Ottawa River
@@ -2701,7 +2701,7 @@ This trail takes visitors along a geological journey. See shale pillars that sta
 <p>Laundry facilities are available at the comfort stations located centrally in each campground.</p> <h2>Park Store</h2>
 <p>The park store offers groceries, snacks, camping supplies, souvenirs and every kid’s favourite - ice cream. Campers can also purchase firewood or rent canoes and kayaks at the park store.</p> <h2>Rentals</h2>
 <p>Canoe/kayak rentals are available at the park store.</p>
-</div>",,
+</div>",5201 Canon Smith Drive Fitzroy Harbour K0A 1X0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Forks of the Credit Provincial Park,"Forks of the Credit is on the famous Bruce Trail.
 Hiking and picnicking are favourite activities.
 Great spot for fishing.
@@ -2715,7 +2715,7 @@ Popular in the winter for cross-country skiing and snowshoeing.",This is a day u
 <p>Cross-country skiing and snowshoeing are popular activites in the park.</p> </div>","<div id=""facilities"">
 <h2>Day Use</h2>
 <p>Small grassy picnic area with a few tables during the spring, summer and fall seasons. Located next to the parking lot.</p>
-</div>",,
+</div>",Earl Rowe Provincial Park P.O. Box 872 Alliston L9R 1W1,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 French River Provincial Park,"A river of national historic significance the French River is the first designated Canadian Heritage River
 Paddle the route of Indigenous people, French Explorers, fur traders and Voyageurs
 A 105 kilometre canoe route of interconnected lakes, gorges and rapids from Lake Nipissing to Georgian Bay
@@ -2786,7 +2786,7 @@ Spring: open Thursday to Monday from 9:00 am to 4:00 pm (Closed Tuesday and Wedn
 Summer: open 7 days a week 9:00 am to 5:00 pm<br/>
 Fall: open Thursday to Monday from 9:00 am to 4:00 pm (Closed Tuesday and Wednesday)<br/>
 Closed for the season Sunday before Thanksgiving Monday</p>
-</div>",,
+</div>","20526 Highway 69, PO Box 9 Alban P0M 1A0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Frontenac Provincial Park,"Explore Frontenac’s 5,355 hectares on the southern edge of the Canadian Shield
 Open year-round for four season backcountry recreation -48 interior campsites
 Canoe routes through 22 lakes and over 100 km of looped backpacking and hiking trails
@@ -2845,7 +2845,7 @@ The Friends of Frontenac offer wilderness skills courses to those who wish to ga
 <p>Flush toilets are located at the Park Office.</p> <h2>Park Store</h2>
 <p>Visitors to Frontenac can purchase souvenir items at the Park Office.</p> <h2>Visitor Centre</h2>
 <p>The Park Office has an impressive array of interpretive panels, displays, animal mounts and maps/information.</p>
-</div>",,
+</div>",P.O. Box 11 6700 Salmon Lake Rd. Sydenham K0H 2T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Fushimi Lake Provincial Park,"A clean, clear northern lake, surrounded by lush Boreal Forest
 Camping experience for everyone: RV, tent or trailer sites, or backcountry sites on your own island.
 Excellent Walleye, Northern Pike and Yellow Perch fishing.
@@ -2912,7 +2912,7 @@ This trail takes you to one of the few original fire lookout towers left in Onta
 <p>There are washers and dryers, and a laundry tub at the comfort station, as well as a laundry soap dispenser with detergents for sale.</p> <h2>Park Store</h2>
 <p>The Park Store is found in the Main Gate House. A variety of supplies are available, from key needs like ice, bug spray and suntan lotion, to coffee, ice cream and candy. You will also find a variety of Ontario Parks merchandise for the whole family.</p> <h2>Rentals</h2>
 <p>We rent motorboats, canoes, kayaks, peddle boats and bikes.</p>
-</div>",,
+</div>","PO BOX 670, 613 Front Street Hearst P0L 1NO",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Grundy Lake Provincial Park,"Camping experience for everyone: RV, car camping or backcountry canoe-in sites.
 Activities for all ages: great hiking trails, canoe/kayak rentals nearby and many great beaches with smooth rocky shores provide excellent swimming; bring your bikes!
 Countless inland lakes that offer endless canoeing and kayaking adventures.
@@ -3000,7 +3000,7 @@ This trail passes through dense forest and wetlands. Moose, deer, fisher, grouse
 <p>Canoes and kayaks are available for rent nearby.</p>
 <p>Personal Floatation Devices (PFDs) are available at the park with a $25 refundable deposit.</p> <h2>Visitor Centre</h2>
 <p>The park Visitor Centre is located near Grundy Lake Main Beach on Gut Lake. The building is an abandoned church from the local area. There is an amphitheatre where a lot of natural heritage education programming takes place.</p>
-</div>",,
+</div>","Site #5, Compartment #4, 20400 Hwy. 522 RR #1 Britt P0G 1A0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Halfway Lake Provincial Park,"Family-oriented campground with two buoyed beaches and great swimming
 Day tripping, overnight hiking and canoeing provide access to exceptional vistas. There are opportunities to see nesting Bald Eagles and a heron rookery along the Two Narrows Canoe Route and moose are often sited along the Echo Pond Trail
 Natural Heritage Education programs
@@ -3046,7 +3046,7 @@ Located on the east side of Highway 144, towards the north end of the park, this
 <p>Pets can swim and at the boat launch</p> <h2>Rentals</h2>
 <p>Halfway Lake offers canoe, kayak and stand up paddleboard rentals.</p> <h2>Visitor Centre</h2>
 <p>Be sure to drop into the Visitor Centre where you can get a firsthand glimpse at some of the wildlife that call Halfway Lake home. It is here that staff can assist you with plant and animal identification, provide some history on the park or walk with you while you stroll through the centre looking at the various exhibits.</p>
-</div>",,
+</div>","P.O. Box 560, c/o Windy Lake Provincial Park Levack P0M 2C0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Inverhuron Provincial Park,"Prized for its sandy beach, dunes and glorious sunsets.
 Includes a wetland and a young hardwood forest
 Diverse habitat nurtures rare plants and protects many woodland animals and birds.
@@ -3114,7 +3114,7 @@ Caution should be used by anyone canoeing or kayaking along the shore of Lake Hu
 <p><strong>Personal Floatation devices (PFDs):</strong> Available at the Registration Office. For a refundable deposit, you can borrow a properly fitted PFD.</p>
 <p><strong>Extension Cord Loan Service:</strong> For a refundable deposit, you are able to borrow extension cords. Electrical pedestals are at times a distance from the site and may require cords that are longer than some people might bring.</p>
 <p>Tackle Share is available.</p>
-</div>",,
+</div>","19 Jordon Rd., RR#2 Tiverton, ON N0G 2T0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Ivanhoe Lake Provincial Park,"A long curving lip of a sandy beach with warm, shallow water and a playground makes this park attractive to families with young children.
 Many campsites offer a spectacular view of the lake.
 Located between Chapleau and Timmins, this park is a popular spot for family holidays, fishing trips and canoe outings.
@@ -3163,7 +3163,7 @@ Hikers can trek along one of the most accessible and representative eskers in On
 <p>Canoes and paddleboats can be rented from the park store. Personal floatation devices and safety equipment are also available.</p> <h2>Trailer Storage</h2>
 <p>Visitors who may wish to return to the park frequently during the operating season can choose to leave their trailer in our trailer storage lock-up. Storage fees and arrangements can be made at the park office.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre is located at the end of La Baie campground. Here you can learn about the Boreal Forest and the wildlife that lives here, along with the sensitivity and significance of park values that Ivanhoe Lake protects.</p>
-</div>",,
+</div>",170 Ivanhoe Lake Road PO Box 191 Foleyet P0M 1T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 John E. Pearce Provincial Park,"Great birding opportunities in this 68 hectare park.
 The Backus Page House Museum is situated onsite in a restored 1850s Georgian style house, which represents the history and culture of rural Victorian society.
 A trail with fifteen interpretive stops that leads through a century old hardwood forest.
@@ -3185,7 +3185,7 @@ This trail leads through a centuries old hardwood forest. Fifteen interpretive s
 <h2>Barrier Free</h2>
 <p>The Backus Page Museum is wheelchair accessible with barrier-free washrooms located only 300 metres away.</p> <h2>Day Use</h2>
 <p>John E. Pearce is an excellent location for a picnic.  Picnic tables are available.</p>
-</div>",,
+</div>","Box 9 Port Burwell, ON N0J 1T0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Kakabeka Falls Provincial Park,"40 metre high Kakabeka Falls is the second highest waterfall in Ontario with year round access for viewing
 Excellent views of the falls and gorge from the boardwalk that wraps around the top of the falls
 The Kaministiquia River has cut deep into the rocks to reveal 1.6 million year old fossils at the bottom of the falls 
@@ -3233,7 +3233,7 @@ The Visitor Centre is available to rent for small meetings or gatherings. Contac
 <p>The Park Store is located in the Visitor Centre. A variety of Ontario Parks’ souvenirs are available.</p> <h2>Picnic Shelters</h2>
 <p>Picnic shelters are available at the beach and by the visitor centre.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre is open from the May long weekend to the Thanksgiving Weekend. Interpretive information on the park, an indoor theatre or meeting room, the Park Naturalist and the Park Store are all located here. The Visitor Centre can be booked for small gatherings and meetings. Call the park directly at 807-473-9231 to reserve.</p>
-</div>",,
+</div>","Box 252 Kakabeka Falls, ON P0T 1W0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Kap-Kig-Iwan Provincial Park,"The rushing Englehart River plunges down white-water rapids, over several cascades and waterfalls in a picturesque valley
 Surrounded by forest, a convenient and pleasant campground sits high above the river, located just off Highway 11, two kilometers south of Englehart
 Many walking, photography, bird-watching and hiking opportunities in the Englehart River valley","Car Camping
@@ -3254,7 +3254,7 @@ Kap-Kig-Iwan has both electrical and non-electrical campsites available.","Birdi
 <p>There is one comfort station within the park.</p> <h2>Day Use</h2>
 <p>The main waterfall down in the Englehart Valley is the perfect location to have a scenic picnic lunch.  The day-use area is located along the Englehart River with picnic tables, parking and access to the trails.</p> <h2>Flush Toilets</h2>
 <p>Flush toilets are available at the comfort station near the park gatehouse.</p>
-</div>",,
+</div>","2-4 Highway 11 South, PO Box 730 Cochrane P0L 1C0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Kawartha Highlands Provincial Park,"Did you know - Kawartha Highlands Signature Site Park is the largest park in southern Ontario after Algonquin Provincial Park?
 It is a special place with many opportunities for you to experience the outdoors ranging from backcountry canoeing and camping to a short hike. Before visiting please be aware that, unlike some parks you may be familiar with, the access points at Kawartha don’t have a lot of facilities including limited parking.
 Ontario Parks wants everyone to have a safe and enjoyable time when visiting the park no matter what activity you participate in. We ask that all visitors be responsible and prepared for whatever activity you plan on participating in at the park. Please stick to designated trails and portages and be respectful of other park visitors and the natural environment at all times.
@@ -3294,7 +3294,7 @@ To maintain the wilderness atmosphere of Kawartha Highlands, the use of amplifie
 <h2>Boat Launch</h2>
 <p>Boat launches for small vessels exist at the following access points: Anstruther, Wolf, Loon Call and Long Lakes.</p> <h2>Day Use</h2>
 <p>Kawartha Highlands offers many options for those who want to paddle for the day.  During your day trip you can enjoy a shore lunch and swim at a scenic lakeside spot.  There are limited day-use facilities at a few of the access points.</p>
-</div>",,
+</div>","106 Monck Street, Box 500 Bancroft, ON K0L 1C0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Kettle Lakes Provincial Park,"Twenty-two deep, spring-fed kettle lakes formed by glaciers
 Primarily Jack Pine Boreal Forest, with great blueberry picking in August.
 Many lakes are stocked with Rainbow and Brook Trout for excellent fishing.
@@ -3362,7 +3362,7 @@ Hikers are rewarded with beautiful views of Island Lake. </p>
 <p>A picnic shelter exists at Green Lake and Slab Lake. This is available to rent for special occasions.</p> <h2>Rentals</h2>
 <p>Rentals are available for canoes and paddle boats (both come with PFDs), bicycles, stand-up paddleboards, kayaks and a picnic shelter. Trailer storage is available in the park. The park also has a Tackleshare program which lends out fishing rods and tackle to park visitors, free of charge.</p> <h2>Visitor Centre</h2>
 <p>There is a Visitor Centre tucked away near the front gate which has interactive displays and is the central location for many Natural Heritage Education activities.</p>
-</div>",,
+</div>","1350 Municipal Road Connaught, ON P0N 1H0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Killarney Provincial Park,"This iconic 645 square kilometre wilderness landscape showcases the wild Georgian Bay Coast of pink granite; the La Cloche Mountains’ white quartzite ridges and over 50 exceptionally clear, sapphire lakes set among Jack Pine hills.
 The area has long captivated artists including The Group of Seven’s A.Y. Jackson, Franklin Carmichael and A.J. Casson, so much so, that they persuaded the Ontario government to make it a park.
 Extensive backcountry canoeing and sea kayaking experiences.
@@ -3493,7 +3493,7 @@ Although this trail takes up to 10 days to do in its entirety, hikers can take s
 <p>At two Outpost shops, operated by the Friends of Killarney, you can buy maps, trail guides, educational books and souvenirs. The Outposts are located at the George Lake park entrance and at the Bell Lake access point.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the park which is located at the Winter Warm-Up Hut in the day-use area. The shelter is available on a first-come first-served basis.</p> <h2>Rentals</h2>
 <p>Canoes are available from a number of local outfitters; snowshoes can be rented through the Friends of Killarney Park and can be reserved by calling 705-287-2800</p>
-</div>",,
+</div>","960 Highway #637 Killarney, ON P0M 2A0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Killbear Provincial Park,"Kilometres of rugged, rocky shoreline mixed with numerous sand beaches
 Beautiful views of windswept pines on rocky islands
 6 km recreational trail for hiking and biking
@@ -3572,7 +3572,7 @@ The recreational trail runs parallel to the main park road from the park entranc
 <p>There is one picnic shelter located at the Day-Use area. It can be rented for exclusive use (phone 705 342 5492 to reserve), but it is normally available on a first-come first- served basis.</p> <h2>Trailer Dump / Fill Station</h2>
 <p>There are 2 potable water stations located in the Park.  One on the edge of the Park Office parking lot and one at the grey water pump out station located off Day Use Beach road.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre has 1,000 square metres of exhibit space with interactive exhibits about the park and the surrounding area. Popular attractions include the live Massasauga Rattlesnake and Eastern Foxsnake. Snake talks are held daily during the summer. Located on a stretch of rocky shoreline, the Visitor Centre has stunning views of Georgian Bay.</p>
-</div>",,
+</div>",35 Killbear Park Road Nobel P0G 1G0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Komoka Provincial Park,"This near-urban park is located along the scenic Thames River. Much of the park is former agricultural land now succeeding to meadows, the river portion is located in mature forests.","Komoka is a day use only park. Nearby parks offering camping include Port Burwell, Long Point, The Pinery and Rondeau",,Parking,"<div id=""camping"">
 <h2></h2>
             Komoka is a day use only park. Nearby parks offering camping include <a href=""/park/portburwell"">Port Burwell</a>, <a href=""/park/longpoint"">Long Point</a>, <a href=""/park/thepinery"">The Pinery</a> and <a href=""/park/rondeau"">Rondeau</a>
@@ -3583,7 +3583,7 @@ Komoka Provincial Park,"This near-urban park is located along the scenic Thames 
 <p>Pay and display machines are located at two parking lots, located at 503 Gideon Drive and 22290 Komoka Road. The former lots at 2526 Oxford Street West and Gideon Dr./Brigham Rd. have been closed.</p>
 <p>At the parking lot at 503 Gideon Drive there is LED lighting, a privy and a Molok (waste receptacle).</p>
 <p>At the parking lot at 22290 Komoka Road there is a Molok (waste receptacle).</p>
-</div>",,
+</div>",Port Burwell Provincial Park P.O. Box 9 Port Burwell N0J 1T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Lady Evelyn-Smoothwater Provincial Park,"Located in the heart of the Temagami region and centre of a 2400km interconnected canoeing network, thousands of years old
 A spectacular wilderness park encompassing rugged topography, clear lakes and rushing rivers
 Precambrian bedrock rises to a dome, forming the highest point in Ontario – Ishpatina Ridge – with several others, like Maple Mountain, in the top ten
@@ -3647,7 +3647,7 @@ Crowned as Ontario’s highest elevation, this challenging 3.2 kilometre hike wi
 <p>There are endless opportunities in the backcountry for swimming including both shallow and deeper water entries along rocky headlands.</p> </div>","<div id=""facilities"">
 <h2>Rentals</h2>
 <p>Canoes and camping equipment can be rented from outfitters in Temagami and near park access points.</p>
-</div>",,
+</div>",24 Finlayson Park Road Temagami P0H 2H0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Lake on the Mountain Provincial Park,"The lake is a natural curiosity with a constant flow of clean, fresh water, with no apparent source
 60 metres above Lake Ontario with views towards the Bay of Quinte, the Glenora Ferry and the north shore 
 Great picnic spot if you are exploring Prince Edward County
@@ -3662,7 +3662,7 @@ Day-use park, no camping","Lake on the Mountain is a day-use only park.  There a
 <p>Toilets and the boardwalk to viewing platform have barrier-free access.</p> <h2>Day Use</h2>
 <p>Picnic tables are available at the park.</p> <h2>Flush Toilets</h2>
 <p>Flush toilets are located adjacent to the parking lot.</p>
-</div>",,
+</div>","296 County Rd # 7 Picton, ON K0K 2T0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Lake St. Peter Provincial Park,"Large lake to explore by boat; great fishing opportunities
 Beautiful sandy beaches for swimming
 Spend the day at nearby Algonquin or Silent Lake Provincial Parks, free for day-use with your camping permit from Lake St. Peter","Car Camping
@@ -3693,7 +3693,7 @@ Lake St. Peter is the northern terminus of the Hastings Heritage Trail. Located 
 <p>Laundry facilities are located in the comfort station.</p> <h2>Park Store</h2>
 <p>Located at the park office, the park store sells camping supplies, ice, firewood and park souvenirs.</p> <h2>Rentals</h2>
 <p>Canoes and kayaks are available for rent at the park office.</p>
-</div>",,
+</div>",356 Lake St. Peter Road Lake St. Peter K0L 2K0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Lake Superior Provincial Park,"The Lake Superior Coast, including both easy to access and remote sections of the Lake Superior shoreline
 Spectacular and diverse scenery – cliffs, beaches, river valleys, waterfalls, inland lakes, Algoma Hills, fall colours
 World-class hiking and paddling along the Lake Superior shoreline
@@ -3906,7 +3906,7 @@ On Lake Superior, this day-use area has a sand and pebble beach and access to th
 <p>Park souvenirs, maps and related publications are available at the Park Office at Red Rock Lake, and in the Visitor Centre adjacent to the Agawa Bay Campground.</p> <h2>Rentals</h2>
 <p>Canoes are available for rent at Agawa Bay and Rabbit Blanket Lake gatehouses, and at the Park Office for Mijinemungshing Lake.</p> <h2>Visitor Centre</h2>
 <p>Located adjacent to the Agawa Bay Campground, the Visitor Centre highlights the “Power of Lake Superior” and the park’s cultural history, natural features and recreational opportunities. This facility also includes an information/reception area, washrooms, theatre/activity room and a gift shop.</p>
-</div>",,
+</div>",PO Box 267 Wawa P0S 1K0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Long Point Provincial Park,"Fourth oldest Provincial Park in Ontario (Est. 1921)
 Over 1.5 km sandy beach on the warm waters of Lake Erie
 Excellent fishing and boating opportunities in Long Point Bay
@@ -3961,7 +3961,7 @@ Comfort stations are also located in the day-use area and they provide flush toi
 <p>Personal Floatation Devices (PFDs) are available for loan with a refundable deposit.</p>
 <p>Fishing rods are also available for loan through the Ontario Federation of Anglers and Hunters (OFAH) Tackleshare program.</p>
 <p>Canoe rentals are available outside of the park.</p>
-</div>",,
+</div>","PO Box 99 350 Erie Blvd Port Rowan, ON N0E 1M0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 MacGregor Point Provincial Park,"MacGregor Point is one of the most ecologically diverse natural places along the Lake Huron shoreline. A complex ecosystem unfolds at this all-season park on a seven-kilometre stretch of coast, just south of Port Elgin.
 Park interpreters offer a full summer program of activities, including guided walks by the shore and through silver maple swamps, cattail marshes, ponds, fens and bogs that reveal unusual inhabitants.
 Learn about the carnivorous (meat-eating) plants that make this area their home. Rare Dwarf Lake Iris and the elusive Spotted Turtle appear in the spring. 
@@ -4144,7 +4144,7 @@ The Friends provide a weekend full of activities each Family Day Weekend (third 
 <p>Bikes are available for rent and trailer storage is also available for rent.</p>
 <p>For a refundable deposit, you are able to borrow extension cords. Electrical pedestals are at times a distance from the site and may require cords that are longer than some people might bring.</p> <h2>Visitor Centre</h2>
 <p>Open daily from May through to September for a minimum of four hours per day. During July and August full interpretive programming is carried out. The Visitor Centre offers displays, brochures, a camper’s library with field guides and nature lore and the Huron Fringe Shop operated by the Friends of MacGregor Point Park. Naturalist’s programs, conducted walks and a variety of children’s activities are regularly offered, providing visitors with excellent opportunities to learn first-hand about the park environment.</p>
-</div>",,
+</div>","1593 Bruce Road 33, RR#1 Port Elgin, ON N0H 2C5",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 MacLeod Provincial Park,"Named after an abandoned gold mine, this park is located on a peninsula in Kenogamisis Lake
 The lake offers excellent swimming and walleye and pike fishing in its bays and marshes
 Look up at the sky on a clear summer night and you may see the northern lights
@@ -4175,7 +4175,7 @@ This trail passes through a forest of Trembling Aspen, the prominent tree in the
 <p>The park has two comfort stations centrally located in the campground.</p> <h2>Day Use</h2>
 <p>Come for a swim at the beach and a picnic near the waterfront. MacLeod has a large day-use area with picnic tables, fire pits and grills. Water and toilet facilities are nearby.</p> <h2>Flush Toilets</h2>
 <p>Flush toilets are available at each of the park’s comfort stations.</p>
-</div>",,
+</div>","MacLeod Provincial Park c/o Geraldton Community Forests Inc.Box 400 Geraldton, ON P0T 1M0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Makobe-Grays River Provincial Park,"The Makobe River is one of the wild whitewater rivers that flow from the headwaters contained in Lady Evelyn-Smoothwater Provincial Park.
 In the high water levels of spring and early summer, many of the numerous rapids may be run as Class I and ll by skilled whitewater paddlers, for a short but challenging trip.
 The Makobe River has cut a series of narrow canyons through shield bedrock as it flows northward from the height of land to the Montreal River.
@@ -4219,7 +4219,7 @@ All Interior registrations are final. No changes or refunds are allowed through 
 <p>There are endless opportunities in the backcountry for swimming including both shallow and deeper water entries along rocky headlands.</p> </div>","<div id=""facilities"">
 <h2>Rentals</h2>
 <p>Canoes and camping equipment can be rented from outfitters near the various park access points.</p>
-</div>",,
+</div>",24 Finlayson Park Road Temagami P0H 2H0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Mara Provincial Park,"Approximately a 10 minute drive South of Orillia
 Beach located on the shores of Lake Simcoe
 0.5 km nature trail
@@ -4247,7 +4247,7 @@ The park has car camping with both electrical and non-electrical campsites. Our 
 <p>Flush toilets are located in both comfort stations.</p> <h2>Picnic Shelters</h2>
 <p>Mara has one picnic shelter available for reservation from the Friday of the Victoria Day weekend until Labour Day. This medium sized picnic shelter is located right on our beautiful beach and will accommodate up to 50 people. The shelter comes with the use of a charcoal barbeque and has enough picnic tables to accommodate maximum capacity. Alcohol is not permitted in our day-use area and this includes our picnic shelter. Parking is available within close proximity to the shelter and there are washrooms and drinking water taps available for use. </p>
 <p>Call the park directly to inquire about or reserve the picnic shelter (705) 326-4451</p>
-</div>",,
+</div>","181 Courtland Street, Ramara Township L3V 6H7",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Mark S. Burnham Provincial Park,"Day-use park; great for a quiet walk in the woods or a family picnic
 Majestic stands of maple, beech, elm and hemlock - among the oldest in Ontario
 In the middle of the Peterborough Drumlin Field, which contains more than 3,000 of these glacial remnants
@@ -4261,7 +4261,7 @@ This trail winds through a mature hardwood forest.</p> </div>","<div id=""facili
 <h2>Day Use</h2>
 <p>The small day-use area offers shady spots for a picnic.</p> <h2>Picnic Shelters</h2>
 <p>A picnic shelter with picnic tables is available for use on a first-come, first-served basis.</p>
-</div>",,
+</div>",846 Highway 7 Peterborough K0L 1S0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Marten River Provincial Park,"A replica 19thcentury logging camp brings a bygone era to life 
 The park is the southern gateway to the Temagami area and is a base for canoeists, boaters, hikers and anglers
 Enjoy remnant stands of massive pines including a 350 year old White Pine as you walk the Transition Trail
@@ -4295,7 +4295,7 @@ Marten River has 2 adjoining group campsites. Each site will accommodate a minim
 <p>The store features clothing items, souvenirs, maps, ice, firewood and books. Groceries and other essentials are available from local businesses near the park.</p> <h2>Rentals</h2>
 <p>The park runs a TackleShare program which lends out fishing rods and tackle to park visitors.<br/>
 Trailer storage is available at Marten River.</p>
-</div>",,
+</div>",2860 Hwy 11 North Marten River P0H 1T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 McRae Point Provincial Park,"Pull-through sites for large and extra large equipment
 On the shores of Lake Simcoe near Orillia
 1.2 km nature trail
@@ -4325,7 +4325,7 @@ You could also call the Ministry of Natural Resources Information Centre at 1-80
 <p>Our large day-use area is available upon purchase of a valid day use permit, summer pass, annual pass or if you have a valid camping permit. The day-use area is open daily from 8:00 a.m. to 10:00 p.m. from the second Friday in May until the Thanksgiving Monday.  No alcohol is permitted in our day-use area at any time, day or night.  If you are bringing pets, they must be leashed at all times, including our off-season and they are not permitted on the beach.</p> <h2>Flush Toilets</h2>
 <p>Flush toilets are found in comfort stations in the North and South Campgrounds.</p> <h2>Rentals</h2>
 <p>Personal Floatation Devices can be borrowed with a $30 refundable deposit for each jacket at our Registration Office.</p>
-</div>",,
+</div>",4366 McRae Park Road Ramara Township L3V 6H7,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Mikisew Provincial Park,"Relaxing with family and friends on one of the three shallow sandy beaches
 Boating and paddling around the small islands on Eagle Lake
 Hiking through beautiful hardwood forest and past vibrant ponds and wetlands
@@ -4460,7 +4460,7 @@ Named appropriately, this trail is a narrow point of land that juts out into Eag
 <li>Soccer balls</li>
 <li>Frisbees</li>
 </ul>
-</div>",,
+</div>",301 Park Road South South River P0A 1X0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Misery Bay Provincial Park,"The only operating (day-use only) provincial park on Manitoulin Island
 Provides access to scenic Lake Huron Coastline
 Eco-friendly Visitor Centre
@@ -4490,7 +4490,7 @@ Mac’s Bay Trail extends off the easterly portion of the Coastal Trail and trav
 <p>Flush toilets are located in the Visitor Centre.</p> <h2>Visitor Centre</h2>
 <p>The Misery Bay Visitor Centre offers people an opportunity to learn about the globally rare alvar ecosystems and the provincially significant wetland within the park. The facility, which sits on the dry shoreline of an ancient glacial lake, is the operational headquarters for the Friends of Misery Bay and is open weekends in May and June and all week in July and August.  </p>
 <p>The Visitor Centre and was built in partnership with the Friends of Misery Bay and Ontario Parks. The building was designed to be green and is run off the grid, generating its own power through solar energy and heating and cooling the use of passive solar design.</p>
-</div>",,
+</div>","P.O. Box 560, c/o Windy Lake Provincial Park Levack P0M 2C0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Missinaibi Provincial Park,"A Canadian Heritage River, designated for its significant Indigenous, fur trade and logging cultural heritage, outstanding ecological and geological natural heritage, and wilderness recreation.
 A 500 km long provincial park, encompassing large lakes, scenic waterfalls and outstanding whitewater.
 A variety of unique camping experiences: Barclay Bay Campground on Missinaibi Lake; interior boat and canoe sites on Missinaibi Lake; backcountry canoe sites on hundreds of kilometers of Missinaibi River.
@@ -4561,7 +4561,7 @@ Visit the remnants of a logging camp that operated in Baltic Bay, part of Missin
 <p>￼13’ Old Town Cayuga (light touring) polyethylene</p>
 <p><strong>Canoes</strong></p>
 <p>￼16’ Old Town (Royalex)</p>
-</div>",,
+</div>",190 Cherry Street Chapleau P0M 1K0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Mississagi Provincial Park,"A rugged landscape of ancient hills and clear lakes located west of Sudbury
 Seven hiking trails of varying duration and difficulty levels with great views; fall is a particularly spectacular season for hiking
 Rustic camping with many pull-through sites and seasonal leasing options
@@ -4629,7 +4629,7 @@ This trail is situated just 11 km north of the park in the Rawhide Lake Conserva
 <p>A picnic area with tables is located on the shore of Semiwite Lake. There are privies nearby.  Another picnic area is located on the shores of Flack Lake, along with privies, a boat launch and the Flack Lake nature trail.</p> <h2>Park Store</h2>
 <p>The Park Store is located at the gatehouse and sells a selection of Ontario Parks merchandise. In addition, the park sells ice (blocks and cubes), a variety of Pepsi products, bottled water, ice cream and sundries.</p> <h2>Rentals</h2>
 <p>Canoes can be rented by the day or half-day for use on the lakes in and around the park. Personal floatation devices (PFDs) are available with a $25 refundable deposit.</p>
-</div>",,
+</div>","c/o Chutes Provincial Park P.O. Box 37, 660 Imperial Street North Massey P0P 1P0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Mono Cliffs Provincial Park,"Mono Cliffs is located on the picturesque Bruce Trail 
 Numerous hiking trails throughout the park 
 Diversity of ferns and cedars 
@@ -4658,7 +4658,7 @@ Walk through a canyon on the spillway trail or past 30 meter cliffs on the cliff
 <p>Skiing and snowshoeing welcomed on hiking trails. Please note that trails are not maintained or track set, use caution during winter months.</p> </div>","<div id=""facilities"">
 <h2>Day Use</h2>
 <p>Small grassy picnic area with a few tables during the spring, summer and fall seasons. Located next to the parking lot.</p>
-</div>",,
+</div>",c/o Earl Rowe Provincial Park P.O. Box 872 Alliston L9R 1W1,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Murphys Point Provincial Park,"Located on Big Rideau Lake, part of the historic Rideau Waterway
 Silver Queen Mine, an early 1900s mica mine
 Tours of the mine and other regular interpretive programs from end of June to Labour Day and fall weekends
@@ -4794,7 +4794,7 @@ Two parking lots are maintained for winter day-use. The Tay Valley Cross-Country
 <p>A fully-stocked Park Store is within walking distance of the campground. There you will find ice cream, canoe/kayak rentals, firewood, ice, souvenirs, clothing, some groceries, snacks and more. The store may have limited hours during the non-peak summer season, at which time firewood and ice are available on a self-serve system. Please call ahead to confirm hours of operation.</p> <h2>Rentals</h2>
 <p>Canoes and kayaks can be rented from the Park Store and picked up at one of three locations: Park Store (Loon Lake), administration dock (Noble Bay), main beach (Hogg Bay). Personal Floatation Devices (PFDs) are also available with a $25 refundable deposit. Fishing tackle is available for lending, free of charge, from the Park Store as part of the Tackleshare program.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre is located next to the Park Store. Hours of operation are 1:00 p.m. to 4:00 p.m., most days from July 1 to Labour Day. The Visitor Centre may be open on some fall weekends. A live Gray (Black) Ratsnake is on display, along with other displays about the park’s natural and cultural features.</p>
-</div>",,
+</div>","2243 Elmgrove Road, R.R. 5 Perth K7H 3C7",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Nagagamisis Provincial Park,"Anglers return year after year to this large secluded lake north of Hornepayne. They are drawn by the excellent fishing for Great Walleye, Northern Pike and Yellow Perch.
 Boat launch, fish cleaning station and fish smoker. 
 Two great hiking trails and a new playground!
@@ -4827,7 +4827,7 @@ Car camping is available at two campgrounds in close proximity to showers, a lau
 <p>There are washers and dryers, a laundry tub, and a laundry soap dispenser with common detergents for sale at the comfort station.</p> <h2>Park Store</h2>
 <p>The Park Store is found in the Main Gate House. A variety of supplies are available, from key needs like ice, bug spray and suntan lotion, to coffee, ice cream and candy. You will also find a variety of Ontario Parks’ merchandise for the whole family.</p> <h2>Rentals</h2>
 <p>The park rents motorboats, canoes, kayaks, peddle boats and bicycles.</p>
-</div>",,
+</div>","PO BOX 670, 613 Front Street Hearst P0L 1N0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Neys Provincial Park,"Enjoy one the finest sand beaches on Lake Superior’s north shore.
 View a model of a former prisoner-of-war (POW) camp at the Visitor Centre and the actual remains of POW Camp 100.
 See Pic Island as it was immortalized on canvas by Lawren Harris of the famous Canadian painting team, The Group of Seven.
@@ -4900,7 +4900,7 @@ This trail takes you to some spectacular vantage points overlooking Lake Superio
 <p>A picnic shelter is located at the day-use area at the west end of the park. It is available on a first-come, first-served basis.</p> <h2>Rentals</h2>
 <p>Neys has canoes available for rent. All canoe rentals come with a boat safety kit, personal floatation devices (PFDs) and paddles.</p> <h2>Visitor Centre</h2>
 <p>The Neys Visitor Centre is open daily during July and August. It features exhibits on the natural and cultural history of the park.</p>
-</div>",,
+</div>","P.O. Box 280, 1004 Hwy 17 Terrace Bay P0T 2W0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 North Beach Provincial Park,"Over one kilometre ribbon of sand shelters tiny North Beach from Lake Ontario
 The sandy beach is a great place to picnic on a summer day
 Swim or boat in the sheltered waters of the bay or the more open Lake Ontario
@@ -4918,7 +4918,7 @@ A quieter park than its more famous neighbour - Sandbanks","North Beach is a day
 <p>A boat launch is located on the north side of the park. It is suitable for small craft only. Personal floatation devices are available for loan at the park (refundable deposit is required).</p> <h2>Day Use</h2>
 <p>North Beach is a day-use only park and is therefore the perfect place to enjoy a picnic.  Picnic tables and toilet facilities are conveniently located along the beach.  There is plenty of parking for visitors.</p> <h2>Park Store</h2>
 <p>North Beach has a small canteen where park souvenirs and traditional fast food and beverages can be purchased. It is located along the park’s main road.</p>
-</div>",,
+</div>",440 North Beach Rd Consecon K0K 2T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Oastler Lake Provincial Park,"Set on the Boyne River, minutes from Parry Sound and Georgian Bay
 Panoramic views from the waterfront campsites overlooking Oastler Lake
 Summer hiking and biking on the nearby Seguin Recreational Trail 
@@ -4955,7 +4955,7 @@ Ten walk-in campsites are located on the tip of the peninsula in the Point Campg
 <p>The Pet Exercise Area includes a very small sandy beach, grassy area with a couple benches and picnic tables. It’s a great place to bring your pet for a swim off-leash.</p> <h2>Picnic Shelters</h2>
 <p>Reservations are recommended and can be made for a half day or full day.</p> <h2>Rentals</h2>
 <p>Canoes are available for rent on a first-come, first-served basis, but may only be used within the park on Oastler Lake.</p>
-</div>",,
+</div>",380 Oastler Park Drive Parry Sound P2A 2W8,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Obabika River Provincial Park,"This waterway park contains an incredible diversity of landscapes, from island-speckled lakes, to meandering rivers, bedrock uplands and expansive wetlands, as well as towering stands of old growth pine and rocky cliffs
 Part of Temagami’s 2400km network of portages and waterways, the park contains segments of a number of canoe routes that link with other parks, conservation reserves and Crown land.
 Archaeological evidence of the area’s rich Indigenous heritage dates back 6,000 years, and canoeists will travel on ancient portages or “nastawgan”.
@@ -4998,7 +4998,7 @@ All Interior registrations are final. No changes or refunds are allowed through 
 <p>The lakes and rivers of this provincial park offer typical backcountry swimming opportunities with some fine sand/silt shorelines and rocky headlands for access to the water.</p> </div>","<div id=""facilities"">
 <h2>Rentals</h2>
 <p>Canoes and camping equipment can be rented from outfitters near the various park access points.</p>
-</div>",,
+</div>",24 Finlayson Park Road Temagami P0H 2H0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Ojibway Provincial Park,"Tranquil and wild, this retreat on Little Vermilion Lake offers a sandy beach and good swimming
 Fantastic fishing for Smallmouth Bass
 Park lakes link to several major northern canoe routes
@@ -5039,7 +5039,7 @@ The trail leads to Terry Lake where you can fish for Northern Pike and view wild
 <p>Flush toilets are found in various locations in the campground.</p> <h2>Laundromat</h2>
 <p>Laundry facilities can be found at the comfort station in the main campground.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter located in the day-Use area. The shelter is available on a first-come, first-served basis.</p>
-</div>",,
+</div>","Box 730, 479 Government Street Dryden P8N 2Z4",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Ouimet Canyon Provincial Park,"Panoramic views of a 150 metre wide gorge and sheer cliffs that drop 100 metres straight down to the canyon floor
 A trail and boardwalk connects two lookout platforms with spectacular views of the canyon
 Arctic plants, usually found 1,000 kilometres north, survive in the unique environment at the bottom of the canyon
@@ -5054,7 +5054,7 @@ Day-use park only park",Ouimet Canyon is a day-use only park.  There are no over
 <h2>Barrier Free</h2>
 <p>The park’s vault toilets and one route to the canyon rim are barrier-free.</p> <h2>Day Use</h2>
 <p>Ouimet Canyon is a day-use park with a picnic area located near the main parking lot and trailhead.</p>
-</div>",,
+</div>",Ouimet Canyon Provincial Park c/o Sleeping Giant Provincial Park R.R. #1 Pass Lake P0T 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Oxtongue River-Ragged Falls Provincial Park,"Close proximity to Algonquin Provincial Park
 Gravel Falls demonstrates the powerful, erosive force of glacial meltwater.
 A short trail leads from the parking lot to a lookout of the thundering whitewater falls.
@@ -5066,7 +5066,7 @@ The falls are very beautiful, one of the top 10 waterfalls in Ontario!",This is 
 <p>There is a short hiking trail that leads to the water fall. Depending on the time of year, and with caution, you can climb along the rocks to the bottom of the falls; an equally impressive view of the falls.</p> </div>","<div id=""facilities"">
 <h2>Day Use</h2>
 <p>Small day use area located a short distance outside the west gate of Algonquin Provincial Park.  Please note, the parking lot in the day use area is pay and display.</p>
-</div>",,
+</div>",Arrowhead Provincial Park RR# 3 Huntsville PIH 2J4,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Pakwash Provincial Park,"Secluded and serene, this northern park guarantees a sandy beach and shallow, warm waters ideal for swimming, fishing and canoeing
 Gateway for northern canoe routes
 Fantastic walleye fishing
@@ -5099,7 +5099,7 @@ Hikers will cross a marsh, pass a beaver pond and walk through woods along this 
 <p>A small park store is located in the Park Office. The store features clothing items, souvenirs, camper supplies, ice and firewood.<br/>
 Groceries are available outside of the park in Ear Falls 20 km south on Highway 105.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the day-use area which is available on a first-come, first-served basis.</p>
-</div>",,
+</div>","Box 730, 479 Government Street Dryden P8N 2Z4",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Pancake Bay Provincial Park,"More than 3 km of beautiful sand beach and Caribbean blue water
 Panoramic view of Lake Superior from the Edmund Fitzgerald Lookout hiking trail
 The park is located along the historic paddling route of the Voyageurs
@@ -5172,7 +5172,7 @@ Located across Highway 17 from the campground, this hiking trail takes you throu
 <p>High-efficiency washers and dryers are located at the East and West Campground comfort stations.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter in the park which is located at the day-use area. The shelter is available on a first-come, first-served basis.</p> <h2>Rentals</h2>
 <p>Personal Floatation Devices (PFDs) are available.</p>
-</div>",,
+</div>","12729 Hwy 17N, P0 box 61 Batchwana Bay P0S 1A0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Petroglyphs Provincial Park,"Largest known concentration of Indigenous rock carvings (petroglyphs) in Canada, depicting turtles, snakes, birds, humans and more; this sacred site is known as “The Teaching Rocks”
 Visit the Learning Place Visitor Centre to discover the traditions of the Ojibway (Nishnaabe) people through the teachings of the medicine wheel
 Visit bright blue/green McGinnis Lake – one of only a handful of meromictic (layers of water that don’t intermix) lakes in Canada
@@ -5202,7 +5202,7 @@ This narrow trail winds through large pine stands and areas of oak and birch. A 
 <p>Flush toilets are available at the visitor centre.</p> <h2>Park Store</h2>
 <p>The Park Store, located in the visitor centre, offers souvenirs and refreshments. Browse through nature books for children and adults, as well as books on rock art and Indigenous culture. Relax in front of the stone fireplace while enjoying a cup of coffee, tea or cider and a snack.</p> <h2>Picnic Shelters</h2>
 <p>A covered picnic shelter is located at the McGinnis Lake East day-use area.</p>
-</div>",,
+</div>",2249 Northey’s Bay Rd. Woodview K0L 3E0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Pigeon River Provincial Park,"Dramatic High Falls, 28 m high and Middle Falls, 6m high
 Scenic views of Lake Superior and the USA shoreline
 Great hiking and walking trails, taking in views of the falls and river gorge and featuring carved metal art sculptures that depict the history of the area 
@@ -5234,7 +5234,7 @@ Embrace this challenging hike up steep cliff tops to spectacular views over Lake
 <p>Enjoy hiking trails, scenic views and sculpted artwork benches. Visitors can hike the many trails or picnic along the river.</p> <h2>Flush Toilets</h2>
 <p>Flush toilets are located at the Pigeon River Ontario Travel Information Centre.</p> <h2>Park Store</h2>
 <p>A variety of Ontario Parks’ souvenirs can be purchased at the Ontario Travel Information Centre.</p>
-</div>",,
+</div>","c/o Kakabeka Falls, Box 252 Kakabeka Falls P0T 1W0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Pinery Provincial Park,"A breathtakingly beautiful park with 10 km of sand beach on the shores of mighty Lake Huron.
 Extremely rare and fragile Oak Savanna and Coastal Dune Ecosystems with extraordinary biodiversity – over 800 vascular plants, over 300 bird species.
 Sunsets here are ranked by National Geographic as among the “Top 10 Best in the World”!
@@ -5396,7 +5396,7 @@ Pinery’s longest trail takes the visitor through some of the park’s oldest f
 <p>Pinery has many different ways to explore the Old Ausable Channel. Rent one of the many canoes, paddle boats, hydro bikes, single or double kayaks.  </p>
 <p>In the winter explore the park from one of its many ski or snowshoe trails. Ski and snowshoe rentals are available on weekends when the trails are operating, with the last rental of the day being prior to 3:00 p.m.</p> <h2>Visitor Centre</h2>
 <p>No visit to Pinery would be complete without a stop at the Visitor Centre. Open since 1993, the centre has exhibits (completed refreshed in 2011) on the park’s natural history. The Visitor Centre also includes the Friends of Pinery Park Nature Store and an indoor theatre featuring wildlife videos. The Park Naturalist at the Information Desk can answer questions about the park, its facilities and natural features.</p>
-</div>",,
+</div>",9526 Lakeshore Road RR2 Grand Bend N0M 1T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Point Farms Provincial Park,"Once the site of a popular Victorian resort, this park north of Goderich is perched on a bluff and offers spectacular views of the blue water and beautiful sunsets of Lake Huron.
 The park offers many family-friendly experiences including a large sandy beach with good swimming; 6 km of hiking trails, playgrounds and playing fields.
 Halloween activities (usually on Thanksgiving Weekend) are a special treat for families who decorate campsites and trick or treat throughout the park.
@@ -5441,7 +5441,7 @@ A more challenging hike with rugged terrain and steep inclines that wind along s
 <p>The Park Office sells Ontario Parks’ merchandise, souvenirs basic camper supplies, firewood and ice.<br/>
 <br/>
 Groceries and camper supplies are available outside of the park at a nearby general store, or a short drive into Goderich.</p>
-</div>",,
+</div>",82491 Bluewater Highway R.R.3 Goderich N7A 3X9,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Port Bruce Provincial Park,"Picturesque 200 m sandy beach located in the hamlet of Port Bruce
 Picnic area with a hardtop basketball court 
 Restaurant beside the park
@@ -5456,7 +5456,7 @@ Free admission",This park is a day-use only located in the hamlet of Port Bruce.
 <p>Washrooms are barrier-free.</p> <h2>Day Use</h2>
 <p>This park is a great stop for a picnic lunch. You can bring your own or there are services available in the village.</p> <h2>Flush Toilets</h2>
 <p>Flush toilets are located at the parking lot adjacent to the beach.</p>
-</div>",,
+</div>",Box 9 Port Burwell N0J 1T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Port Burwell Provincial Park,"The 2.5 km sandy beach is one of most beautiful on the northern shore of Lake Erie.
 An exceptional family friendly campground with large, well-treed, level sites as well as an outstanding play area for kids.
 Family-friendly Discovery Drop-ins from July 1st to Labour Day.
@@ -5502,7 +5502,7 @@ This interpretive trail, which features a self-guided brochure, travels through 
 Extension cords are available to rent at the Campground Office.</p>
 <p>For a $25 refundable deposit, visitors can borrow a properly fitted Personal Floatation Device (PFD). Staff can provide additional information and can outfit visitors with a PFD at the Day-Use Gate.</p> <h2>Visitor Centre</h2>
 <p>Park staff provides interpretive and recreational programs during the summer season (July 1st to Labour Day)</p>
-</div>",,
+</div>",9 Wilson Lane Port Burwell N0J 1T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Potholes Provincial Park,"A short walking trail with boardwalks and interpretive signs takes you through distinctive bedrock scenery including “potholes” formed by glacial erosion, miniature waterfalls and boreal forest along the Kinniwabi River.
 A nice convenient picnic stop along Highway 101 in an ancient glacial valley.
 No camping, but privy toilets are available.",This is a day use only park.,"Birding,Hiking,Natural Heritage Education",Day Use,"<div id=""camping"">
@@ -5516,7 +5516,7 @@ No camping, but privy toilets are available.",This is a day use only park.,"Bird
 <p>These panels also highlight the provincially significant vegetation associated with these landforms.</p> </div>","<div id=""facilities"">
 <h2>Day Use</h2>
 <p>Parking right off Highway 101 provides access to the walking trail that winds along the Kinniwabi River.  Privy toilets are located at the trailhead.</p>
-</div>",,
+</div>",190 Cherry Street Chapleau P0M 1K0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Presqu'ile Provincial Park,"Over 300 car camping sites in a variety of settings from shoreline to forest
 2.5 km sandy beach
 16 km of trails and paths along shorelines and through woodlands and meadows
@@ -5666,7 +5666,7 @@ This path connects the cemetery interpretive panel at the Camp Office parking lo
 The Lighthouse Interpretive Centre introduces park guests to the fascinating cultural history of Presqu’ile. Come see the lighthouse model, schooner displays and our video presentations on the sinking of the Speedy and the history of the peninsula as told by Jack Atkins, the last farmer on the peninsula. The Lighthouse Interpretive Centre and Lighthouse Gift Shop are open daily during the summer months from 10:00 a.m. to 5:00 p.m. and on weekends during spring and fall.</p>
 <p><strong>Nature Centre </strong><br/>
 Visit the Nature Centre and catch a glimpse of the rich, natural history that Presqu’ile has to offer. Get up close to the live frogs, snakes, fish and turtles that call the park home. The Nature Centre is in the yellow house located on Lighthouse Lane between the Group Camp and Lighthouse Interpretive Centre. It is open daily from Canada Day to Labour Day weekend from 10:00 a.m. to 4:00 p.m.</p>
-</div>",,
+</div>",328 Presqu’ile Parkway Brighton K0K 1H0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Quetico Provincial Park,"Quetico is an iconic wilderness class park renowned for its rugged beauty, towering rock cliffs, majestic waterfalls, virgin pine and spruce forests, picturesque rivers and lakes
 World famous destination for backcountry canoeing with over 2,000 lakes and 460,000 ha of remote wilderness. You can explore the heart of the park for two days or two weeks.
 Adjoins the Boundary Waters Canoe Area Wilderness of the Superior National Forest in Minnesota
@@ -5931,7 +5931,7 @@ The Quetico Artist in Residence program is also presented through the NHE depart
 <p>A pet trail and swimming area can be found in the Dawson Trail Campground.</p> <h2>Rentals</h2>
 <p>Kayaks and stand up paddleboards (SUPs) are available for rent at the Dawson Trail Campground. Park visitors can also borrow personal flotation devices (PFDs), fishing gear and an all-terrain wheelchair.</p> <h2>Visitor Centre</h2>
 <p>Quetico has been a park for over 100 years. The Dawson Trail Heritage Pavillion contains exhibits highlighting the diverse and storied past of Quetico. Downstairs, you are encouraged to explore the John B. Ridley Research Library, which is open to everyone and provides resources for the study of biology, geology, history, culture, archaeology, and wilderness management of Quetico and environs.  The collection includes books, articles, pamphlets, maps, slides, photographs, and oral history tapes.  There are also a number of index card files on topics such as such as chronological history, biography, lake names and birds.</p>
-</div>",,
+</div>",108 Saturn Ave. Box 2430 Atikokan P0T 1C0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Rainbow Falls Provincial Park,"View the cascading waters as they plunge over the rock ledges of Rainbow Falls on their way to Lake Superior.
 Hike the trails which lead to panoramic views of Lake Superior and Whitesand Lake.
 The Rainbow Falls Trail located within the park is part of the 52 km Casque Isles Trail section of the Voyageur Trail that runs between the communities of Terrace Bay, Schreiber and Rossport.
@@ -5988,7 +5988,7 @@ A series of stairs and platforms follow Rainbow Falls down to a sturdy bridge ov
 <p>Firewood, ice and park souvenirs are available at the park store located at the gatehouse at Rossport Campground.</p> <h2>Picnic Shelters</h2>
 <p>Organized groups can reserve picnic shelter facilities at Whitesand Lake Campground and Rossport Campground day-use area.  Please contact the park to reserve.</p> <h2>Rentals</h2>
 <p>Canoes, paddle boats, bicycles, and water bikes are all available for rent. Ask at the gate house.</p>
-</div>",,
+</div>","P.O. Box 280, 1004 Hwy 17 Terrace Bay P0T 2W0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 René Brunelle Provincial Park,"A camping experience for everyone: RV, tent and trailer camping located near Kapuskasing. Seasonal site rental available.
 Four sandy beaches on Remi Lake, a float plane base for many years in the early 1900s
 Great Walleye, Northern pike and Small-mouth bass fishing along with a fish cleaning station.
@@ -6052,7 +6052,7 @@ This trail offers a great opportunity to explore the Boreal Forest, passing thro
 <p>The Park Store is found in the Main Gate House. A variety of supplies are available, from key needs like ice, bug spray and suntan lotion, to coffee, ice-cream and candy. You will also find a variety of Ontario Parks merchandise for the whole family.</p> <h2>Picnic Shelters</h2>
 <p>Relax in the shade of our Picnic shelter on Phipps Point there is always a gentle breeze blowing and a great view of the lake.</p> <h2>Rentals</h2>
 <p>The park rents motorboats, canoes, kayaks, peddle boats and bikes.</p>
-</div>",,
+</div>","PO BOX 670, 613 Front Street Hearst P0L 1N0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Restoule Provincial Park,"Paddling alongside ancient cedars at the cliff base of the 100 meter high Stormy Lake Bluff
 Hiking the Fire Tower Trail for an amazing view of Stormy Lake
 Biking on the Angels Point and Rangers Point Trails
@@ -6209,7 +6209,7 @@ This is an unmaintained trail and is only recommended for experienced explorers.
 <p class=""text-center"" style=""font-size: 1.2em;""><strong>2 Days or More—Save 15%</strong></p>
 <h2>Visitor Centre</h2>
 <p>Located in the Day-Use Area at the Ranges Point trailhead. Open from July through August. Hours are posted thoughout the park.</p>
-</div>",,
+</div>",8818 Highway 534 Restoule P0H 2R0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Rideau River Provincial Park,"Located on the historic Rideau Waterway, a UNESCO World Heritage Site
 Enjoy family camping on nice level, shaded campsites with all of the amenities nearby
 Great base for exploring Ottawa; only 40 minutes away or the small towns that line the Rideau.
@@ -6244,7 +6244,7 @@ Hike the Shoreline Trail and look for wildlife along the riverbank such as frogs
 <p>The Park Office stocks ice cream, firewood, ice, canoe rentals, worms and park souvenirs.</p> <h2>Picnic Shelters</h2>
 <p>A picnic shelter is located at the main beach. It is available on a first-come, first-served basis.</p> <h2>Rentals</h2>
 <p>Canoes can be rented from the Park Office and picked up at the boat launch. Personal Floatation Devices (PFDs) are also available for loan with a $25 refundable deposit. Fishing rod and reel are available free to loan from the Park Office as part of the Tackleshare program.</p>
-</div>",,
+</div>",2680 Donnelly Drive Kemptville K0G 1J0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Rock Point Provincial Park,"Exposed fossils of a coral reef dating back to over 350 million years embedded in limestone shelf along the beach
 Viewing platform above sand dunes
 2 km hiking trail
@@ -6284,7 +6284,7 @@ Explore a variety of forest and wetland communities including Carolinian, Oak Sa
 <p>Pets are permitted on the far west end of the beach in the day-use area.</p> <h2>Picnic Shelters</h2>
 <p>There is one picnic shelter located in the day-use area. This shelter can be reserved by contacting the park office (905) 774-6642.</p> <h2>Rentals</h2>
 <p>Bicycles and barbeques are available for rent from the park store.</p>
-</div>",,
+</div>",215 Niece Rd Dunnville N1A 2X5,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Rondeau Provincial Park,"11 km of sandy beaches on Lake Erie 
 Excellent hiking, biking, and rollerblading opportunities
 World renowned bird watching destination including the springtime “Festival of Flight” that attracts birdwatchers from across Ontario and the United States.
@@ -6361,7 +6361,7 @@ Visitors can borrow basic fishing equipment including a rod, reel and tackle for
 <p>The Visitor Centre at Rondeau is located 5 km south of the campground at the intersection of Lakeshore Road and Gardiner Avenue. Travel there by bicycle down Harrison Trail or by car down Rondeau Road or Lakeshore Road.</p>
 <p>Explore the diversity of Rondeau through interactive displays, live animal viewing and NHE programs. On a rainy day spend some time watching birds through the birding window, donated by the Friends of Rondeau Park.</p>
 <p>The Visitor Centre is open daily from spring to late fall. Call 519-674-1768 for current hours.</p>
-</div>",,
+</div>",18050 Rondeau Park Road Morpeth N0P 1X0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Rushing River Provincial Park,"Rushing River cascades over rock gouged by glaciers in a series of rapids but elsewhere is passable by canoe
 A favourite family camping destination offering beaches, playgrounds, interpretive programs, hiking trails and endless opportunities for exploring 
 Only a 2.5 hour drive from Winnipeg
@@ -6444,7 +6444,7 @@ This short trail starts at the main day-use area and travels the ridge towards t
 <p>Kayaks and water bikes are available for rent from the Park Office and the North Side Nook. The Park Office also rents barbecues at the picnic shelters and extension cords and life jackets are available for loan with a deposit. Canoes for use on the canoe routes for three days or more may also be rented. Short term canoe rentals, complete with delivery, are available at the privately operated Rushing River General Store, less than one kilometre south of the park entrance. </p>
 <p>Campsites #400 and #401 come ready to go with modern tent trailers. The trailers are equipped with electricity, propane and a small fridge and stove. Guests are responsible for their own dishes and bedding. Rent one of these trailers for six nights and the seventh night is free! Please contact the park directly for more information.</p> <h2>Visitor Centre</h2>
 <p>The park museum provides interpretive displays and serves as the headquarters for the park’s natural heritage education programs. Drop by with questions and make sure to check out the program schedules.</p>
-</div>",,
+</div>",P.O. Box 5080 Kenora P9N 3X9,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Samuel de Champlain Provincial Park,"Located on historic Mattawa River fur trade route in the scenic Mattawa Valley
 Great hiking trails with scenic views – outstanding fall colours
 Voyageur adventure interpretive experience – try paddling a Voyageur canoe
@@ -6493,7 +6493,7 @@ This trails winds its way through active forestry research plots. A trail guide 
 <p>There is a road that that is not well-travelled that leads from Jingwakoki Campground out to our group camping area and back out along the Amable du Fond River to a gate at Highway 17 that is used as a pet exercise area.</p> <h2>Rentals</h2>
 <p>Rental canoes and kayaks are conveniently located in each campground on the shores of Moore Lake. Rental arrangements can be made at the Park Store and include Personal Floatation Devices (PFDs) paddles and a boat safety kit.</p> <h2>Visitor Centre</h2>
 <p>The Mattawa River Visitor Centre showcases the natural and cultural history of Samuel de Champlain Provincial Park and the Mattawa River valley. Regular hours and the opportunity to speak with a Park Naturalist are available during the months of July and August.</p>
-</div>",,
+</div>",6905 Highway 17 east PO Box 147 Mattawa P0H 1V0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sandbanks Provincial Park,"World’s largest baymouth barrier dune formation
 Three expansive sandy beaches that some say are among the best in Canada; Outlet Beach is perfect for families, with shallow waters and gentle drop off
 Location jutting out into Lake Ontario means that this park is a bird migration hotspot in spring and fall
@@ -6599,7 +6599,7 @@ This trail loops through a unique and fragile dune habitat and travels along the
 <p>Canoes and kayaks are available for rent at the woodlot. Personal Floatation Devices (PFDs) are available for loan with a $30 refundable deposit. Visitors can also borrow free of charge fishing rods and tackle through the Tackleshare program.</p>
 <p>An all-terrain beach wheelchair is available to borrow, courtesy of The Friends of Sandbanks Park.</p> <h2>Visitor Centre</h2>
 <p>The Visitor Centre is located in the Outlet Beach area by the Park Office. The Visitor Center offers an opportunity to learn more about Sandbanks history and natural features through displays and exhibits. Displays include live reptiles, amphibians and fish, as well as examples of some of the more common plant life found at Sandbanks.</p>
-</div>",,
+</div>",3004 County Rd. 12 RR#1 Picton K0K 2T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sandbar Lake Provincial Park,"Beautiful sandy beach with gently sloping swimming area that’s great for kids
 Transitional forest with plants and animals from the boreal forest as well as those of the Great Lakes-St. Lawrence Lowlands
 Erratic boulders are strewn amidst the trees- evidence of the power of glaciers
@@ -6646,7 +6646,7 @@ This trail will familiarize you with some of the unique natural and historical f
 <p>There is one picnic shelter in the day-use area beside the beach. The shelter is available on a first-come, first-served basis.</p> <h2>Rentals</h2>
 <p>Canoes, kayaks, and motorboats are available for rent.</p>
 <p>Personal Floatation Devices (PFDs) are also available for loan with a $25 refundable deposit.</p>
-</div>",,
+</div>","Box 730, 479 Government Street Dryden P8N 2Z4",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sauble Falls Provincial Park,"The perfect base camp for visits to nearby Sauble Beach and to explore the Bruce Peninsula.
 An exceptional picnicking site including a children’s adventure playground.
 Spring and fall spawning runs for Rainbow Trout and Chinook salmon. Watch the fish struggle over each ledge of this cascading waterfall to spawn upstream.
@@ -6682,7 +6682,7 @@ This trail travels primarily through a Red Pine plantation. An interpretive leaf
 <p>The park offers laundry facilities.</p> <h2>Picnic Shelters</h2>
 <p>The shelter is very popular and is available on a first-come, first-served</p> <h2>Rentals</h2>
 <p>Canoes, paddle boats and kayaks can be rented adjacent to the Day-Use area.</p>
-</div>",,
+</div>",1400 Sauble Falls Road South Bruce Peninsula N0H 2T0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Selkirk Provincial Park,"Quiet campground with grassed campsites
 Wheeler’s Walk Trail with boardwalk across marsh wetland
 Large day-use picnic area
@@ -6718,7 +6718,7 @@ This trail takes hikers from the campground side of the park across a marsh wetl
 <p>Flush toilets are found in the central comfort station in Area 2 Campground.</p> <h2>Laundromat</h2>
 <p>Laundry facilities are located at the central comfort station in Area 2 Campground.</p> <h2>Park Store</h2>
 <p>A small park store is located at the Park Office. Basic camping supplies, souvenirs, snacks, beverages, ice and firewood are available.</p>
-</div>",,
+</div>","151 Wheeler’s Sideroad, R.R. # 1 Selkirk N0A 1P0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sharbot Lake Provincial Park,"Located on two beautiful, clear lakes that offer great swimming, canoeing, boating and fishing
 Park your vehicle and enjoy all the park amenities within easy walking distance of each other, great for young families
 Nature trails are picturesque and offer a great variety of scenery
@@ -6755,7 +6755,7 @@ Follow this trail along the ridge of land that divides Black Lake and Sharbot La
 <p>A swimming area for your pet is provided on Sharbot Lake.  If you let your pet off leash, you must have control at all times.</p> <h2>Picnic Shelters</h2>
 <p>Sharbot Lake has one picnic shelter which may be rented on a daily basis for those family or friends gathering to celebrate events. If the shelter is not rented it is available for park visitors on the days you need to get out of the weather. Please contact the park if you wish to reserve the shelter.</p> <h2>Rentals</h2>
 <p>For those who want to explore Sharbot or Black Lakes further, canoes are available for rent on a daily basis. Personal Floatation Devices (PFDs) are available for loan with a $25 refundable deposit. The park has tents for rent upon request. Please contact the Park Office for further details.</p>
-</div>",,
+</div>","Civic # 25467 Hwy 7, R.R.#2 Sharbot Lake K0H 2P0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sibbald Point Provincial Park,"Large sandy beach on Lake Simcoe
 Spacious electrical and non-electrical campsites with pull through trailer sites
 Audio Device Free Camping for a natural camping experience near an urban centre
@@ -6799,7 +6799,7 @@ This walk explores the rich history of the Sibbald Family through an interpretiv
 <p>Group picnic shelters in the day-use area accommodate 50–75 people and can be reserved for weekend use. The picnic shelters are also audio device free. Reservations can be made by calling the park Monday through Thursday, starting in early May.</p> <h2>Rentals</h2>
 <p>Personal Floatation devices (PFDs) are available at the Registration Office. For a refundable deposit, you can borrow a properly fitted PFD.</p> <h2>Visitor Centre</h2>
 <p>Eildon Hall Museum, once home to the Sibbald family, displays 19th century artefacts and furniture. It is open during July and August. St. George’s Anglican Church, built in 1877, is located at the northwest corner of the park. Its graveyard is the final resting place of famous Canadian authors Stephen Butler Leacock and Mazo de la Roche.</p>
-</div>",,
+</div>",26071 York Rd 18 (Park Road) Sutton West L0E 1R0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Silent Lake Provincial Park,"Over 19 km of hiking trails and mountain biking trails
 Beautiful lookout point over Silent Lake
 No motor boats or electric motors are permitted on Silent Lake
@@ -6996,7 +6996,7 @@ This is a wilderness trail designed for the more experienced hiker. It is rugged
 <p>Laundry facilities are located at both the Pincer Bay and Granite Ridge comfort stations.</p> <h2>Park Store</h2>
 <p>Located in the gatehouse, the Silent Lake park store offers Ontario Parks’ clothing and souvenirs, coffee, firewood and ice.</p> <h2>Rentals</h2>
 <p>Canoe and kayak rentals are available daily throughout the summer season (including spring and fall). Snowshoe rentals are available throughout the winter season.  Please contact the park for pricing and availability.</p>
-</div>",,
+</div>",1589 Silent Lake Park Road Bancroft K0L 1C0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Silver Falls Provincial Park,"This park is distinctive for its collection of Holocene-era features which occurred within the last 10,000 years and include the Dog Lake marine, kettles terraces, spillways and outwash deposits
 Offers seasonal rustic camping
 Offers picnicking, sand beaches, swimming, canoeing, boating and sport fishing 
@@ -7022,7 +7022,7 @@ Silver Falls is one of the classic hiking trails in the Thunder Bay area and is 
 <p><strong>Please note :</strong> There is no running water or electricity at the park.</p> <h2>Boat Launch</h2>
 <p>Concrete boat launch is located directly on Dog Lake close to the campground. No overnight vehicle or boat trailer parking at the boat launch.</p> <h2>Toilets (vault / earth pit)</h2>
 <p>One vault privies and several earth pit privies are located in the campground. Please note there is no running water at the park. Hand sanitizer is provided.</p>
-</div>",,
+</div>",Kakabeka Falls Provincial Park Box 252 Kakabeka Falls P0T 1W0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Silver Lake Provincial Park,"Located on a picturesque lake that offers great swimming, canoeing, boating, and fishing
 Park your vehicle and enjoy all the park amenities within easy walking distance, great for young families with a good playground
 Clean facilities and friendly staff are our top priority
@@ -7053,7 +7053,7 @@ Along a boardwalk, cross the marsh at the eastern end of Silver Lake to higher g
 <p>Ice, firewood, worms, and park souvenirs are available at the park store located in the Park Office. For other supplies, visit the nearby village of Sharbot Lake or the town of Perth.</p> <h2>Picnic Shelters</h2>
 <p>Silver Lake has one picnic shelter which may be rented on a daily basis for those family or friends gathering to celebrate events. When the shelter is not reserved, it is available for visitors on a first-come, first-served basis. Please contact the park if you wish to reserve the shelter.</p> <h2>Rentals</h2>
 <p>For those who want to explore Silver Lake further, canoes are available for rent on a daily basis. Personal Floatation Devices (PFDs) are available for loan with a $25 refundable deposit. The park has tents for rent upon request. Please contact the park office for further details.</p>
-</div>",,
+</div>","Civic # 22726 Hwy 7, R.R.#2 Maberly K0H 2B0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sioux Narrows Provincial Park,"Located on the shores of Lake of the Woods, this park offers recreation opportunities for the lake lover - boating, swimming, sailing and canoeing
 Internationally renowned for its walleye fishing 
 Great location to start your exploration of Lake of the Woods; this 1 million acre lake has over 14,000 islands and 105,000 kilometres of shoreline
@@ -7093,7 +7093,7 @@ This all season trail begins near the park entrance and connects to a trail syst
 <p>Laundry facilities are located at the main comfort station.</p> <h2>Picnic Shelters</h2>
 <p>A picnic shelter is located at the main day-use and picnic area. There is also a large BBQ available for rent. Please contact the park for details.</p> <h2>Rentals</h2>
 <p>Canoes are available for rent at the park office.</p>
-</div>",,
+</div>",P.O. Box 5080 Kenora P9N 3X9,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Six Mile Lake Provincial Park,"A pretty park with landscape that has inspired painters
 Many semi-private, larger sites.
 Conveniently located off Hwy 400
@@ -7142,7 +7142,7 @@ Hikers will circle a wetland area which provides important habitat for a wide va
 <p>Available for rent by contacting the park at (705) 756-2746.</p> <h2>Rentals</h2>
 <p>Canoes, kayaks and paddle boats are available for rent at the park store.</p>
 <p>The park also offers rental dock spaces and participates in the personal floatation devices (PFDs) and Tackleshare loaner programs.</p>
-</div>",,
+</div>",2024 Joe King's Road Port Severn L0K 1S0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sleeping Giant Provincial Park,"Breathtaking views of Lake Superior and the surrounding area are available from the Top of the Giant Trail and Thunder Bay Lookout
 Over 100 km of incredible hiking trails with many spectacular geological features such as the ‘Sea Lion’ and Tee Harbour
 Excellent wildlife viewing in the park’s boreal forest: deer, wolf, fox, lynx and over 200 bird species
@@ -7299,7 +7299,7 @@ The internationally recognized Sleeping Giant Loppet takes place on the first Sa
 <p>The WestWind Store is located in the Visitor Centre and is operated by the Friends of Sleeping Giant Park. The store offers canoe and kayak rentals, Ontario Parks’ souvenirs, books, gifts, tasty treats, camping supplies, detailed maps of the park’s trail system and fishing rods and tackle are available for loan, free of charge through the Ontario Federation of Anglers and Hunters Tackleshare Program.</p> <h2>Rentals</h2>
 <p>Canoes and kayaks are available for rent in the WestWind Store, located in the upper floor of the Visitor Centre.</p> <h2>Visitor Centre</h2>
 <p>The Sleeping Giant Visitor Centre features interactive exhibits that explore the natural and cultural history of the Sibley Peninsula including a model of the Silver Islet Mine.</p>
-</div>",,
+</div>",R.R. #1 Pass Lake P0T 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Solace Provincial Park,"Solace Provincial Park encompasses a chain of narrow, scenic lakes that point north and south, and lie between a series of forest-covered ridges.
 Canoeing opportunities are lake-to-lake with short rugged portages in-between.
 The park connects with Lady Evelyn-Smoothwater and Sturgeon River Provincial Parks and other waterways on Crown land, as part of the Temagami canoe route network.
@@ -7340,7 +7340,7 @@ All Interior registrations are final. No changes or refunds are allowed through 
 <p>The lakes and rivers of this park offer typical backcountry swimming opportunities with some shorelines and rocky headlands providing access to the water.</p> </div>","<div id=""facilities"">
 <h2>Rentals</h2>
 <p>Canoes and camping equipment can be rented from outfitters near the various park access points</p>
-</div>",,
+</div>",24 Finlayson Park Road Temagami P0H 2H0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Spanish River Provincial Park,"The Spanish River and Biscotasi Lake are favourites for backcountry canoeing. Its rugged landscape, towering pines, variety of whitewater, a chance to include road or train access options and choice of routes make it a popular trip.
 The Spanish River offers paddling for canoeists of intermediate skill level, with Class I and II rapids, lots of swifts and moving water. Take the East Branch of the river for whitewater fun or take the train to Biscotasing to start your trip on the wilder, West Branch of the river.
 Stay on huge island-studded Biscotasi Lake for flatwater paddling and great fishing.
@@ -7386,7 +7386,7 @@ Biscotasi Lake to Sheahan – 74 km (4 days)<br/>
 <h2>Boat Launch</h2>
 <p>There is a public boat launch at the Duke Lake access. Boat launches are located at Biscotasing General Store and Agnew Lake Lodge (a launch fee applies at this location).</p> <h2>Day Use</h2>
 <p>The park is open for day-use. Permits for day-use are not required.</p>
-</div>",,
+</div>","c/o Chutes Provincial Park P.O. Box 37, 660 Imperial Street North Massey P0P 1P0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Springwater Provincial Park,"An appealing day-use park for family picnics - year round!
 12 kilometers of hiking trails.
 Large playing field.",This is a day use only park.  Please consider camping nearby at Earl Rowe or at Bass Lake.,"Biking,Birding,Winter Activities","Barrier Free,Comfort Station(s),Day Use,Flush Toilets,Park Store,Picnic Shelters","<div id=""camping"">
@@ -7407,7 +7407,7 @@ In the winter the trails are groomed and track set for cross-county skiing and i
 <p>There are flush toilets available year-round in all three comfort stations.</p> <h2>Park Store</h2>
 <p>The Ontario Parks store is open during July and August only. It sells Ontario Parks’ merchandise, ice cream and cold beverages.</p> <h2>Picnic Shelters</h2>
 <p>Springwater features eight picnic shelters suitable for special occasions such as family reunions, company picnics, school groups, birthday parties and weddings. The shelters range in size and can accommodate up to a maximum of 400 people. Some shelters offer electricity, lighting, water and fire pits.</p>
-</div>",,
+</div>",1331 Route 26 Midhurst L0L 1X0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sturgeon Bay Provincial Park,"Excellent fishing on Sturgeon Bay, leading into Georgian Bay
 Situated among the 30,000 Islands - just off of Trans-Canada Highway 69
 Great shallow sandy beach
@@ -7475,7 +7475,7 @@ Bring your binoculars!</p> <h2>Boating</h2>
 <p>Laundry facilities are available a short distance away, near the cabins.</p> <h2>Park Store</h2>
 <p>The Sturgeon Bay park store offers merchandise, small souvenirs and many camper supplies including ice and groceries.</p> <h2>Rentals</h2>
 <p>Canoes are available for rent at the park store.</p>
-</div>",,
+</div>",203 Hwy. 529 Point au Baril P0G 1K0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Sturgeon River Provincial Park,"The Sturgeon River provides canoeists with plenty of whitewater, scenic falls and rapids, wildlife spotting and good fishing, all in a remote setting.
 Enjoy the river’s continually changing scenery, from long slender lakes to narrow river channels, rapids and shallows. The river begins in the Temagami highlands, with bedrock outcrops eventually turning to sandy shores over the course of a week-long paddle
 This scenic river was once used by loggers to float timber downstream to distant mills, and some evidence of the days of the “river drives” can still be found along the river’s shores.","Backcountry Camping
@@ -7520,7 +7520,7 @@ All Interior registrations are final. No changes or refunds are allowed through 
 <p>There are endless opportunities in the backcountry for swimming including both shallow and deeper water entries along rocky headlands.</p> </div>","<div id=""facilities"">
 <h2>Rentals</h2>
 <p>Canoes and camping equipment can be rented from outfitters near the various park access points.</p>
-</div>",,
+</div>",24 Finlayson Park Road Temagami P0H 2H0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 The Massasauga Provincial Park,"Backcountry camping on Georgian Bay stretching from Parry Sound to the Moon River
 Park takes in hundreds of windswept islands, inland forests and lakes
 Camp by the bay or paddle to inland lake sites
@@ -7549,7 +7549,7 @@ Nine interpretive stops explain the geology along this trail. Those who find the
 <p>Pete’s Place Day Use – No parking available – water access only.</p>
 <h2>Rentals</h2>
 <p>Canoe rentals are available, reservations are recommended; non-reserved canoes are available on first-come, first-served basis for campers. Check at the Park Office for more information.</p>
-</div>",,
+</div>",380 Oastler Park Drive Parry Sound P2A 2W8,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Tidewater Provincial Park,"Tidewater Provincial Park, a partnered park operated under agreement with the Moose Cree First Nation, is located in the northernmost part of Ontario near the salt waters of James Bay and Hudson Bay.
 This special park attracts visitors and campers looking for an unusual and exciting outdoor experience.
 The park consists of five islands in the Moose River estuary close to Moose Factory and Moosonee. From Moosonee, there are water taxis to take visitors to the park islands. Caution is advised as the winds, tides and river currents can challenge the most experienced canoeists.
@@ -7581,7 +7581,7 @@ The operation of Tidewater Park is in partnership with the Moose Cree First Nati
 <p>A long dock is available to adjust to the tides of the Moose River. This allows boats to safely launch from the park.</p> <h2>Day Use</h2>
 <p>The Park contains one picnic shelter that can be used for Day Use or get-togethers.   It is adjacent to an open field which has traditionally been used for group camping.</p> <h2>Picnic Shelters</h2>
 <p>A picnic shelter is available.</p>
-</div>",,
+</div>",2 – 4 Highway 11 South Cochrane P0L 1C0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Turkey Point Provincial Park,"Only provincial park with a golf course
 Three hiking trails
 Great beach in the village of Turkey Point – shallow, buoyed swimming, great for kids.
@@ -7628,7 +7628,7 @@ This trail is located just east of the Whippoorwill Campground and takes you thr
 <p>A small park store is located at the park office. Basic camper’s supplies, souvenirs, clothing, snacks, beverages, ice and firewood are available.</p> <h2>Picnic Shelters</h2>
 <p>The picnic shelter is available for rent by interested groups; primarily mid-week during summer months and daily in the spring and fall.</p>
 <p>The shelter is located on the main road entering the campgrounds and adjacent to the children’s playground area.</p>
-</div>",,
+</div>","194 Turkey Point Rd., P.O. Box 5 Turkey Point N0E 1T0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Voyageur Provincial Park,"Summer nature interpretation program
 Four beaches on the Ottawa River
 Camping experience – both car camping and RV
@@ -7687,7 +7687,7 @@ This trail is the main park hiking trail. It winds through several terrestrial a
 <br/>
 Visitors can rent canoes, paddleboats and kayaks at the boat rental facility located in the day-use area. A large group barbeque is also available for rent at the day-use picnic area.</p>
 <p>For those requiring camping equipment, tents, sleeping bags and cook stoves are available for rent at the main registration office.</p>
-</div>",,
+</div>","1313 Front Road, Box 130 Chute-à-Blondeau K0B 1B0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Wabakimi Provincial Park,"World-class wilderness canoeing, including over 2,000 kilometres of lake and river routes and some excellent whitewater
 Remote wilderness with opportunities for wildlife viewing and sport fishing
 Legendary fishing for walleye and northern pike; fly-in backcountry lodges and resorts
@@ -7730,7 +7730,7 @@ Please contact the park if you have further questions.","Birding,Boating,Canoein
 <h2>Barrier Free</h2>
 <p>Although Wabakimi is a wilderness park, some fly-in tourist outfitters can offer barrier-free access to this wilderness experience.</p> <h2>Rentals</h2>
 <p>Boats can be rented through tourist outfitters within the park.</p>
-</div>",,
+</div>","c/o Ministry of Natural Resources 435 James Street S., Suite #221d Thunder Bay P7E 6S8",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Wakami Lake Provincial Park,"Great fishing and northern camping experience
 Diverse camping experience
 Boreal forest with remnant old growth White Pine
@@ -7781,7 +7781,7 @@ Two 16’ Aluminum boats with 20 hp Yamaha or Mercury outboard is available for 
 <p>If you are planning a return trip and wish to leave your trailer and/or boat behind for easy convenience, we provide a safe and secure area for storage. Fees and arrangements can be made at the park store.</p> <h2>Trailer Storage</h2>
 <p>If you are planning a return trip and wish to leave your trailer and/or boat behind for easy convenience, we provide a safe and secure area for storage. Fees and arrangements can be made at the park store.</p> <h2>Visitor Centre</h2>
 <p>The park Visitor Centre is located adjacent to the park office with limited open hours.</p>
-</div>",,
+</div>",190 Cherry Street Chapleau P0M 1K0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Wasaga Beach Provincial Park,"​Wasaga Beach is not only the longest freshwater beach in the world with 14 km of safe, sandy shore, but the sunsets there are breathtaking. 
 Wasaga Beach is the first provincial park in Canada to be awarded the “Blue Flag” designation for its banks management efforts under the international environmental standards. For more information, visit www.BlueFlag.ca 
 This natural area of ​​6.8 hectares protects wildlife habitat and nesting shorebirds, including the Piping Plover, which is endangered. 
@@ -7820,7 +7820,7 @@ Snowshoe rentals and a 10 kilometre snowshoe trail are also available.</p> </div
 <p>Personal Floatation Devices (PFDs) are also available for a refundable deposit. PFDs are available at the gatehouses located at Beach Areas 1 through 6. All-terrain wheelchairs are available at the Park Office on a first-come, first-served basis (a refundable deposit is required).</p> <h2>Visitor Centre</h2>
 <p>As part of the War of 1812 Bicentennial, a new Welcome Centre was built at Nancy Island Historic Site. Nancy Island has served as a historic site since 1928 and is the most viable and related site to the War of 1812 in Simcoe County and the Georgian Bay Region. It represents a major event during the War of 1812 - HMS Nancy’s August 14, 1814 battle against three American schooners. The island houses the charred hull and artefacts of the HMS Nancy from the pivotal moment in Canadian history. Today, the borders of Canada are a direct result of the valiant struggle of the Nancy and her crew.</p>
 <p>The Welcome Centre houses a gift shop, tourist information, washrooms and interpretation relating to both Nancy Island and Wasaga Beach’s rich natural and cultural history.</p>
-</div>",,
+</div>",11-22nd St. North Wasaga Beach L9Z 2V9,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Wheatley Provincial Park,"Ontario’s “deep south” provincial park – at the same latitude as Northern California.
 Campgrounds are situated among a tangle of creeks in a beautifully wooded Carolinian forest setting with a number of creekside campsites.
 Trails wind through a southern style Carolinian forest.
@@ -7875,7 +7875,7 @@ All of the camping loops in Boosey Creek are radio-free and allows the opportuni
 <p>Wheatley’s day-use and beach areas house three picnic pavilions that are spread out along the Lake Erie shoreline. Each pavilion is equipped with electricity, group barbeques and picnic tables. Pavilion 2 is the closest to a comfort station and Pavilion 3 is located at the farthest end of the day-use area with easy access to the beach and bordered by Boosey Creek. Each of these pavilions may be reserved for a fee.</p> <h2>Rentals</h2>
 <p>The Park participates in the OFAH Tackleshare program where you can borrow completely rigged fishing lines for a refundable deposit.</p>
 <p>Personal Floatation Devices (PFDs) are also available with a $25 refundable deposit.</p>
-</div>",,
+</div>","21116 Klondyke Road, P.O. Box 640 Wheatley N0P 2P0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 White Lake Provincial Park,"White Lake, a 6,500 hectare lake, is one of the largest lakes on the Lake Superior Circle Route
 Very good fishing for Walleye and Northern Pike
 Great place to swim, with warm waters and sandy beaches
@@ -7934,7 +7934,7 @@ Eight exercise stations make this campground trail ideal for a quick workout. It
 <p>Basic groceries, camping supplies, licences, bait and gas can be obtained within eight kilometres of the park.</p> <h2>Pet Exercise Area</h2>
 <p>Close to the campground, pets are allowed to swim at the boat launch in the day-use area. Another pet swimming area is located down the park road to Clearwater Lake, just past the Tiny Bog trailhead. This section of road is also the place to walk your pet off leash. Other than these areas, pets must be on a leash at all times. Please remember to always clean up after your pet.</p> <h2>Rentals</h2>
 <p>The park rents canoes, adult mountain bikes, tents, fishing equipment, and trailer storage can be arranged.</p>
-</div>",,
+</div>",P.O. Box 340 White River P0M 3G0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Windy Lake Provincial Park,"Fantastic sandy beaches and great swimming/water sports scene
 Large day-use area with rental area for private use
 Large private campsites including several double sites for multi-family camping
@@ -8038,7 +8038,7 @@ Reservations can be made online or through our call centre by calling 1-888-ONT-
 <p>The Pet Recreation Area allows your pet to be off the leash but you are still required to keep constant care and control of your animal. And don’t forget to poop and scoop.</p> <h2>Picnic Shelters</h2>
 <p>Windy Lake features a reservable day-use area that is ideal for family reunions and work functions. The site features a private beach, washrooms and a large picnic shelter.</p> <h2>Rentals</h2>
 <p>Windy Lake has PFDs and Tackleshare fishing equipment.</p>
-</div>",,
+</div>","P.O. Box 560, c/o Windy Lake Provincial Park Levack P0M 2C0",,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
 Woodland Caribou Provincial Park,"This wilderness park is a paddler’s paradise offering almost 2,000 km of maintained canoe routes on a myriad of rivers and lakes.
 Enjoy solitude and commune with nature; Woodland Caribou sees fewer than 1,000 paddlers per season. This undisturbed boreal forest is home to one of the largest groups of woodland caribou south of Hudson Bay.
 Two major river systems – the Gammon and Bloodvein flow through the park; Bloodvein River is designated as a Canadian Heritage River
@@ -8082,4 +8082,4 @@ Please contact the park if you need assistance planning your canoe adventure.</p
 <h2>Park Store</h2>
 <p>A park store selling Woodland Caribou souvenirs is located at our office in Red Lake.<br/>
 Red Lake is a full service community and will be able to fill all your needs.</p>
-</div>",,
+</div>",227 Howey Street Box 5003 Red Lake P0V 2M0,,"Boating,Boating - Motorboat Restrictions,Camping - Backcountry,Camping - Winter (includes Roofed),Canoeing,Fishing,Hunting,Snowmobiling,Snowshoeing,Swimming,Whitewater Paddling","Backcountry Access Points(14),Campsites (Backcountry)(900),Campsites (Total)(900),Docks(3)"
