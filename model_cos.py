@@ -193,7 +193,7 @@ def get_recommendations(data):
 
     df_sorted = df_filtered.sort_values(by='score', ascending=False)
     top=df_sorted.iloc[:6].copy()
-    return_cols = ['name','address', 'phone', 'overview']
+    return_cols = ['name','address', 'phone', 'overview', 'latitude','longitude']
     for col in return_cols:
         top[col] = campsite_list_rv[col]
     result = top.to_dict('records')
