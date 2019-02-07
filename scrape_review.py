@@ -17,6 +17,10 @@ phonesearch_url += '&input='
 detaillsearch_url = 'https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyDX8Uxzozw5kOzezJ5Cfz-DPsXXG8neOkM'
 detaillsearch_url += '&fields=rating,review,price_level'
 detaillsearch_url += '&placeid='
+
+geocoding_url = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDX8Uxzozw5kOzezJ5Cfz-DPsXXG8neOkM'
+geocoding_url += '&address='
+
 def get_google_api_response(url):
     res = requests.get(url)
     if(res.status_code==200):
@@ -182,6 +186,28 @@ def process_public_campsite_review():
     df = pd.read_csv('public_campsites_googleinfo.csv', encoding='utf-8')
     df.dropna(inplace=True)
     get_reviews(df, 'public_campsites_reviews.csv')
-    
-    
-process_public_campsite_review()
+
+def get_geocoding():
+    public_sites = pd.read_csv('public_campsites.csv')
+    public_sites['lat'] = 0.0
+    public_sites['lng'] = 0.0
+    for i in range(public_sites.shape[0]):
+        try:
+            name = public_sites.iloc[i]['name']
+            print("processing " + name)
+            res = get_google_api_response(geocoding_url + urllib.parse.quote_plus(name))
+            if(res['status']=='OK'):
+                result = res['results']
+                if(len(result) >= 1):
+                    r = result[0]
+                    public_sites.at[i, 'lat'] = r['geometry']['location']['lat']
+                    public_sites.at[i, 'lng'] = r['geometry']['location']['lng']
+            else:
+                print("%s for %s" %(res.status, name))
+        except Exception as e:
+            print("exception occurred to geocode %s" % (name))
+            print(e)
+        time.sleep(0.2)
+    public_sites.to_csv('public_campsites_latlng.csv', encoding='utf-8', header=True, index= False)
+#process_public_campsite_review()
+get_geocoding()

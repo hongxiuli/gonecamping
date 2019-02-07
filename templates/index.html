@@ -5,12 +5,11 @@
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.min.css">
-
+    <link rel="shortcut icon" href="/static/favicon.ico" />
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="/static/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/bootstrap-slider.min.js"></script>
-
     <title>Gone Camping</title>
     <style>
         body {
@@ -49,12 +48,13 @@
         
         .site-label {
             color: #fff;
-            font-weight: 900;
+            font-weight: 600;
             display: block;
             font-size: 1.2em;
+            text-decoration: underline;
         }
         
-        #search-result {
+        .result {
             background-color: #333;
             border-radius: 0.2rem;
             border: 1px solid #333;
@@ -63,6 +63,7 @@
             padding: 7px;
             opacity: 0.9;
             color: #fff;
+            margin-bottom: 20px;
         }
         
         .table {
@@ -96,6 +97,16 @@
         }
         .form-check{
             margin-left: 10px;
+        }
+        .map {
+            height: 300px;  /* The height is 400 pixels */
+            width: 100%;  /* The width is the width of the web page */
+        }
+        #search-result{
+            margin-top: 20px;
+        }
+        .review{
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -163,8 +174,9 @@
                             <input id="distance" data-slider-id='distance-slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="50"/>
                         </div>
                     </div>
-                    <div class='site-label' style='margin-top: 30px;'>Similar Campgrounds</div>
                     <div id='search-result'>
+                        
+                        <!--
                         <table class="table" id='result-table'>
                             <thead class="thead-dark">
                                 <tr>
@@ -177,6 +189,7 @@
                                 </tr>
                             </thead>
                         </table>
+                        -->
                     </div>
                 </div>
                 
@@ -185,6 +198,29 @@
             </div>
         </div>
     </div>
+    <script type="text/html" id="result_template">
+        <div class='result'>
+            <div class='row'>
+                <div class="col">
+                    <h4 class='title'></h4>
+                    <div class='map' id='map1'>map goes here</div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class='site-label'>Review Summary</div>
+                        <div class='review'></div>
+                    </div>
+                    <div>
+                        <div class='site-label'>Facilities and Activities</div>
+                        <div class='features'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-kqMIZcdDjtIDIyeHU1vZM75nllLG9VM">
+    </script>
 </body>
 <script>
     $(function() {
@@ -221,12 +257,28 @@
             source: availableSites
         });
 
+        var initMap = function(id, lat, lng) {
+            var location = {lat: lat, lng: lng};
+            // The map, centered at location
+            var map = new google.maps.Map(
+                document.getElementById(id), {zoom: 7, center: location});
+            // The marker, positioned at location
+            var marker = new google.maps.Marker({position: location, map: map});
+        }
+
         var process_result = function(data) {
             console.log('success! ');
             console.log(data)
             for (var i = 1; i < data.length; i++) {
                 d = data[i];
-                row = $("<tr class='result-row'>");
+                row = $($('#result_template').html());
+                row.find('.title').html(d.name);
+                row.find('.review').html(d.overview);
+                map_id = 'map-'+i;
+                row.find('.map').attr('id', map_id);
+                row.appendTo('#search-result');
+                initMap(map_id, d.latitude, d.longitude);
+                /*
                 row.append(
                     $('<td>').text(i)
                 ).append(
@@ -241,11 +293,11 @@
                     $('<td>').text(d.score.toFixed(2))
                 );
                 $('#result-table').append(row);
+                */
             }
 
         };
         $('#search-button').click(function() {
-            $('.result-row').remove();
             var url = '/recommendations';
             var data = {
                 'name': $('#select-site').val()

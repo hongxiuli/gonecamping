@@ -196,7 +196,7 @@ def get_recommendations(data):
     
     similarity = 0.5*bin_similarity + 0.5*text_similarity
     
-    return_cols = ['name','address', 'phone', 'sum_rv']
+    return_cols = ['name','address', 'phone', 'sum_rv', 'latitude', 'longitude']
     df = pv_campground_rv[return_cols].copy()
     df['score'] = list(similarity)
 
@@ -212,6 +212,7 @@ def get_recommendations(data):
 
     df_sorted = df_filtered.sort_values(by='score', ascending=False)
     top = df_sorted.iloc[:6]
+
     result = top.to_dict('records')
     return result
 
