@@ -36,11 +36,21 @@ def get_place_reviews(google_name, name):
     elem = driver.find_element_by_css_selector('div.section-scrollbox')
     
     max_review = 1300
+    pre_loaded = 0
+    no_more = 0
     while(True):
         driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", elem)
         time.sleep(1)
         reviews = driver.find_elements_by_css_selector('div.section-review')
         loaded = len(reviews)
+        if(loaded == pre_loaded):
+            no_more += 1
+        else:
+            no_more = 0
+        if(no_more > 10):
+            print("could not load more")
+            break
+        pre_loaded = loaded
         print("loaded %d reviews, %d to go" % (loaded, total_reviews - loaded))
         if(loaded >= total_reviews or loaded >=max_review):
             break
