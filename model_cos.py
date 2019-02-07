@@ -38,29 +38,39 @@ def activity_str_to_set(a):
             result.add(t)
     return result
 
-def process_activities(campsite_list):
+def process_activities(pv_campground):
     activities = set()
-    for i in range(campsite_list.shape[0]):
-        temp = activity_str_to_set(campsite_list.iloc[i]['activities'])
+    for i in range(pv_campground.shape[0]):
+        temp = activity_str_to_set(pv_campground.iloc[i]['activities'])
         activities = activities.union(temp) 
                 
     #add the columns
     for a in activities:
-        campsite_list[a] = 0
+        pv_campground[a] = 0
     
-    for i in range(campsite_list.shape[0]):
-        temp = activity_str_to_set(campsite_list.iloc[i]['activities'])
+    for i in range(pv_campground.shape[0]):
+        temp = activity_str_to_set(pv_campground.iloc[i]['activities'])
         for t in temp:
-            campsite_list.at[i, t] = 1
+            pv_campground.at[i, t] = 1
     
     return activities
 
+
+
 ###### STEP 1: load the campsite into memory 
         
-campsite_list = pd.read_csv("private_campsites.csv", encoding='utf-8') 
+pv_campground = pd.read_csv("private_campsites.csv", encoding='utf-8') 
+#pb_campground = pd.read_csv("public_campsites.csv", encoding='utf-8') 
+
+
 
 ###### SETP 2: process activities to binary columns
-activities = process_activities(campsite_list)
+activities = process_activities(pv_campground)
+#activities = process_activities(pb_campground)
+#pv_campground.to_csv("private_feature.csv",encoding='utf-8')
+
+
+
 
 
 ###### SETP 3: Reviews
@@ -78,11 +88,11 @@ for name in names:
     temp_dict['name'].append(name)
     temp_dict['review'].append(reviews_for_name)
 reviews_all = pd.DataFrame(temp_dict)
-campsite_list_rv = campsite_list.merge(reviews_all, on='name')
-campsite_list_rv['ov_rv'] = campsite_list_rv['overview'] + campsite_list_rv['review']
+pv_campground_rv = pv_campground.merge(reviews_all, on='name')
+pv_campground_rv['ov_rv'] = pv_campground_rv['overview'] + pv_campground_rv['review']
 
 ##### SETP 4: add overview and review together
-ov_rv =campsite_list_rv[['ov_rv']]
+ov_rv =pv_campground_rv[['ov_rv']]
 ov_rv['ov_rv'] = ov_rv['ov_rv'].str.replace("[^a-zA-Z#]", " ")
 ov_rv_done = [remove_stopwords(r.split()) for r in ov_rv['ov_rv']]
 # make entire text lowercase and stem them
@@ -122,7 +132,7 @@ class LabeledLineSetence():
     def __iter__(self):
         for idx, doc in enumerate(self.doc_list):
             yield gensim.models.doc2vec.TaggedDocument(words=doc,tags=[self.labels_list[idx]])
-labels = campsite_list_rv['name'].tolist()
+labels = pv_campground_rv['name'].tolist()
 it = LabeledLineSetence(ov_rv_tokenized, labels)
 doc2vec = Doc2Vec(size=100, window=10, min_count=5, workers=11,alpha=0.025, iter=20)
 doc2vec.build_vocab(it)
@@ -148,25 +158,34 @@ bin_cols = ['Accessible facilities', 'Credit/debit cards', 'Dumping (station or 
           'Toilets (pit/outhouse)'
           ]
 bin_cols += list(activities)
-bin_list =campsite_list_rv[bin_cols]
+bin_list =pv_campground_rv[bin_cols]
 coss_binary_vars = cosine_similarity(bin_list, bin_list)
 
 print("****model is ready")
 
 
 ##### STEP 7: Summary of Reviews using TextRank
+from gensim.summarization.summarizer import summarize
+#from gensim.summarization import keywords
 
+pv_campground_rv['sum_rv']=pv_campground_rv['review']
+for i in range(pv_campground_rv.shape[0]):
+    try:
+        temp = summarize(str(pv_campground_rv['review'].iloc[i]), word_count=80)
+        pv_campground_rv.at[i, 'sum_rv']=temp
+    except ValueError:
+        pv_campground_rv.at[i, 'sum_rv']=pv_campground_rv['review'].iloc[i]
+        pass
 
-
-
-
-
+for i in range(pv_campground_rv.shape[0]):
+    if(pv_campground_rv.iloc[i]['sum_rv'] == ''):
+        pv_campground_rv.at[i, 'sum_rv']=pv_campground_rv['review'].iloc[i]
 
 
 def get_recommendations(data):
     name = data.pop('name')
     
-    row = campsite_list_rv.loc[campsite_list_rv['name']==name]
+    row = pv_campground_rv.loc[pv_campground_rv['name']==name]
     print("look for index %d for name %s" %(row.index[0], name))
     
     #get the cosine similarity for binary values
@@ -177,12 +196,12 @@ def get_recommendations(data):
     
     similarity = 0.5*bin_similarity + 0.5*text_similarity
     
-    #candidates = cosine_sim[row.index[0]]
-    df = campsite_list_rv[['name']].copy()
+    return_cols = ['name','address', 'phone', 'sum_rv']
+    df = pv_campground_rv[return_cols].copy()
     df['score'] = list(similarity)
 
     #filter
-    temp = campsite_list_rv
+    temp = pv_campground_rv
     for col in data.keys():
         temp = temp.loc[temp[col]==1]
     valid_indexes = temp.index.tolist()
@@ -192,10 +211,7 @@ def get_recommendations(data):
     df_filtered = df.iloc[valid_indexes]
 
     df_sorted = df_filtered.sort_values(by='score', ascending=False)
-    top=df_sorted.iloc[:6].copy()
-    return_cols = ['name','address', 'phone', 'overview']
-    for col in return_cols:
-        top[col] = campsite_list_rv[col]
+    top = df_sorted.iloc[:6]
     result = top.to_dict('records')
     return result
 
