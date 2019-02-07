@@ -27,11 +27,6 @@
             margin: 0;
         }
         
-        .user-input {
-            margin-top: 20px;
-            margin-left: 300px;
-        }
-        
         #search-bar {
             margin-top: 30px;
         }
@@ -116,7 +111,6 @@
         <div class="navbar navbar-dark bg-dark shadow-sm">
             <div class="container d-flex justify-content-between">
                 <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2" focusable="false" aria-hidden="true"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
                     <strong>Gone Camping</strong>
                 </a>
             </div>
@@ -125,10 +119,10 @@
     <div class='container'>
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <a class="nav-item nav-link active" id="nav-lucky-tab" data-toggle="tab" href="#nav-feel-lucky" role="tab" aria-controls="nav-home" aria-selected="true">
+                <a class="nav-item nav-link active" id="nav-lucky-tab" data-toggle="tab" href="#nav-feel-lucky" role="tab" aria-selected="true">
                     Feel Lucky
                 </a>
-                <a class="nav-item nav-link" id="nav-advanced-tab" data-toggle="tab" href="#nav-advanced" role="tab" aria-controls="nav-profile" aria-selected="false">
+                <a class="nav-item nav-link" id="nav-advanced-tab" data-toggle="tab" href="#nav-advanced" role="tab" aria-selected="false">
                     Advanced Search
                 </a>
             </div>
@@ -168,37 +162,21 @@
                                 <label class="form-check-label" for="boating">Boat/Canoe</label>
                             </div>
                         </div>
-
-                        <div id='distance-wrapper'>
+                        
+                        <div id='distance-wrapper' style='display: none'>
                             <label for="distance">Distance From Home: <span id='distance-value'>50KM</span></label><br />
                             <input id="distance" data-slider-id='distance-slider' type="text" data-slider-min="0" data-slider-max="500" data-slider-step="1" data-slider-value="50"/>
                         </div>
+                        
                     </div>
                     <div id='search-result'>
-                        
-                        <!--
-                        <table class="table" id='result-table'>
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Address</th>
-                                    <th scope="col">Phone</th>
-                                    <th scope="col">Overview</th>
-                                    <th scope="col">Similarity</th>
-                                </tr>
-                            </thead>
-                        </table>
-                        -->
                     </div>
                 </div>
-                
-            </div>
-            <div class="tab-pane fade" id="nav-advanced" role="tabpanel" aria-labelledby="nav-profile-tab">
             </div>
         </div>
     </div>
-    <script type="text/html" id="result_template">
+    <!-- this is the template for result display-->
+    <div id="result_template" style='display: none'>
         <div class='result'>
             <div class='row'>
                 <div class="col">
@@ -217,7 +195,7 @@
                 </div>
             </div>
         </div>
-    </script>
+    </div>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-kqMIZcdDjtIDIyeHU1vZM75nllLG9VM">
     </script>
@@ -234,7 +212,7 @@
             $('#distance-value').text(slider.val() + 'KM');
         });
         var resetResult = function(){
-            $('.result-row').remove();
+            $('#search-result').empty()
             $('#select-site').val('')
         };
         $('#nav-lucky-tab').click(function(){
@@ -267,8 +245,7 @@
         }
 
         var process_result = function(data) {
-            console.log('success! ');
-            console.log(data)
+            $('#search-result').empty();
             for (var i = 1; i < data.length; i++) {
                 d = data[i];
                 row = $($('#result_template').html());
@@ -296,7 +273,6 @@
                 if($('#fishing').is(':checked')) data['fishing'] = true;
                 if($('#boating').is(':checked')) data['boat rental (non-motorized)'] = true;
             }
-            console.log(url);
             $.ajax({
                 'url': url,
                 type: "POST",
