@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def homepage():
-    all_sites = list(model_cos.campsite_list_rv['name'])
+    all_sites = list(model_cos.pv_campground_rv['name'])
     print(all_sites)
     return render_template('index.html', all_sites = all_sites)
 
