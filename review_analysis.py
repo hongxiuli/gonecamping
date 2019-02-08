@@ -2,11 +2,13 @@ import os
 import pandas as pd
 import math
 
-def process_user_review():
-    files = os.listdir("./reviews")
+def process_user_review(files=None, df = None):
+    if(files is None):
+        files = os.listdir("./reviews")
     names = ['user'] + [f.replace('.csv', '') for f in files]
-    df = pd.DataFrame(columns=names)
-    df.set_index("user", inplace = True)
+    if(df is None):
+        df = pd.DataFrame(columns=names)
+        df.set_index("user", inplace = True)
     count=1
     for f in files:
         print("processing %s, %d out of %d" %(f, count, len(files)))
@@ -39,4 +41,6 @@ def remove_user_with_one_review():
     df = df.iloc[indexes_to_keep]
     df.to_csv('public_campsites_user_reviews_more_than_one.csv', encoding='utf-8', index=False, header=True)
 
+
+#process_user_review()
 remove_user_with_one_review()

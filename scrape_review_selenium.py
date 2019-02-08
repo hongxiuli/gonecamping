@@ -64,6 +64,13 @@ def get_place_reviews(google_name, name):
         #print(review_user.text)
         #get star
         review_star = review.find_elements_by_css_selector('span.section-review-star-active')
+        stars = len(review_star)
+        # rating is not represented by stars, but in the format of 4/5
+        if(stars == 0):
+            numerical_rating = review.find_elements_by_css_selector('span.section-review-numerical-rating').text
+            pos = numerical_rating.find('/')
+            stars = int(float(numerical_rating[:pos]))
+
         #print("stars: %d" %(len(review_star)))
         #get review text
         review_content = review.find_element_by_css_selector('span.section-review-text')
@@ -71,7 +78,7 @@ def get_place_reviews(google_name, name):
         
         result['name'].append(name)
         result['user'].append(review_user.text)
-        result['stars'].append(len(review_star))
+        result['stars'].append(stars)
         result['review'].append(review_content.text)
 
     temp = pd.DataFrame(result)
@@ -97,5 +104,5 @@ def get_places_reviews():
         print('===============process %d out of %d' %(i+1, total))
         get_place_reviews(google_name, name)
     
-#get_place_reviews('Arrowhead Provincial Park', 'Arrowhead Provincial Park', result)
+#get_place_reviews('Rock Lake Campground', 'Algonquin  Rock Lake Campground')
 get_places_reviews()
