@@ -138,28 +138,56 @@
                         <div id="facility-wrapper">
                             <label class='advanced-option-header'>Facilities</label>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="play-ground">
-                                <label class="form-check-label" for="play-ground">Play Ground</label>
+                                <input type="checkbox" class="form-check-input" id="Group camping">
+                                <label class="form-check-label" for="Group camping">Group Camping</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="pet-friendly">
-                                <label class="form-check-label" for="pet-friendly">Pet-Friendly</label>
+                                <input type="checkbox" class="form-check-input" id="Laundromat">
+                                <label class="form-check-label" for="Laundromat">Laundromat</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Playground">
+                                <label class="form-check-label" for="Playground">Play Ground</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Pet-friendly">
+                                <label class="form-check-label" for="Pet-friendly">Pet-Friendly</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Toilets/showers (comfort station)">
+                                <label class="form-check-label" for="Toilets/showers (comfort station)">Showers</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="Dumping (station or mobile)">
+                                <label class="form-check-label" for="Dumping (station or mobile)">Dumping Station</label>
                             </div>
                         </div>
                         
                         <div id="activity-wrapper">
                             <label class='advanced-option-header'>Activities</label>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="hiking">
-                                <label class="form-check-label" for="hiking">Hiking</label>
+                                <input type="checkbox" class="form-check-input" id="walking/hiking trails">
+                                <label class="form-check-label" for="walking/hiking trails">Hiking</label>
                             </div>
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="fishing">
                                 <label class="form-check-label" for="fishing">Fishing</label>
                             </div>
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="boating">
-                                <label class="form-check-label" for="boating">Boat/Canoe</label>
+                                <input type="checkbox" class="form-check-input" id="horseback riding">
+                                <label class="form-check-label" for="horseback riding">Horseback Riding</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="boat rental (non-motorized)">
+                                <label class="form-check-label" for="boat rental (non-motorized)">Boat Rental(non-motorized)</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="whitewater rafting">
+                                <label class="form-check-label" for="whitewater rafting">Whitewater rafting</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="cycling">
+                                <label class="form-check-label" for="cycling">Biking</label>
                             </div>
                         </div>
                         
@@ -267,12 +295,13 @@
             if($('#nav-advanced-tab').hasClass('active'))
             {
                 //append the other things
-                if($('#play-ground').is(':checked')) data['Playground'] = true;
-                if($('#pet-friendly').is(':checked')) data['Pet-friendly'] = true;
-                if($('#hiking').is(':checked')) data['walking/hiking trails'] = true;
-                if($('#fishing').is(':checked')) data['fishing'] = true;
-                if($('#boating').is(':checked')) data['boat rental (non-motorized)'] = true;
+                $("input[type='checkbox']").each(function(){
+                    if($(this).is(':checked')){
+                        data[$(this).attr('id')] = true;
+                    }
+                });
             }
+            console.log(data);
             $.ajax({
                 'url': url,
                 type: "POST",

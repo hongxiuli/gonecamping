@@ -4,10 +4,7 @@ import os
 import time
 
 def get_content(url):
-    parts = url.split('/')
     fn = 'htmls/' + urllib.parse.quote_plus(url) + '.html'
-    
-    
     contents = None
     if(os.path.isfile(fn)):
         print("get " + url + " from cache")

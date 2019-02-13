@@ -8,6 +8,7 @@ def process_introduction(content):
     intro_tag = bs.find('div', id='introduction')
     intro = intro_tag.find('div', class_='intro_list').get_text().strip()
     temp = bs.find('img', class_='park_name_logo')
+    #René Brunelle Provincial Park is renamed to Rene...
     name = temp.next_sibling.get_text().strip()
     if(name.startswith('Algonquin')):
         name = name.replace('-', '') + ' Campground'
@@ -43,11 +44,11 @@ def process_introduction(content):
     temp = list(div1122.children)
     div112231 = temp[1]
     div112232 = temp[3]
-    facilities_img_tags = div112231.find_all('embed')
+    facilities_img_tags = div112231.find_all('img')
     for img_tag in facilities_img_tags:
         if(img_tag['title'].find('Not available') == -1):
             facilities_icon.append(img_tag['title'])
-    activities_img_tags = div112232.find_all('embed')
+    activities_img_tags = div112232.find_all('img')
     for img_tag in activities_img_tags:
         if(img_tag['title'].find('Not available') == -1):
             activities_icon.append(img_tag['title'])
@@ -110,11 +111,12 @@ def scrape_all():
         #introduction
         content = get_content(url)
         name, intro, address, facilities_icon, activities_icon = process_introduction(content)
+        print(facilities_icon)
         result['name'].append(name)
         result['introduction'].append(intro)
         result['address'].append(address)
-        result['facilities_icon'] = ','.join(facilities_icon)
-        result['activities_icon'] = ','.join(activities_icon)
+        result['facilities_icon'].append(','.join(facilities_icon))
+        result['activities_icon'].append( ','.join(activities_icon))
         
         #camping
         content = get_content(url+'/camping')

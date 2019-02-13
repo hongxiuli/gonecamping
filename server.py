@@ -9,15 +9,15 @@ print('model is ready')
 
 @app.route("/")
 def homepage():
-    all_sites = list(model.pv_campground_rv['name'])
-    print(all_sites)
+    all_sites = list(model.all_campground['name'])
     return render_template('index.html', all_sites = all_sites)
 
 @app.route("/recommendations", methods=['POST'])
 def recommendations():
     data = request.json
-    print(data)
+    print('##### start getting recommendations')
     rec = model.get_recommendations(data)
+    print('##### done getting recommendations')
     return jsonify(rec)
 
 if __name__ == '__main__':  # Script executed directly?

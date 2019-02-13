@@ -8,6 +8,7 @@ Created on Thu Jan 24 23:10:21 2019
 import numpy as np
 import pandas as pd
 import nltk
+import os
 from nltk.corpus import stopwords
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -47,71 +48,50 @@ class LabeledLineSetence():
         for idx, doc in enumerate(self.doc_list):
             yield gensim.models.doc2vec.TaggedDocument(words=doc,tags=[self.labels_list[idx]])
 
+############main class for model
 class GC_Model():
     def __init__(self):
-        ###### STEP 1: load the campsite into memory 
-        pv_campground = pd.read_csv("private_campsites.csv", encoding='utf-8') 
-        #pb_campground = pd.read_csv("public_campsites.csv", encoding='utf-8') 
-
-        ###### SETP 2: process activities to binary columns
-        activities = self._process_activities(pv_campground)
-        #activities = process_activities(pb_campground)
-        #pv_campground.to_csv("private_feature.csv",encoding='utf-8')
         
-        ###### SETP 3: add reviews to the dataframe
-        reviews_all = self._process_reviews()
-        self.pv_campground_rv = pv_campground.merge(reviews_all, on='name')
-        self.pv_campground_rv['ov_rv'] = self.pv_campground_rv['overview'] + self.pv_campground_rv['review']
+        ###### load private and public campsites and merge them
+        print('load files')
+        self.all_campground = pd.read_csv("all_campsites_ready.csv", encoding='utf-8')
+        not_useful = ['activities', 'ov_rv', 'review', 'address','overview']
+        self.all_campground.drop(columns=not_useful, inplace=True)
+        #for debugging purpose
+        global all_campground
+        all_campground= self.all_campground
         
-        ##### SETP 4: add overview and review together
-        ov_rv = self.pv_campground_rv[['ov_rv']]
-        ov_rv['ov_rv'] = ov_rv['ov_rv'].str.replace("[^a-zA-Z#]", " ")
-        ov_rv_done = [remove_stopwords(r.split()) for r in ov_rv['ov_rv']]
-        #make entire text lowercase and stem them
-        stemmer = nltk.stem.PorterStemmer()
-        ov_rv_done = [stem_sentence(r, stemmer).lower() for r in ov_rv_done]
-        self.ov_rv_tokenized = [nltk.word_tokenize(sent) for sent in ov_rv_done]
-
-        ##### SETP 5.1: TFIDF vectorize text and pre-calculate the cosine similarity
-        #cosine_tfidf = _tfidf_similarity(ov_rv_done)
-
-        #### STEP 5.2 Word2Vec
-        #cosine_w2v = self._w2vec_similarity()
-
-        #### STEP 5.3 Doc2Vec
-        self.cosine_d2v = self._doc2vec_similarity()
-
-        ##### STEP 6: pre-calculate cosine similarity for binary columns
-        bin_cols = ['Accessible facilities', 'Credit/debit cards', 'Dumping (station or mobile)',
-                'Group camping','Internet (WiFi at site)','Laundromat','Pet-friendly',
-                'Planned activities/events','Playground','Pull-thru sites','Rec hall/games room',
-                'Restaurant/snack bar','Store','Swimming (outdoor pool)','Toilets/showers (comfort station)',
-                'Boating (marina, boat launch, or docks)','Cable TV (at site)','Controlled access',
-                'Hot tub','Internet (hot spot)','Propane','Swimming (indoor pool)','Swimming (lake, river, or beach)',
-                'Toilets (pit/outhouse)'
-                ]
-        bin_cols += list(activities)
-        bin_list = self.pv_campground_rv[bin_cols]
-        self.coss_binary_vars = cosine_similarity(bin_list, bin_list)
-
-        ##### STEP 7: Summary of Reviews using TextRank
-        self.pv_campground_rv['sum_rv']=self.pv_campground_rv['review']
-        for i in range(self.pv_campground_rv.shape[0]):
-            try:
-                temp = summarize(str(self.pv_campground_rv['review'].iloc[i]), word_count=80)
-                self.pv_campground_rv.at[i, 'sum_rv']=temp
-            except ValueError:
-                self.pv_campground_rv.at[i, 'sum_rv']=self.pv_campground_rv['review'].iloc[i]
-                pass
-        for i in range(self.pv_campground_rv.shape[0]):
-            if(self.pv_campground_rv.iloc[i]['sum_rv'] == ''):
-                self.pv_campground_rv.at[i, 'sum_rv']=self.pv_campground_rv['review'].iloc[i]
+        ##### prepare Doc2Vec similarity
+        print('prepare cosine_d2v')
+        self._cosine_d2v()
     
+
+        ##### pre-calculate cosine similarity for binary columns
+        print('calculate binary variables cosine similarity')
+        non_bin_cols = [
+          'name',
+          'Max length (of RV)',
+          'Maximum Amperage',
+          'Min / Max (Daily)',
+          'Seasonal Sites',
+          'Total Sites',
+          'latitude',
+          'longitude',
+          'phone',
+          'sum_rv']
+        
+        all_cols = self.all_campground.columns.tolist()
+        
+        bin_cols = [ c for c in all_cols if c not in non_bin_cols]
+        bin_list = self.all_campground[bin_cols]
+        self.coss_binary_vars = cosine_similarity(bin_list, bin_list)
+        
+        
     ##### PUBLIC FUNCTIONS #####
     def get_recommendations(self, data):
         name = data.pop('name')
         
-        row = self.pv_campground_rv.loc[self.pv_campground_rv['name']==name]
+        row = self.all_campground.loc[self.all_campground['name']==name]
         print("look for index %d for name %s" %(row.index[0], name))
         
         #get the cosine similarity for binary values
@@ -122,12 +102,12 @@ class GC_Model():
         
         similarity = 0.5*bin_similarity + 0.5*text_similarity
         
-        return_cols = ['name','address', 'phone', 'sum_rv', 'latitude', 'longitude']
-        df = self.pv_campground_rv[return_cols].copy()
+        return_cols = ['name', 'sum_rv', 'latitude', 'longitude']
+        df = self.all_campground[return_cols].copy()
         df['score'] = list(similarity)
 
         #filtering
-        temp = self.pv_campground_rv
+        temp = self.all_campground
         for col in data.keys():
             temp = temp.loc[temp[col]==1]
         valid_indexes = temp.index.tolist()
@@ -139,30 +119,77 @@ class GC_Model():
 
         result = top.to_dict('records')
         return result
+    
+    def _cosine_d2v(self):
+        model_path = './models/cosine_d2v.npy'
+        if(os.path.isfile(model_path)):
+            print('loading cosine_d2v model from %s' % (model_path))
+            self.cosine_d2v = np.load(model_path)
+        else:
+            self._tokenize_ov_rv()
+            self._doc2vec_similarity()
+            print("calculated and saving cosine_d2v model")
+            np.save(model_path, self.cosine_d2v)
 
     ##### PRIVATE FUNCTIONS #####
     def _doc2vec_similarity(self):
-        labels = self.pv_campground_rv['name'].tolist()
+        print('calculating cosine_d2v')
+        labels = self.all_campground['name'].tolist()
         it = LabeledLineSetence(self.ov_rv_tokenized, labels)
         doc2vec = Doc2Vec(size=100, window=10, min_count=5, workers=11,alpha=0.025, iter=20)
         doc2vec.build_vocab(it)
         doc2vec.train(it,total_examples=doc2vec.corpus_count, epochs=doc2vec.iter)
         ov_rv_d2v = [doc2vec[name] for name in labels]
-        cosine_d2v = cosine_similarity(ov_rv_d2v, ov_rv_d2v)
-        return cosine_d2v
+        self.cosine_d2v = cosine_similarity(ov_rv_d2v, ov_rv_d2v)
 
     def _get_vec_for_doc(self, word2vec, doc):
         temp = []
         for word in doc:
             try:
                 temp.append(word2vec.wv[word])
-            except KeyError as k:
+            except KeyError:
                 pass
-                #print(k)
         result = np.mean(temp, axis=0)
         return result
+    
+    def _preprocess_private_campsites(self):
+        pv_campground = pd.read_csv("private_campsites.csv", encoding='utf-8') 
+        self._process_private_activities(pv_campground)
+        reviews_all = self._process_private_reviews()
+        pv_campground_rv = pv_campground.merge(reviews_all, on='name')
+        pv_campground_rv['ov_rv'] = pv_campground_rv['overview'] + pv_campground_rv['review']
+        pv_campground_rv.to_csv('private_campsites_ready.csv', encoding='utf-8', header=True, index=False)
+    
+    def _preprocess_merge_and_summary(self):
+        print('=====load files')
+        pv_campground = pd.read_csv("private_campsites_ready.csv", encoding='utf-8') 
+        pb_campground = pd.read_csv('public_campsites_ready.csv', encoding='utf-8')
+        all_campground = pv_campground.append(pb_campground)
+        
+        print('=====fill na')
+        #fillna: empty string for reveiws
+        all_campground['review'] = all_campground['review'].fillna('')
+        #fillna: other features with 0
+        all_campground = all_campground.fillna(0)
+        
+        ##### STEP 7: Summary of Reviews using TextRank
+        print('=====summary of reviews')
+        all_campground['sum_rv']=all_campground['review']
+        for i in range(all_campground.shape[0]):
+            try:
+                temp = summarize(str(all_campground['review'].iloc[i]), word_count=80)
+                all_campground.at[i, 'sum_rv']=temp
+            except ValueError:
+                #self.all_campground.at[i, 'sum_rv']=self.all_campground['review'].iloc[i]
+                pass
+        for i in range(all_campground.shape[0]):
+            if(all_campground.iloc[i]['sum_rv'] == ''):
+                all_campground.at[i, 'sum_rv']=all_campground['review'].iloc[i]
+        
+        print('=====write file')
+        all_campground.to_csv('all_campsites_ready.csv',encoding='utf-8', header=True, index=False)
 
-    def _process_activities(self, pv_campground):
+    def _process_private_activities(self, pv_campground):
         activities = set()
         for i in range(pv_campground.shape[0]):
             temp = activity_str_to_set(pv_campground.iloc[i]['activities'])
@@ -176,7 +203,7 @@ class GC_Model():
                 pv_campground.at[i, t] = 1
         return activities
 
-    def _process_reviews(self):
+    def _process_private_reviews(self):
         campsite_review = pd.read_csv("private_campsites_reviews.csv", encoding='utf-8') 
         review = campsite_review[['name','text']]
         review.dropna(inplace=True)
@@ -191,12 +218,22 @@ class GC_Model():
             temp_dict['name'].append(name)
             temp_dict['review'].append(reviews_for_name)
         return pd.DataFrame(temp_dict)
-
+    
     def _tfidf_similarity(self, data):
         tfidf = TfidfVectorizer(stop_words='english',)
         tfidf_matrix = tfidf.fit_transform(data)
         cosine_tfidf = cosine_similarity(tfidf_matrix, tfidf_matrix)
         return cosine_tfidf
+    
+    def _tokenize_ov_rv(self):
+        print('tokenize ov_rv')
+        ov_rv = self.all_campground[['ov_rv']]
+        ov_rv['ov_rv'] = ov_rv['ov_rv'].str.replace("[^a-zA-Z#]", " ")
+        ov_rv_done = [remove_stopwords(r.split()) for r in ov_rv['ov_rv']]
+        #make entire text lowercase and stem them
+        stemmer = nltk.stem.PorterStemmer()
+        ov_rv_done = [stem_sentence(r, stemmer).lower() for r in ov_rv_done]
+        self.ov_rv_tokenized = [nltk.word_tokenize(sent) for sent in ov_rv_done]
 
     def _w2vec_similarity(self):
         word2vec = Word2Vec(self.ov_rv_tokenized, min_count=2)  
@@ -205,6 +242,39 @@ class GC_Model():
         ov_rv_w2v = [self._get_vec_for_doc(word2vec, doc) for doc in self.ov_rv_tokenized]
         cosine_w2v = cosine_similarity(ov_rv_w2v, ov_rv_w2v)
         return cosine_w2v
+
+
+#Test code for adding web features&activities of campground
+#pv_campground_rv= self.pv_campground_rv
+#model = GC_Model()
+#temp = pv_campground_rv[pv_campground_rv.columns[17:96]].mean()
+
+
+
+
+'''
+pb_campground = pd.read_csv("public_campsites_googleinfo.csv", encoding='utf-8') 
+pb_campground.mean()
+###
+pb_campground = pd.read_csv("public_campsites_latlng.csv", encoding='utf-8') 
+pb_campground = pd.read_csv("public_campsites_reviews.csv", encoding='utf-8') 
+pb_campground = pd.read_csv("public_campsites_user_reviews.csv", encoding='utf-8') 
+pb_campground.shape
+pb_campground = pd.read_csv("public_campsites_user_reviews_more_than_one.csv", encoding='utf-8') 
+pb_campground.shape
+
+'''
+
+
+
+
+
+
+
+
+
+
+
 
 
 
