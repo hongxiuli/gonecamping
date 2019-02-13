@@ -86,6 +86,22 @@ class GC_Model():
         bin_list = self.all_campground[bin_cols]
         self.coss_binary_vars = cosine_similarity(bin_list, bin_list)
         
+        #######facilities and activities to return
+        self.fa = {
+            'Dumping (station or mobile)' : 'Dumping Station',
+            'Group camping' : 'Group Camping',
+            'Laundromat' : 'Laundromat',
+            'Pet-friendly' : 'Pet Friendly',
+            'Playground' : 'Playground',
+            'Toilets/showers (comfort station)' : 'Shower',
+            'horseback riding' : 'Horseback Riding',
+            'fishing' : 'Fishing',
+            'boat rental (non-motorized)' : 'Boat Rental(non-motorized)',
+            'whitewater rafting' : 'Whitewater Rafting',
+            'walking/hiking trails' : 'Hiking',
+            'cycling' : 'Biking'
+        }
+        
         
     ##### PUBLIC FUNCTIONS #####
     def get_recommendations(self, data):
@@ -105,18 +121,29 @@ class GC_Model():
         return_cols = ['name', 'sum_rv', 'latitude', 'longitude']
         df = self.all_campground[return_cols].copy()
         df['score'] = list(similarity)
+        df['facilities_activities'] = ''
 
         #filtering
         temp = self.all_campground
         for col in data.keys():
             temp = temp.loc[temp[col]==1]
         valid_indexes = temp.index.tolist()
-
         df_filtered = df.iloc[valid_indexes]
 
+        #rank
         df_sorted = df_filtered.sort_values(by='score', ascending=False)
         top = df_sorted.iloc[:6]
-
+        
+        #add facilities and activities
+        all_indexes = top.index.tolist()
+        for i in all_indexes:
+            features = []
+            for feature in self.fa.keys():
+                if(self.all_campground.iloc[i][feature] == 1):
+                    features.append(self.fa[feature])
+            if(len(features)>0):
+                top.at[i, 'facilities_activities'] = ', '.join(features)
+        
         result = top.to_dict('records')
         return result
     

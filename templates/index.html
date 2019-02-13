@@ -279,8 +279,10 @@
                 row = $($('#result_template').html());
                 row.find('.title').html(d.name);
                 row.find('.review').html(d.sum_rv);
+                row.find('.features').html(d.facilities_activities)
                 map_id = 'map-'+i;
                 row.find('.map').attr('id', map_id);
+                
                 row.appendTo('#search-result');
                 initMap(map_id, d.latitude, d.longitude);
 
