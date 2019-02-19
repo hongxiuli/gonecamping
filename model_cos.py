@@ -272,33 +272,9 @@ class GC_Model():
 
     def _w2vec_similarity(self):
         word2vec = Word2Vec(self.ov_rv_tokenized, min_count=2)  
-        #vocabulary = word2vec.wv.vocab
-        
         ov_rv_w2v = [self._get_vec_for_doc(word2vec, doc) for doc in self.ov_rv_tokenized]
         cosine_w2v = cosine_similarity(ov_rv_w2v, ov_rv_w2v)
         return cosine_w2v
-
-
-#Test code for adding web features&activities of campground
-#pv_campground_rv= self.pv_campground_rv
-#model = GC_Model()
-#temp = pv_campground_rv[pv_campground_rv.columns[17:96]].mean()
-
-
-
-
-'''
-pb_campground = pd.read_csv("public_campsites_googleinfo.csv", encoding='utf-8') 
-pb_campground.mean()
-###
-pb_campground = pd.read_csv("public_campsites_latlng.csv", encoding='utf-8') 
-pb_campground = pd.read_csv("public_campsites_reviews.csv", encoding='utf-8') 
-pb_campground = pd.read_csv("public_campsites_user_reviews.csv", encoding='utf-8') 
-pb_campground.shape
-pb_campground = pd.read_csv("public_campsites_user_reviews_more_than_one.csv", encoding='utf-8') 
-pb_campground.shape
-
-'''
 
 
 

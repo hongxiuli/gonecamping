@@ -128,19 +128,6 @@ pb = pd.merge(pb,temp, left_index=True, right_index=True)
 pb.to_csv('public_campsites_ready.csv', encoding='utf-8', header=True, index=True)
 
 
-pv = pd.read_csv("private_campsites.csv", encoding='utf-8')
-
-
-
-
-
-#df1 = pd.DataFrame(np.array([[1,2],[3,4]]), columns=['A', 'B'])
-#df2 = pd.DataFrame(np.array([[5,6],[7,8]]), columns=['A', 'C'])
-
-#df3 = df1.append(df2)
-
-
-
 
 
 
