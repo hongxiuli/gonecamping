@@ -1,3 +1,6 @@
+"""
+Use Selenium to scrape Google user reviews directly from the webpage
+"""
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
@@ -5,6 +8,12 @@ import pandas as pd
 import os
 
 def get_place_reviews(google_name, name):
+    """
+    scrape Google user reviews for a campsite. Reveiws will be stored in a csv file
+    @param google_name: the name returned from Google place API when we search for name. 
+                        Use this name would generate better search result on Google maps
+    @param name: orginal name of the campsite, which is obtained from scraping the campsite web pages
+    """
     result = {
         'name':[],
         'user': [],
@@ -61,7 +70,7 @@ def get_place_reviews(google_name, name):
     for review in reviews:
         #get user name
         review_user = review.find_element_by_css_selector('div.section-review-title')
-        #print(review_user.text)
+
         #get star
         review_star = review.find_elements_by_css_selector('span.section-review-star-active')
         stars = len(review_star)
@@ -71,10 +80,8 @@ def get_place_reviews(google_name, name):
             pos = numerical_rating.find('/')
             stars = int(float(numerical_rating[:pos]))
 
-        #print("stars: %d" %(len(review_star)))
         #get review text
         review_content = review.find_element_by_css_selector('span.section-review-text')
-        #print(review_content.text)
         
         result['name'].append(name)
         result['user'].append(review_user.text)
@@ -86,7 +93,7 @@ def get_place_reviews(google_name, name):
     driver.close()
 
 def get_places_reviews():
-    df = pd.read_csv('public_campsites_googleinfo.csv', encoding='utf-8')
+    df = pd.read_csv('./data/public_campsites_googleinfo.csv', encoding='utf-8')
     df.dropna(inplace=True)
 
     files = os.listdir("./reviews")
@@ -104,5 +111,7 @@ def get_places_reviews():
         print('===============process %d out of %d' %(i+1, total))
         get_place_reviews(google_name, name)
     
-#get_place_reviews('Rock Lake Campground', 'Algonquin  Rock Lake Campground')
+"""
+Uncomment the following line and then run this file
 get_places_reviews()
+"""

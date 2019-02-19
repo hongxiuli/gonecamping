@@ -1,9 +1,17 @@
+"""
+Scrape public campsites information from ontarioparks.com
+Data will be stored in public_campsites.csv
+"""
 from utils import get_content
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
 
 def process_introduction(content):
+    """
+    parse the introduction tab to get the following information
+    name, introduction, address, facilities, activities
+    """
     bs = BeautifulSoup(content, 'html.parser')
     intro_tag = bs.find('div', id='introduction')
     intro = intro_tag.find('div', class_='intro_list').get_text().strip()
@@ -15,8 +23,8 @@ def process_introduction(content):
     else:
         name = name + ' Provincial Park'
         
-    activities_icon = [];
-    facilities_icon = [];
+    activities_icon = []
+    facilities_icon = []
     '''
         div introduction
             div-11
@@ -63,11 +71,17 @@ def process_introduction(content):
     return name, intro, address, facilities_icon, activities_icon
     
 def process_camping(content):
+    """
+    parse Camping tab, grab the text under this tab
+    """
     bs = BeautifulSoup(content, 'html.parser')
     temp = bs.find('div', id='camping')
     return str(temp), temp.get_text().strip()
     
 def process_activities(content):
+    """
+    parse Activities tab, only get the headings in <h2> tags
+    """
     bs = BeautifulSoup(content, 'html.parser')
     temp = bs.find('div', id='activities')
     h2s = temp.find_all('h2')
@@ -78,6 +92,9 @@ def process_activities(content):
     return str(temp), ','.join(activities)
     
 def process_facilities(content):
+    """
+    parse Facilities tab, only get the headings in <h2> tags
+    """
     bs = BeautifulSoup(content, 'html.parser')
     temp = bs.find('div', id='facilities')
     h2s = temp.find_all('h2')
@@ -86,9 +103,12 @@ def process_facilities(content):
         facilities.append(h2.get_text().strip())
         
     return str(temp), ','.join(facilities)
-    
-    
+
 def scrape_all():
+    """
+    Scrape all public campsites information. URLs are stored in public_campsite_urls.txt
+    Results are stored in public_campsites.csv 
+    """
     with open('public_campsite_urls.txt') as f:
         contents = f.readlines()
     contents = [x.strip() for x in contents]
@@ -139,6 +159,9 @@ def scrape_all():
         #phone
         result['phone'].append(None)
     df = pd.DataFrame(result)
-    df.to_csv('public_campsites.csv', encoding='utf-8', index= False, header = True)
+    df.to_csv('./data/public_campsites.csv', encoding='utf-8', index= False, header = True)
 
+"""
+Uncomment the following line and run this file
 scrape_all()
+"""

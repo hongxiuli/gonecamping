@@ -20,6 +20,6 @@ def recommendations():
     print('##### done getting recommendations')
     return jsonify(rec)
 
-if __name__ == '__main__':  # Script executed directly?
+if __name__ == '__main__':  # Script executed directly
     app.run(host='0.0.0.0', port = 8080, debug=False)
     

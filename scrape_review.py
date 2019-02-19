@@ -1,8 +1,12 @@
+"""
+Using Google Location API to get the reviews for the campsites
+"""
 import requests
 import urllib.parse
 import pandas as pd
 import time
 import math
+import os
 
 google_api_key = 'PUT GOOGLE API KEY HERE'
 textsearch_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&key=' + google_api_key
@@ -23,14 +27,22 @@ geocoding_url += '&address='
 def get_google_api_response(url):
     res = requests.get(url)
     if(res.status_code==200):
-        #print(res.content)
         return res.json()
     else:
         print("status: %d" % res.status_code)
         raise Exception(res.content)
 
-def get_google_review(name, address=None, phone=None):
-    
+def get_place_info(name, address=None, phone=None):
+    """
+    Locate the object using Google Place API based on
+        name, if not found, then
+        address, if not found, then
+        phone, if not found, then None
+    @param name: place name to be searched
+    @param address: address to be searched
+    @param phone: phone to be searched
+    @return: dictionary from Google's place API call
+    """
     print("=========================================")
     #try name first
     url = textsearch_url + urllib.parse.quote_plus(name)
@@ -86,10 +98,13 @@ def get_google_review(name, address=None, phone=None):
             }
     
 def get_all_basic_info(df, output_fn):
-    '''
-    - get the basic information for a place especailly the place_id, which will be used in another google API call to get the reviews
-    - save the basic information to private_camp_sites_places.csv
-    '''
+    """
+    get the basic information for a place especailly the place_id, 
+    which will be used in another google API call to get the reviews.
+    A csv file will be generated to contain the place_id along with other information
+    @param df: DataFrame containing campsite basic information including name, address, phone
+    @param output_fn: the file name of the csv file to be generated
+    """
     result = {}
     keys = ['name', 'place_id', 'rating', 'by']
     
@@ -98,7 +113,7 @@ def get_all_basic_info(df, output_fn):
         row = df.iloc[i]
         try:
             time.sleep(0.3)
-            temp = get_google_review(row['name'], row['address'], row['phone'])
+            temp = get_place_info(row['name'], row['address'], row['phone'])
             if(temp['rating'] is None or temp['rating']==0):
                 print("%s, %s, %s has no ratings %s: " %(row['name'], row['address'], row['phone'], temp['rating']))
             
@@ -121,26 +136,12 @@ def get_all_basic_info(df, output_fn):
     temp = pd.DataFrame(result)
     temp.to_csv(output_fn, encoding='utf-8', header=True, index=False)
     
-def check_basic_info():
-    '''
-    the get_all_basic_info sometimes could not find the basic infor for a place
-    so this functions checks the places that we could not locate and see what we can do next...
-    
-    so only the following places could not be returned by google place api, we can do the search manually
-    
-    original_name                           name
-    Otter's Edge Estates                    NaN   
-    Ardoch Falls Wilderness Park            5891 Ardoch Rd   
-    Credivale RV Park Ltd                   14158 Mississauga Rd   
-    Riverview Campground                    22164 Valleyview Rd   
-    Wessell's Adult Trailer Park            8314 ON-35 
-    '''
-    pd.set_option('display.max_columns', None)
-    df = pd.read_csv('private_camp_sites_places.csv', encoding='utf-8')
-    temp = df.loc[df['by']=='address']
-    print(temp)
-    
 def get_reviews(df, output_fn):
+    """
+    get Google user reviews and write results to csv
+    @param df: DataFrame containing campsites information including place_id
+    @param output_fn: file name of csv to be written to
+    """
     i = 0
     result = {}
     keys = ['author_name', 'author_url', 'profile_photo_url', 'rating', 'relative_time_description', 'text', 'time']
@@ -175,19 +176,26 @@ def get_reviews(df, output_fn):
     temp = pd.DataFrame(result)
     temp.to_csv(output_fn, encoding='utf-8', header=True, index=False)
 
-def process_public_campsite_review():    
-    #1. to call google api to get basic information of all the places, uncomment the line below
-    #df = pd.read_csv('public_campsites.csv', encoding='utf-8')
-    #get_all_basic_info(df, 'public_campsites_googleinfo.csv')
+def process_public_campsite_review():
+    """
+    get public campsite reivews. two csv files are generated:
+        public_campsites_googleinfo.csv
+        public_campsites_reviews.csv
+    """
+    if(not os.path.isfile('./data/public_campsites_googleinfo.csv')):
+        df = pd.read_csv('./data/public_campsites.csv', encoding='utf-8')
+        get_all_basic_info(df, './data/public_campsites_googleinfo.csv')
     
-    #to get the reviews, uncomment the line below.
-    #you need to have private_camp_sites_places.csv populated first
-    df = pd.read_csv('public_campsites_googleinfo.csv', encoding='utf-8')
+    df = pd.read_csv('./data/public_campsites_googleinfo.csv', encoding='utf-8')
     df.dropna(inplace=True)
-    get_reviews(df, 'public_campsites_reviews.csv')
+    get_reviews(df, './data/public_campsites_reviews.csv')
 
 def get_geocoding():
-    public_sites = pd.read_csv('public_campsites.csv')
+    """
+    use Google geocoding API to get the latitude and longitude of public campsites
+    public_campsites_latlng.csv is generated
+    """
+    public_sites = pd.read_csv('./data/public_campsites.csv')
     public_sites['lat'] = 0.0
     public_sites['lng'] = 0.0
     for i in range(public_sites.shape[0]):
@@ -207,6 +215,9 @@ def get_geocoding():
             print("exception occurred to geocode %s" % (name))
             print(e)
         time.sleep(0.2)
-    public_sites.to_csv('public_campsites_latlng.csv', encoding='utf-8', header=True, index= False)
-#process_public_campsite_review()
-get_geocoding()
+    public_sites.to_csv('./data/public_campsites_latlng.csv', encoding='utf-8', header=True, index= False)
+
+"""
+#To get reviews for public campsites, uncomment the following line and run this file
+process_public_campsite_review()
+"""

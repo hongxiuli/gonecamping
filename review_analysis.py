@@ -1,14 +1,23 @@
+"""
+Pre-process user reviews:
+1. combine individual reviews from ./reviews directory to public_campsites_user_reviews.csv
+2. remove users that only have one single review on one single campsites, results stored in public_campsites_user_reviews_more_than_one.csv
+"""
 import os
 import pandas as pd
 import math
 
-def process_user_review(files=None, df = None):
+def combine_user_reviews(files=None):
+    """
+    Combine user reveiws to a single csv file
+    @param files: if provided, only combine these files. otherwise combine everything under ./reviews directory
+    @param df
+    """
     if(files is None):
         files = os.listdir("./reviews")
     names = ['user'] + [f.replace('.csv', '') for f in files]
-    if(df is None):
-        df = pd.DataFrame(columns=names)
-        df.set_index("user", inplace = True)
+    df = pd.DataFrame(columns=names)
+    df.set_index("user", inplace = True)
     count=1
     for f in files:
         print("processing %s, %d out of %d" %(f, count, len(files)))
@@ -20,12 +29,18 @@ def process_user_review(files=None, df = None):
             df.at[row['user'], row['name']] = row['stars']
         count += 1
         if(count%10==0):
-            df.to_csv('public_campsites_user_reviews.csv', encoding='utf-8', index=True, header=True)
+            df.to_csv('./data/public_campsites_user_reviews.csv', encoding='utf-8', index=True, header=True)
     print('writing to csv')
-    df.to_csv('public_campsites_user_reviews.csv', encoding='utf-8', index=True, header=True)
+    df.to_csv('./data/public_campsites_user_reviews.csv', encoding='utf-8', index=True, header=True)
 
-def remove_user_with_one_review():
-    df = pd.read_csv('public_campsites_user_reviews.csv', encoding='utf-8')
+def remove_users_with_one_review():
+    """
+    Remove users who only left one review on one particular campsites.
+    Result is written to public_campsites_user_reviews_more_than_one.csv
+    """
+    if(not os.path.isfile('./data/public_campsites_user_reviews.csv')):
+        combine_user_reviews()
+    df = pd.read_csv('./data/public_campsites_user_reviews.csv', encoding='utf-8')
     columns = df.columns.tolist()
     columns.remove('user')
     indexes_to_keep = []
@@ -39,8 +54,9 @@ def remove_user_with_one_review():
                     break
     
     df = df.iloc[indexes_to_keep]
-    df.to_csv('public_campsites_user_reviews_more_than_one.csv', encoding='utf-8', index=False, header=True)
+    df.to_csv('./data/public_campsites_user_reviews_more_than_one.csv', encoding='utf-8', index=False, header=True)
 
-
-#process_user_review()
-remove_user_with_one_review()
+"""
+uncomment the following line and run this file
+remove_users_with_one_review()
+"""

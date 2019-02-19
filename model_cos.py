@@ -54,7 +54,7 @@ class GC_Model():
         
         ###### load private and public campsites and merge them
         print('load files')
-        self.all_campground = pd.read_csv("all_campsites_ready.csv", encoding='utf-8')
+        self.all_campground = pd.read_csv("./data/all_campsites_ready.csv", encoding='utf-8')
         not_useful = ['activities', 'ov_rv', 'review', 'address','overview']
         self.all_campground.drop(columns=not_useful, inplace=True)
         #for debugging purpose
@@ -101,10 +101,6 @@ class GC_Model():
             'walking/hiking trails' : 'Hiking',
             'cycling' : 'Biking'
         }
-        
-        ######load user reviews
-        uv = pd.read_csv('public_campsites_user_reviews_more_than_one.csv', encoding='utf-8')
-        self.uv = uv.fillna(0)
         
     ##### PUBLIC FUNCTIONS #####
     def get_recommendations(self, data, recommendation_postFunc = None):
@@ -188,17 +184,17 @@ class GC_Model():
         return result
     
     def _preprocess_private_campsites(self):
-        pv_campground = pd.read_csv("private_campsites.csv", encoding='utf-8') 
+        pv_campground = pd.read_csv("./data/private_campsites.csv", encoding='utf-8') 
         self._process_private_activities(pv_campground)
         reviews_all = self._process_private_reviews()
         pv_campground_rv = pv_campground.merge(reviews_all, on='name')
         pv_campground_rv['ov_rv'] = pv_campground_rv['overview'] + pv_campground_rv['review']
-        pv_campground_rv.to_csv('private_campsites_ready.csv', encoding='utf-8', header=True, index=False)
+        pv_campground_rv.to_csv('./data/private_campsites_ready.csv', encoding='utf-8', header=True, index=False)
     
     def _preprocess_merge_and_summary(self):
         print('=====load files')
-        pv_campground = pd.read_csv("private_campsites_ready.csv", encoding='utf-8') 
-        pb_campground = pd.read_csv('public_campsites_ready.csv', encoding='utf-8')
+        pv_campground = pd.read_csv("./data/private_campsites_ready.csv", encoding='utf-8') 
+        pb_campground = pd.read_csv('./data/public_campsites_ready.csv', encoding='utf-8')
         all_campground = pv_campground.append(pb_campground)
         
         print('=====fill na')
@@ -222,7 +218,7 @@ class GC_Model():
                 all_campground.at[i, 'sum_rv']=all_campground['review'].iloc[i]
         
         print('=====write file')
-        all_campground.to_csv('all_campsites_ready.csv',encoding='utf-8', header=True, index=False)
+        all_campground.to_csv('./data/all_campsites_ready.csv',encoding='utf-8', header=True, index=False)
 
     def _process_private_activities(self, pv_campground):
         activities = set()
@@ -239,7 +235,7 @@ class GC_Model():
         return activities
 
     def _process_private_reviews(self):
-        campsite_review = pd.read_csv("private_campsites_reviews.csv", encoding='utf-8') 
+        campsite_review = pd.read_csv("./data/private_campsites_reviews.csv", encoding='utf-8') 
         review = campsite_review[['name','text']]
         review.dropna(inplace=True)
         names = review['name'].unique().tolist()

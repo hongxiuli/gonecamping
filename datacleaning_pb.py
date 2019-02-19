@@ -12,7 +12,7 @@ import os
 
 
 #######Data Cleaning of Public Campsites
-pb = pd.read_csv("public_campsites.csv", encoding='utf-8') 
+pb = pd.read_csv("./data/public_campsites.csv", encoding='utf-8') 
 
 pb_af_total = set()
 #add everything in activities and facilities
@@ -119,13 +119,13 @@ columns_to_drop = ['camping', 'activities', 'facilities', 'camping_raw',
 pb.drop(columns=columns_to_drop, inplace=True)
 
 #latitude and longitude
-temp = pd.read_csv('public_campsites_latlng.csv', encoding='utf-8')
+temp = pd.read_csv('./data/public_campsites_latlng.csv', encoding='utf-8')
 temp.set_index('name', inplace=True)
 temp = temp[['latitude','longitude']]
 
 pb = pd.merge(pb,temp, left_index=True, right_index=True)
 
-pb.to_csv('public_campsites_ready.csv', encoding='utf-8', header=True, index=True)
+pb.to_csv('./data/public_campsites_ready.csv', encoding='utf-8', header=True, index=True)
 
 
 
