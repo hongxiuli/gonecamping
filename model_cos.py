@@ -102,9 +102,12 @@ class GC_Model():
             'cycling' : 'Biking'
         }
         
+        ######load user reviews
+        uv = pd.read_csv('public_campsites_user_reviews_more_than_one.csv', encoding='utf-8')
+        self.uv = uv.fillna(0)
         
     ##### PUBLIC FUNCTIONS #####
-    def get_recommendations(self, data):
+    def get_recommendations(self, data, recommendation_postFunc = None):
         name = data.pop('name')
         
         row = self.all_campground.loc[self.all_campground['name']==name]
@@ -116,6 +119,7 @@ class GC_Model():
         #get the cosine similarity for text values
         text_similarity = self.cosine_d2v[row.index[0]]
         
+        #overall similarity is a weighted sum of binary variables' similarity and text similarity
         similarity = 0.5*bin_similarity + 0.5*text_similarity
         
         return_cols = ['name', 'sum_rv', 'latitude', 'longitude']
@@ -144,8 +148,13 @@ class GC_Model():
             if(len(features)>0):
                 top.at[i, 'facilities_activities'] = ', '.join(features)
         
+        if(recommendation_postFunc is not None):
+            recommendation_postFunc(self, name, top['name'].tolist())
+
         result = top.to_dict('records')
         return result
+
+    ##### PRIVATE FUNCTIONS #####
     
     def _cosine_d2v(self):
         model_path = './models/cosine_d2v.npy'
@@ -157,8 +166,7 @@ class GC_Model():
             self._doc2vec_similarity()
             print("calculated and saving cosine_d2v model")
             np.save(model_path, self.cosine_d2v)
-
-    ##### PRIVATE FUNCTIONS #####
+    
     def _doc2vec_similarity(self):
         print('calculating cosine_d2v')
         labels = self.all_campground['name'].tolist()

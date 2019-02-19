@@ -1,4 +1,5 @@
 .spyproject/
+.vscode/
 .DS_Store
 Archived/
 Test.py
