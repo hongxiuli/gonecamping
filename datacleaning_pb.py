@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Feb  8 10:28:24 2019
+Data cleaning for public campsites:
+1. add activities and facilities as columns
+2. map activities and facilities to private campsites' corresponding ones
+3. drop uncessary columns
+4. add latitude and longitude
+5. output final data to public_campsites_ready.csv
 
 @author: hongxiu
 """
@@ -9,13 +15,6 @@ import numpy as np
 import pandas as pd
 import re
 import os
-
-
-#######Data Cleaning of Public Campsites
-pb = pd.read_csv("./data/public_campsites.csv", encoding='utf-8') 
-
-pb_af_total = set()
-#add everything in activities and facilities
 
 def break_af_str(text):
     result = set()
@@ -26,13 +25,14 @@ def break_af_str(text):
     for i in arr:
         result.add(re.sub('\(\d+\)', '', i))
     return result
-        
+
+pb = pd.read_csv("./data/public_campsites.csv", encoding='utf-8') 
+#add everything in activities and facilities
+pb_af_total = set()
 for index, row in pb.iterrows():
     pb_af_total = pb_af_total.union(break_af_str(row['facilities_icon']))
     pb_af_total = pb_af_total.union(break_af_str(row['activities_icon']))
-    
-
- #add the column and set default value to 0
+#add the column and set default value to 0
 for t in pb_af_total:
     pb[t] = 0
 
@@ -48,8 +48,7 @@ for index, row in pb.iterrows():
             pb.at[index, feature] = birding
         else:
             pb.at[index, feature] = 1
-
-        
+#rename the columns to make sure public campsites and private campsites have the same columns   
 renames = {
     'Campsites (Electrical)':'Electrical',
     'Campsites (Seasonal Campsite Rental)':'Seasonal Sites',
@@ -70,10 +69,9 @@ renames = {
     'Campsites (Dog Free)': 'Pet-friendly',
     'introduction':'overview'
 }
-
 pb = pb.rename(columns = renames)
 
-#dog
+#public campites use "Dog Free" while private campsites use "Pet Friendly"
 pb['Pet-friendly'] = 1 - pb['Pet-friendly']
 
 #non-motorized boat
@@ -101,7 +99,6 @@ pb.drop(columns=['Birding', 'Birding - Festivals'], inplace=True)
 pb.set_index('name', inplace=True)
 
 pb['review'] = ''
-
 #public reviews
 files = os.listdir('./reviews')
 for f in files:
@@ -112,10 +109,9 @@ for f in files:
     pb.at[f.replace('.csv', ''), 'review'] = r
 
 pb['ov_rv'] = pb['overview'] + pb['review']
-
+#drop unnecessary columns
 columns_to_drop = ['camping', 'activities', 'facilities', 'camping_raw',
        'activities_raw', 'facilities_raw','activities_icon', 'facilities_icon']
-
 pb.drop(columns=columns_to_drop, inplace=True)
 
 #latitude and longitude
@@ -124,21 +120,4 @@ temp.set_index('name', inplace=True)
 temp = temp[['latitude','longitude']]
 
 pb = pd.merge(pb,temp, left_index=True, right_index=True)
-
 pb.to_csv('./data/public_campsites_ready.csv', encoding='utf-8', header=True, index=True)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
