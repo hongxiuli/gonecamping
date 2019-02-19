@@ -4,21 +4,20 @@ import pandas as pd
 import time
 import math
 
-textsearch_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery'
-textsearch_url += '&key=AIzaSyDX8Uxzozw5kOzezJ5Cfz-DPsXXG8neOkM'
+google_api_key = 'PUT GOOGLE API KEY HERE'
+textsearch_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=textquery&key=' + google_api_key
 textsearch_url += '&fields=name,rating,place_id'
 textsearch_url += '&input='
 
-phonesearch_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=phonenumber'
-phonesearch_url += '&key=AIzaSyDX8Uxzozw5kOzezJ5Cfz-DPsXXG8neOkM'
+phonesearch_url = 'https://maps.googleapis.com/maps/api/place/findplacefromtext/json?inputtype=phonenumber&key=' + google_api_key
 phonesearch_url += '&fields=name,rating,place_id'
 phonesearch_url += '&input=' 
 
-detaillsearch_url = 'https://maps.googleapis.com/maps/api/place/details/json?key=AIzaSyDX8Uxzozw5kOzezJ5Cfz-DPsXXG8neOkM'
+detaillsearch_url = 'https://maps.googleapis.com/maps/api/place/details/json?key=' + google_api_key
 detaillsearch_url += '&fields=rating,review,price_level'
 detaillsearch_url += '&placeid='
 
-geocoding_url = 'https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyDX8Uxzozw5kOzezJ5Cfz-DPsXXG8neOkM'
+geocoding_url = 'https://maps.googleapis.com/maps/api/geocode/json?key=' + google_api_key
 geocoding_url += '&address='
 
 def get_google_api_response(url):
