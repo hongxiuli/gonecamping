@@ -1,4 +1,4 @@
-#Gone Camping
+# Gone Camping
 
 ## Problem
 There are over 600 campgrounds in Ontario and more than 0.5 million campsite bookings annually. However, the search process of good campgrounds is inefficient and time-consuming. When campers need to find similar alternatives or explore new ones, they need to decide from 50-80 campground features and read hundreds of reviews.
